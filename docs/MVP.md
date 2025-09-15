@@ -5,7 +5,7 @@ Primeiro entregar com os titulares
 
 ## Processamento
 
-Construir grafo de colaboração, cada nó contém **Nome, Lattes, similarity score, isFromICT, IsFromUnesp **
+Construir grafo de colaboração, cada nó contém **Nome, Lattes, similarity score, isFromICT, IsFromUnesp**
 - [ ] Construir grafo até distância com orientador no máximo K
 - [ ] Remover duplicadas (Orientador colaborou com Y e Z, mas Y também colaborou com Z)
 - [ ] Calcular similarity score 
