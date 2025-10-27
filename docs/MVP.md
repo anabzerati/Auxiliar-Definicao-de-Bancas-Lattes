@@ -1,4 +1,4 @@
-Primeiro entregar com os titulares 
+Primeiro entregar com os titulares utilizando somente membros do ICT 
 ## Input
 - [ ] Interface simples no terminal para receber o título do tema + lattes do orientador
 
