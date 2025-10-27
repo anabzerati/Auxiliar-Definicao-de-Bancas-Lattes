@@ -14,8 +14,7 @@ Construir grafo de colaboração, cada nó contém **Nome, Lattes, similarity sc
 
 ### Similarity score
 Considera: 
-- 10 publicações mais recentes da seção "**Artigos completos publicados em periódicos**"
--  10 publicações mais recentes na seção **Trabalhos completos publicados em anais de congressos**
+- 10 publicações mais recentes do **Google Schoolar**"
 - Seção **linhas de pesquisa**
 
 obs: seções que tem na página HTML do lattes
