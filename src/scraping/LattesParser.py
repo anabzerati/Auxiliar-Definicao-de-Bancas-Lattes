@@ -2,6 +2,8 @@ from typing import Dict, Tuple, List
 import re
 from bs4 import BeautifulSoup
 
+from pprint import pprint
+
 
 class LattesParser:
     """
@@ -83,7 +85,7 @@ class LattesParser:
 
                 # some Linhas de Pesquisa may have an "Objetivo" field with useless information
                 # dude i really wish that i had  conceived a better idea to solve this.
-                if not area_text.startswith("Objetivo: "):
+                if not area_text.startswith("Objetivo:"):
 
                     area_return_list.append(area_text)
 
@@ -94,10 +96,14 @@ class LattesParser:
             )
             return []
 
-
     def _get_research_projects(self) -> List[str]:
-        research_project_link = self.soup.find("a", attrs={"name": "ProjetosPesquisa"}) 
-    
+        """Extracts research projects from the loaded reseracher
+
+        Returns:
+            List[str]: A list of the research projects. Returns an empty list if the section is not found.
+        """
+        research_project_link = self.soup.find("a", attrs={"name": "ProjetosPesquisa"})
+
         if research_project_link:
             main_div_area = (
                 research_project_link.parent
@@ -114,10 +120,8 @@ class LattesParser:
             area_return_list = []
             for area in areas:
                 area_text = area.get_text(strip=True)
-                        
 
-                if not area_text.startswith("Descrição:"):
-                    print(area_text)
+                if not area_text.startswith(("Descrição:", "Situação:")):
                     area_return_list.append(area_text)
 
             return area_return_list
@@ -127,38 +131,77 @@ class LattesParser:
             )
             return []
 
-
     def _get_periodicals_papers(self) -> List[str]:
         """
-        Incomplete
+        Extracts the titles of the 10 latest periodical papers from the HTML document
+
+        Returns:
+            List[str]: a list of up to 10 paper titles.
         """
 
         periodicals_div = self.soup.find("div", id="artigos-completos")
-
-        papers = periodicals_div.findAll("span", class_="transform")
+        # 10 latest papers
+        papers = periodicals_div.findAll("span", class_="transform")[:10]
 
         titles = []
         for paper in papers:
             paper_text: str = paper.get_text(strip=True)
-            last_part: str = paper_text.split(';')[-1]
-            
-            authors_title = last_part[last_part.find("."):-1]
+            last_part: str = paper_text.split(";")[-1]
+
+            authors_title = last_part[last_part.find(".") : -1]
 
             authors_title_split = authors_title.split(".")
 
-            for i in range(0,4):
+            for i in range(0, 4):
                 if len(authors_title_split[i]) > 3:
                     title = authors_title_split[i]
                     break
+            #  print(title)
+            titles.append(title)
+        return titles
 
+    def _get_congress_papers(self) -> List[str]:
+        """Extracts the titles of the 10 latest congress papers from the HTML document.
+
+
+        Returns:
+            List[str]: a list of up to 10 paper titles
+        """
+
+        congress_link = self.soup.find(
+            "a", attrs={"name": "TrabalhosPublicadosAnaisCongresso"}
+        )
+
+        papers = congress_link.find_all_next(name="span", attrs={"class": "transform"})[
+            :10
+        ]
+
+        titles = []
+
+        for paper in papers:
+            paper_text: str = paper.get_text(strip=True)
+            last_part: str = paper_text.split(";")[-1]
+
+            authors_title = last_part[last_part.find(".") : -1]
+
+            if len(authors_title) == 0:
+                continue
+            authors_title_split = authors_title.split(".")
+            print(f"title: {authors_title}")
+            print("\n\n")
+            for i in range(0, 4):
+                if len(authors_title_split[i]) > 3:
+                    title = authors_title_split[i]
+                    break
             titles.append(title)
 
-        return titles 
+        return titles
+
     def _extract_information(self) -> None:
         """Extract and store all relevant info in self.info.
 
         Side Effects:
-            Populates `self.info` with keys: 'name', 'lattes_id', 'research_areas', 'papers'
+            Populates `self.info` with keys: 'name', 'lattes_id', 'research_areas', 'research_areas','periodic papers', 'congress papers' and 'projects'
         """
 
         name, lattes_id_lattes = self._get_personal_info()
@@ -167,16 +210,62 @@ class LattesParser:
 
         periodic = self._get_periodicals_papers()
 
+        congress = self._get_congress_papers()
+
         projects = self._get_research_projects()
 
+        self.info = {
+            "name": name,
+            "lattes_id": lattes_id_lattes,
+            "research_areas": areas,
+            "periodic_papers": periodic,
+            "congress_papers": congress,
+            "projects": projects,
+        }
+
     def get_info(self) -> Dict:
-        """Public getter for the extracted information from .html lattes cv
+        """
+        Retrieve the parsed information from the Lattes CV HTML document.
+
+        This method returns a dictionary populated by `_extract_information()`,
+        containing key biographical and research-related data extracted from
+        the individual's Lattes CV.
 
         Returns:
-            Dict: A dictionary containing all extracted Lattes information.
+            Dict: A dictionary with the following structure:
+
+                {
+                    "name": str,
+                        # Full name of the researcher.
+
+                    "lattes_id": str,
+                        # The unique Lattes platform identifier (usually a numeric string).
+
+                    "research_areas": List[str],
+                        # List of declared research areas.
+
+                    "periodic_papers": List[str],
+                        # Titles of papers published in academic journals or periodicals.
+
+                    "congress_papers": List[str],
+                        # Titles of papers presented at academic conferences or congresses.
+
+                    "projects": List[str]
+                        # Titles or descriptions of research projects the person participates in.
+                }
+
+        Notes:
+            - The dictionary is only available after `_extract_information()` has been executed.
+            - If the extraction process failed or was incomplete, some fields may be empty lists or `None`.
         """
         return self.info
 
 
 if __name__ == "__main__":
-    parser = LattesParser("/home/willao/docs/Github/Auxiliar-Definicao-de-Bancas-Lattes/data/ppgcc/2740441033907310.html")
+    parser = LattesParser(
+        "/home/willao/docs/Github/Auxiliar-Definicao-de-Bancas-Lattes/data/ppgcc/0840226903480590.html"
+    )
+
+    prof_indo = parser.get_info()
+
+    pprint(prof_indo)
