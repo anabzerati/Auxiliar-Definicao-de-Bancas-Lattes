@@ -1,8 +1,8 @@
 from typing import Dict, Tuple, List
 import re
 from bs4 import BeautifulSoup
-
-from pprint import pprint
+import os
+from pprint import pprint, pformat
 
 
 class LattesParser:
@@ -152,11 +152,10 @@ class LattesParser:
 
             authors_title_split = authors_title.split(".")
 
-            for i in range(0, 4):
+            for i in range(0, len(authors_title_split)):
                 if len(authors_title_split[i]) > 3:
                     title = authors_title_split[i]
                     break
-            #  print(title)
             titles.append(title)
         return titles
 
@@ -171,6 +170,9 @@ class LattesParser:
         congress_link = self.soup.find(
             "a", attrs={"name": "TrabalhosPublicadosAnaisCongresso"}
         )
+
+        if congress_link is None:
+            return []
 
         papers = congress_link.find_all_next(name="span", attrs={"class": "transform"})[
             :10
@@ -187,9 +189,7 @@ class LattesParser:
             if len(authors_title) == 0:
                 continue
             authors_title_split = authors_title.split(".")
-            print(f"title: {authors_title}")
-            print("\n\n")
-            for i in range(0, 4):
+            for i in range(0, len(authors_title_split)):
                 if len(authors_title_split[i]) > 3:
                     title = authors_title_split[i]
                     break
@@ -261,11 +261,39 @@ class LattesParser:
         return self.info
 
 
+def test_output():
+
+    DATA_DIR = "../../data/ppgcc"
+    OUTPUT_DIR = "outputs"
+
+    html_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".html")]
+
+    for html_file in html_files:
+        file_path = os.path.join(DATA_DIR, html_file)
+        base_name = os.path.splitext(html_file)[0]
+        output_path = os.path.join(OUTPUT_DIR, f"{base_name}.txt")
+
+        print(f"→ Processando: {html_file}")
+
+        parser = LattesParser(file_path)
+        prof_info = parser.get_info()
+
+        # Gera string formatada bonitinha
+        output_text = pformat(prof_info, indent=2, width=100)
+
+        # Salva em arquivo .txt
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(output_text)
+
+        print(f"   ✅ Salvo em {output_path}")
+
+
+    print("\nProcessamento concluído!")
+ 
+
+
 if __name__ == "__main__":
-    parser = LattesParser(
-        "/home/willao/docs/Github/Auxiliar-Definicao-de-Bancas-Lattes/data/ppgcc/0840226903480590.html"
-    )
 
-    prof_indo = parser.get_info()
-
-    pprint(prof_indo)
+ #   parser = LattesParser("/home/willao/docs/Github/Auxiliar-Definicao-de-Bancas-Lattes/data/ppgcc/8884890472193474.html")
+  #  pprint(parser.get_info())
+    test_output()
