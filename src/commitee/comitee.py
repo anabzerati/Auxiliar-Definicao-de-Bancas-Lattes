@@ -1,22 +1,31 @@
-from typing import Optional
-from professors import Member  # supondo que a classe Member está definida em member.py
+from typing import Optional, Tuple
+from professors import Member  
 
 class Committee:
-    def __init__(self, title: str, summary: Optional[str], advisor: Member, titular1: Member, titular2: Member, substitute: Member):
+    def __init__(
+        self,
+        title: str,
+        summary: Optional[str],
+        advisor: Tuple[Member, float],
+        titular1: Tuple[Member, float],
+        titular2: Tuple[Member, float],
+        substitute: Tuple[Member, float]
+    ):
         """
-        Initialize a Committee instance.
+        Initialize a Committee instance with members paired with similarity scores.
 
         Args:
             title (str): The title of the TCC or research theme.
             summary (Optional[str]): The summary or abstract of the project.
-            advisor (Member): The advisor (orientador) of the committee.
-            titular1 (Member): The first titular member.
-            titular2 (Member): The second titular member.
-            substitute (Member): The substitute (suplente) member.
+            advisor (Tuple[Member, float]): The advisor and their similarity score.
+            titular1 (Tuple[Member, float]): The first titular member and their similarity score.
+            titular2 (Tuple[Member, float]): The second titular member and their similarity score.
+            substitute (Tuple[Member, float]): The substitute member and their similarity score.
         """
         self.title: str
         self.summary: Optional[str]
-        self.advisor: Member
-        self.titular1: Member
-        self.titular2: Member
-        self.substitute: Member
+
+        self.advisor: Tuple[Member, float]
+        self.titular1: Tuple[Member, float]
+        self.titular2: Tuple[Member, float]
+        self.substitute: Tuple[Member, float]
