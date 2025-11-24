@@ -1,5 +1,6 @@
 from typing import List, Dict
 
+
 class Member:
     def __init__(self, info: Dict):
         """
@@ -15,15 +16,42 @@ class Member:
         self.congress_papers: List[str]
         self.projects: List[str]
 
-    def calculate_sim_score(self, theme: str, title: str) -> float:
+        self.name = info["name"]
+        self.lattes_id = info["lattes_id"]
+        self.research_areas = info["research_areas"]
+        self.periodic_papers = info["periodic_papers"]
+        self.congress_papers = info["congress_papers"]
+        self.projects = info["projects"]
+
+    def print_info(self) -> None:
+        print(f"--- Professor Information ---")
+        print(f"Name: {self.name}")
+        print(f"Lattes ID: {self.lattes_id}")
+        print("\nResearch Areas:")
+        for area in self.research_areas:
+            print(f"  - {area}")
+
+        print("\nPeriodic Papers:")
+        for paper in self.periodic_papers:
+            print(f"  - {paper}")
+
+        print("\nCongress Papers:")
+        for paper in self.congress_papers:
+            print(f"  - {paper}")
+
+        print("\nProjects:")
+        for project in self.projects:
+            print(f"  - {project}")
+
+    def calculate_sim_score(self, theme: str, summary: str) -> float:
         """
         Calculate a similarity score between the given theme/title and the member's profile.
 
         Args:
             theme (str): The research theme or topic title.
-            title (str): The title of the TCC or project.
+            summary (str): Summary text of the research theme.
 
         Returns:
             float: The calculated similarity score.
         """
-        pass
+        return 1
