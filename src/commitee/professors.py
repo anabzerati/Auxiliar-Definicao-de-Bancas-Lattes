@@ -42,16 +42,3 @@ class Member:
         print("\nProjects:")
         for project in self.projects:
             print(f"  - {project}")
-
-    def calculate_sim_score(self, theme: str, summary: str) -> float:
-        """
-        Calculate a similarity score between the given theme/title and the member's profile.
-
-        Args:
-            theme (str): The research theme or topic title.
-            summary (str): Summary text of the research theme.
-
-        Returns:
-            float: The calculated similarity score.
-        """
-        return 1
