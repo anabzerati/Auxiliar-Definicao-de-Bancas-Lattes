@@ -3,6 +3,7 @@ import argparse
 import warnings
 from commitee.professors import Member
 from scraping.LattesParser import LattesParser
+from similarity.similarity import SentenceTransformerSimilarity
 
 
 def main():
@@ -43,12 +44,17 @@ def main():
         parser = LattesParser(file_path)
         prof_info = parser.get_info()
 
+        similarity = SentenceTransformerSimilarity("all-mpnet-base-v2")
+        score = similarity.similarity_score(theme, resumo, prof_info)
+
         member = Member(prof_info)
-        #       member.print_info()
+        member_list.append((member, score))
 
-        member_list.append(member)
+    member_list.sort(key=lambda x: x[1], reverse=True)
 
-    print(len(member_list))
+    for member, score in member_list[:5]:
+        member.print_info()
+        print(f"Score: {score}\n")
 
 
 if __name__ == "__main__":
