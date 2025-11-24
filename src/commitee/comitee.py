@@ -1,5 +1,6 @@
 from typing import Optional, Tuple
-from professors import Member  
+from professors import Member
+
 
 class Committee:
     def __init__(
@@ -9,7 +10,7 @@ class Committee:
         advisor: Tuple[Member, float],
         titular1: Tuple[Member, float],
         titular2: Tuple[Member, float],
-        substitute: Tuple[Member, float]
+        substitute: Tuple[Member, float],
     ):
         """
         Initialize a Committee instance with members paired with similarity scores.
