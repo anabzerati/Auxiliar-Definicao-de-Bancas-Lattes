@@ -39,7 +39,6 @@ def main():
     member_list = []
     for html_file in html_files:
         file_path = os.path.join(DATA_DIR, html_file)
-        base_name = os.path.splitext(html_file)[0]
 
         parser = LattesParser(file_path)
         prof_info = parser.get_info()
@@ -52,10 +51,15 @@ def main():
 
     member_list.sort(key=lambda x: x[1], reverse=True)
 
-    for member, score in member_list[:5]:
-        member.print_info()
-        print(f"Score: {score}\n")
+    print("Ranking")
+    for member, score in member_list:
+        print(f"{member.name:40s}  ->  {score:.4f}")
 
+    print("Top 5")
+    for member, score in member_list[:5]:
+        print()
+        member.print_info()
+        print()
 
 if __name__ == "__main__":
     main()
