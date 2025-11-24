@@ -16,9 +16,16 @@ Construir grafo de colaboração, cada nó contém **Nome, Lattes, similarity sc
 Considera: 
 - 10 publicações mais recentes de periódicos e anais de congresso
 - Seção **linhas de pesquisa**
-- Seção ** projetos de pesquisa**
+- Seção **projetos de pesquisa**
 
 obs: seções que tem na página HTML do lattes
+
+v_pesquisador = w_p * v_publicacoes + w_l * v_linhas + w_pr * v_projetos
+	​
+pesos:
+- publicações (10 mais recentes): conteúdo temático mais atualizado; w_p=0.5
+- linhas de pesquisa: resumo de atuação; w_l=0.3
+- projetos: pesquisa aplicada; w_proj=0.2
 
 Representar cada pesquisador em como um vetor usando Transformers e calcular a similaridade 
 
