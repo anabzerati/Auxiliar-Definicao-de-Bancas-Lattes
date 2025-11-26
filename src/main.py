@@ -1,16 +1,59 @@
 import os
 import argparse
 import warnings
-from commitee.professors import Member, log
+from commitee.professors import Member
+from logger import init_logger, log
 from scraping.LattesParser import LattesParser
 from similarity.similarity import SentenceTransformerSimilarity
 
-def main():
-    theme: str = input("Enter the title of your theme: ")
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-m", "--model",
+        type=str,
+        default="all-mpnet-base-v2",
+        help="Nome do modelo SentenceTransformer"
+        # Algumas sugestões de modelos:
+        # paraphrase-multilingual-mpnet-base-v2
+        # distiluse-base-multilingual-cased-v2
+        # sentence-transformers/LaBSE
+        # paraphrase-multilingual-MiniLM-L12-v2
+    )
 
-    summary_file = input(
-        "Enter the path to the summary file (leave empty to skip): "
-    ).strip()
+    parser.add_argument(
+        "-t", "--theme",
+        type=str,
+        default="Analise de Modelos de Lingua de Baixo Custo",
+        help="Título do trabalho a ser apresentado"
+    )
+    parser.add_argument(
+        "-s", "--summary",
+        type=str,
+        default="./sum.txt",
+        help="Caminho do arquivo com o resumo"
+    )
+    parser.add_argument(
+        "-o", "--output",
+        type=str,
+        default="ranking_output",
+        help="Caminho pro arquivo de saída"
+    )
+
+    return parser.parse_args()
+
+
+def main():
+
+    args = parse_args()
+    output = args.output + '_' + args.model + '.txt'
+
+    init_logger(output)   # txt com as saídas
+    # theme: str = input("Enter the title of your theme: ")
+    theme = args.theme
+    summary_file = args.summary.strip()
+    # summary_file = input(
+    #     "Enter the path to the summary file (leave empty to skip): "
+    # ).strip()
 
     if summary_file:
         try:
@@ -35,6 +78,8 @@ def main():
     DATA_DIR = "../data/ppgcc"
 
     html_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".html")]
+    
+    similarity = SentenceTransformerSimilarity(args.model)
 
     member_list = []
     for html_file in html_files:
@@ -43,7 +88,6 @@ def main():
         parser = LattesParser(file_path)
         prof_info = parser.get_info()
 
-        similarity = SentenceTransformerSimilarity("all-mpnet-base-v2")
         score = similarity.similarity_score(theme, resumo, prof_info)
 
         member = Member(prof_info)
@@ -51,6 +95,9 @@ def main():
 
     member_list.sort(key=lambda x: x[1], reverse=True)
 
+    log(f'Título do trabalho: {args.theme}')
+    log(f'Resumo do trabalho: {resumo}')
+    log('\n')
     log("Ranking")
     for member, score in member_list:
         log(f"{member.name:40s}  ->  {score:.4f}")
@@ -61,6 +108,8 @@ def main():
         log('\n')
         member.log_info()
         log('\n')
+    
+    print(f'Logs salvos em {output}')
 
 if __name__ == "__main__":
     main()
