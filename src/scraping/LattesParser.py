@@ -91,9 +91,9 @@ class LattesParser:
 
             return area_return_list
         else:
-            print(
-                f"Researcher from {self.filename} does not have research area sections in lattes"
-            )
+            # print(
+            #     f"Researcher from {self.filename} does not have research area sections in lattes"
+            # )
             return []
 
     def _get_research_projects(self) -> List[str]:

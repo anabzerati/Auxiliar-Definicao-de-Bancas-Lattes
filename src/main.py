@@ -45,6 +45,8 @@ def parse_args():
 
     return parser.parse_args()
 
+import warnings
+warnings.filterwarnings("ignore")
 
 def main():
 
@@ -76,6 +78,7 @@ def main():
     print(f"Title: {theme}\n")
     if summary_file:
         print(f"Summary file: {summary_file}")
+        print(f"Summary content: {resumo}")
     else:
         print("Summary file: (none provided)")
 
@@ -109,6 +112,7 @@ def main():
 
     log("\n\n --- Lattes profile information for the top 5 recommendations ---")
 
+    print("\n\n --- Lattes profile information for the top 5 recommendations ---")
     for member, score in member_list[:5]:
         log('\n')
         member.log_info()
