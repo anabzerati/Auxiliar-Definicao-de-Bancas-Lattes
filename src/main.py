@@ -1,10 +1,9 @@
 import os
 import argparse
 import warnings
-from commitee.professors import Member
+from commitee.professors import Member, log
 from scraping.LattesParser import LattesParser
 from similarity.similarity import SentenceTransformerSimilarity
-
 
 def main():
     theme: str = input("Enter the title of your theme: ")
@@ -20,6 +19,7 @@ def main():
         except FileNotFoundError:
             raise FileNotFoundError("The specified file does not exist.")
     else:
+        resumo = ''
         warnings.warn(
             "No summary file provided. Only the title will be used to find the TCC committee.",
             UserWarning,
@@ -51,15 +51,16 @@ def main():
 
     member_list.sort(key=lambda x: x[1], reverse=True)
 
-    print("Ranking")
+    log("Ranking")
     for member, score in member_list:
-        print(f"{member.name:40s}  ->  {score:.4f}")
+        log(f"{member.name:40s}  ->  {score:.4f}")
 
-    print("Top 5")
+    log("\nTop 5")
+
     for member, score in member_list[:5]:
-        print()
-        member.print_info()
-        print()
+        log('\n')
+        member.log_info()
+        log('\n')
 
 if __name__ == "__main__":
     main()
