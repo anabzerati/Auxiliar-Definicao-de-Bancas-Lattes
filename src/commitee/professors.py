@@ -1,10 +1,7 @@
 from typing import List, Dict
+import argparse
+from logger import log
 
-logfile = open("ranking_output.txt", "a", encoding="utf-8") # txt com as saídas
-
-def log(msg=""):
-    print(msg)
-    logfile.write(msg + "\n")
 
 class Member:
     def __init__(self, info: Dict):

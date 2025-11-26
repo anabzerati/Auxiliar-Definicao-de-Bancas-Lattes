@@ -5,6 +5,10 @@ from commitee.professors import Member
 from logger import init_logger, log
 from scraping.LattesParser import LattesParser
 from similarity.similarity import SentenceTransformerSimilarity
+from tqdm import tqdm
+
+import warnings
+warnings.filterwarnings("ignore")
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -68,12 +72,14 @@ def main():
             UserWarning,
         )
 
-    print("\n=== Input Summary ===")
-    print(f"Title: {theme}")
+    print("\n--- Input Summary ---")
+    print(f"Title: {theme}\n")
     if summary_file:
         print(f"Summary file: {summary_file}")
     else:
         print("Summary file: (none provided)")
+
+    print("\n\n--- Analyzing Lattes profiles and calculating recommendations ---")
 
     DATA_DIR = "../data/ppgcc"
 
@@ -82,7 +88,7 @@ def main():
     similarity = SentenceTransformerSimilarity(args.model)
 
     member_list = []
-    for html_file in html_files:
+    for html_file in tqdm(html_files, desc="Processando currículos", unit="arquivo"):
         file_path = os.path.join(DATA_DIR, html_file)
 
         parser = LattesParser(file_path)
@@ -97,12 +103,11 @@ def main():
 
     log(f'Título do trabalho: {args.theme}')
     log(f'Resumo do trabalho: {resumo}')
-    log('\n')
-    log("Ranking")
+    log("\n\n--- Ranking ---")
     for member, score in member_list:
         log(f"{member.name:40s}  ->  {score:.4f}")
 
-    log("\nTop 5")
+    log("\n\n --- Lattes profile information for the top 5 recommendations ---")
 
     for member, score in member_list[:5]:
         log('\n')
