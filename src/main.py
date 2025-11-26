@@ -5,6 +5,8 @@ from commitee.professors import Member
 from scraping.LattesParser import LattesParser
 from similarity.similarity import SentenceTransformerSimilarity
 
+import warnings
+warnings.filterwarnings("ignore")
 
 def main():
     theme: str = input("Enter the title of your theme: ")
@@ -25,12 +27,15 @@ def main():
             UserWarning,
         )
 
-    print("\n=== Input Summary ===")
-    print(f"Title: {theme}")
+    print("\n--- Input Summary ---")
+    print(f"Title: {theme}\n")
     if summary_file:
         print(f"Summary file: {summary_file}")
+        print(f"Summary content: {resumo}")
     else:
         print("Summary file: (none provided)")
+
+    print("\n\n--- Analyzing Lattes profiles and calculating recommendations ---")
 
     DATA_DIR = "../data/ppgcc"
 
@@ -51,11 +56,11 @@ def main():
 
     member_list.sort(key=lambda x: x[1], reverse=True)
 
-    print("Ranking")
+    print("\n\n--- Ranking ---")
     for member, score in member_list:
         print(f"{member.name:40s}  ->  {score:.4f}")
 
-    print("Top 5")
+    print("\n\n --- Lattes profile information for the top 5 recommendations ---")
     for member, score in member_list[:5]:
         print()
         member.print_info()
