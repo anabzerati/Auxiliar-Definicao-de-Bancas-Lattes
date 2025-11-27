@@ -1,4 +1,6 @@
 from typing import List, Dict
+import argparse
+from logger import log
 
 
 class Member:
@@ -23,22 +25,22 @@ class Member:
         self.congress_papers = info["congress_papers"]
         self.projects = info["projects"]
 
-    def print_info(self) -> None:
-        print(f"--- Professor Information ---")
-        print(f"Name: {self.name}")
-        print(f"Lattes ID: {self.lattes_id}")
-        print("\nResearch Areas:")
+    def log_info(self) -> None:
+        log(f"--- Professor Information ---")
+        log(f"Name: {self.name}")
+        log(f"Lattes ID: {self.lattes_id}")
+        log("\nResearch Areas:")
         for area in self.research_areas:
-            print(f"  - {area}")
+            log(f"  - {area}")
 
-        print("\nPeriodic Papers:")
+        log("\nPeriodic Papers:")
         for paper in self.periodic_papers:
-            print(f"  - {paper}")
+            log(f"  - {paper}")
 
-        print("\nCongress Papers:")
+        log("\nCongress Papers:")
         for paper in self.congress_papers:
-            print(f"  - {paper}")
+            log(f"  - {paper}")
 
-        print("\nProjects:")
+        log("\nProjects:")
         for project in self.projects:
-            print(f"  - {project}")
+            log(f"  - {project}")
