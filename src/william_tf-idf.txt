@@ -1,0 +1,398 @@
+Título do trabalho: Segmentação e Detecção de Buracos em vias Utilizando Visão Computacional em Sistemas Embarcados Críticos em Prol de ADAS e Veículos Autônomos
+Resumo do trabalho:  A infraestrutura viária deficiente, especialmente a presença de buracos, representa um risco significativo tanto para a segurança pública quanto para a indústria automotiva, sendo um problema crítico no Brasil. Nesse contexto, a adoção de tecnologias assistivas à direção, com foco na detecção de irregularidades na via, torna-se essencial para mitigar esses riscos, permitindo que os condutores reajam de forma mais eficiente. Para isso, abordagens baseadas em Redes Neurais Profundas têm se mostrado promissoras na detecção e segmentação de objetos, superando métodos tradicionais que frequentemente apresentam limitações em cenários complexos.Este projeto propõe o desenvolvimento e a avaliação de modelos de Aprendizado Profundo aplicados à Visão Computacional para essa finalidade, explorando arquiteturas como Redes Neurais Convolucionais (CNNs) e Vision Transformers. O objetivo é superar as limitações das abordagens existentes, que muitas vezes dependem de conjuntos de dados inadequados ou de modelos computacionalmente intensivos, inviáveis para dispositivos embarcados. Como resultado, os modelos desenvolvidos serão aplicados em uma solução de baixo custo para detecção de buracos em tempo real, auxiliando condutores com Sistemas Avançados de Assistência ao Condutor (ADAS) e/ou enviando informações para um módulo decisor, no caso de veículos autônomos, permitindo realizar uma manobra corretiva. Destacando que esta pesquisa está inserida junto ao projeto do primeiro caminhão autônomo da América Latina junto ao Instituto De Ciências Matemáticas e de Computação da Universidade de São Paulo, intitulado como CaRINA (Carro Robótico Inteligente de Navegação Autônoma), possibilitando gerar novas contribuições. 
+
+
+
+--- Ranking ---
+Diego Renan Bruno                         ->  0.2911
+Aparecido Nilceu Marana                   ->  0.1784
+Lucas Correia Ribas                       ->  0.1387
+Wallace Correa de Oliveira Casaca         ->  0.1366
+João Paulo Papa                           ->  0.1272
+Kelton Augusto Pontara da Costa           ->  0.1048
+Rodolfo Ipolito Meneguette                ->  0.1038
+Renata Spolon Lobato                      ->  0.0939
+Danillo Roberto Pereira                   ->  0.0917
+Antonio Carlos Sementille                 ->  0.0901
+Cassio Machiaveli Oishi                   ->  0.0879
+Fabricio Aparecido Breve                  ->  0.0831
+Denis Henrique Pinheiro Salvadeo          ->  0.0788
+Marilaine Colnago                         ->  0.0723
+Geraldo Francisco Donegá Zafalon          ->  0.0667
+Rogério Eduardo Garcia                    ->  0.0644
+Ronaldo Celso Messias Correia             ->  0.0639
+Felipe Fernandes Fanchini                 ->  0.0608
+Frank José Affonso                        ->  0.0531
+Leonardo Castro Botega                    ->  0.0530
+Carlos Roberto Valêncio                   ->  0.0514
+Mauricio Araujo Dias                      ->  0.0444
+Leonardo Tórtoro Pereira                  ->  0.0443
+Arnaldo Candido Junior                    ->  0.0433
+Rodrigo Capobianco Guido                  ->  0.0403
+Daniel Carlos Guimarães Pedronette        ->  0.0387
+Ivan Rizzo Guilherme                      ->  0.0386
+Caetano Mazzoni Ranieri                   ->  0.0379
+Alexandro José Baldassin                  ->  0.0359
+Rogéria Cristiane Gratão de Souza         ->  0.0338
+Veronica Oliveira de Carvalho             ->  0.0334
+Adriano Mauro Cansian                     ->  0.0330
+Danilo Medeiros Eler                      ->  0.0315
+Jose Remo Ferreira Brega                  ->  0.0300
+Leandro Alves Neves                       ->  0.0229
+Clayton Reginaldo Pereira                 ->  0.0202
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Diego Renan Bruno
+Lattes ID: 6996168862993134
+
+Research Areas:
+  - Arquitetura de Computadores
+  - Sistemas Embarcados Críticos
+  - Visão Computacional
+  - Robótica
+  - Veículos Autônomos
+  - Robótica Móvel Autônoma, Redes Neurais Artificiais, Algoritmos Genéticos e Controle
+  - Veículos Autônomos
+  - Inteligência Artificial
+  - Sistemas Avançados de Assistência ao Motorista (ADAS)
+  - Visão Computacional Robótica
+  - Machine Learning - (Deep Learning 2D/ MLP 3D)
+  - Robótica / Mecatrônica / Automação
+  - LARA - (Laboratório de Automação e Robótica Aplicada)
+
+Periodic Papers:
+  -  EVOLUÇÃO E O DESENVOLVIMENTO DO CHATBOT GPT-3 E GPT-4
+  -  IA - INTELIGENCIA ARTIFICIAL: IMPACTOS, RISCOS E BENEFICIOS QUE DESAFIAM A SOCIEDADE MODERNA
+  -  USO DE IA PARA AUTOMATIZAR TAREFAS DE DESENVOLVIMENTO
+  -  CARINA Project:
+ Visual Perception Systems Applied for Autonomous Vehicles and Advanced 
+Driver Assistance Systems (ADAS)
+  -  ERA DA RECOMENDAÇÃO
+  -  LEI GERAL DE PROTEÇÃO DE DADOS EM UMA SOCIEDADE PANDÊMICA
+  -  APLICATIVO GERENCIAL PARA DISPOSITIVOS MÓVEIS
+  -  PRODUÇÃO MAIS LIMPA: CONTRIBUIÇÕES DA INDÚSTRIA 4
+  -  GANs - REDES ADVERSARIAS GENERATIVAS
+  -  IMPLEMENTAÇÃO DA INTERNET EM NOSSO COTIDIANO
+
+Congress Papers:
+  -  Robotic Visual 
+Attention Architecture for ADAS in Critical Embedded Systems for Smart 
+Vehicles
+  -  Real Time Deep Learning Based Pothole Detection on Low Cost Embedded 
+Devices for ADAS
+  -  BRAIN: dataBase para Pesquisa em Análise de  
+Intrusões Automotivas
+  -  Lexical 
+Analysis of Automatic Transcriptions Using Speech-to-Text Services: A 
+Statistically Evaluated Case Study
+  -  Enhancing Learning Objects Accessibility Through 
+Speech-To-Text Based Architecture: A Comprehensive Triangulation Study
+  -  Real-Time Pedestrian Detection and Tracking 
+System Using Deep Learning and Kalman filter: Applications on Embedded 
+Systems in Advanced Driver Assistance Systems
+  -  A literature review on the detection and tracking
+ of obstacles applied for Advanced Driver Assistance Systems (ADAS) in 
+Robotic Vehicle'
+  -  ADAS classifier for driver monitoring and 
+driving qualification using both internal and external vehicle data
+  -  Development of a robotic sensing 
+system to assist visually impaired people in their task of locomotion in
+ urban environments
+  -  Robotic Computer Vision System with 2D and 3D 
+Data Fusion for Traffic Sign Detection
+
+Projects:
+  - Modelos de Inteligência Artificial para Detecção de Correlação e Predição em redes IoT
+  - Rota2030
+ - SegurAuto: Detecção e Avaliação de Obstáculos e Pedestres Baseada em 
+Reconstrução de imagens 3D e Análise Temporal Aplicada para ADAS 
+veiculares
+  - Robô móvel autônomo para suporte de deficientes visuais na tarefa de locomoção em ambientes urbanos
+  - Análise
+ e fusão de imagens 2D e 3D com vistas para detecção de placas de 
+trânsito em prol da segurança viária com veículos robóticos inteligentes
+  - Algoritmo Neurogenético com vistas para o Planejamento de Rotas de Robôs Móveis Autônomos
+  - Modelagem e Simulação de Sistemas a Eventos Discretos com vistas para processos industriais automáticos
+
+
+
+
+--- Professor Information ---
+Name: Aparecido Nilceu Marana
+Lattes ID: 6027713750942689
+
+Research Areas:
+  - Visão Computacional
+  - Aprendizagem de Máquina
+  - Biometria
+  - Visão Computacional
+  - Biometria
+
+Periodic Papers:
+  -  Combining ArcFace and Visual Transformer Mechanisms for Biometric Periocular Recognition
+  -  Learning Streamed Attention Network from Descriptor Images for Cross-Resolution 3D Face Recognition
+  -  DUA: A Domain-Unified Approach for Cross-Dataset 3D Human Pose Estimation
+  -  Human action recognition in videos based on spatiotemporal features and bag-of-poses
+  -  Deep Features Extraction for Robust Fingerprint Spoofing Attack Detection
+  -  Semi-Supervised Learning with Connectivity-driven Convolutional Neural Networks
+  -  Automatic Frontal Sinus Recognition in Computed Tomography Images for Person Identification
+  -  Deep Discriminative Restricted Boltzmann Machine (DDRBM) for Robust Face Spoofing Detection
+  -  Deep Texture Features for Robust Face Spoofing Detection
+  -  Detecção de spoofing facial: uma abordagem baseada nas máquinas de Boltzmann restritas
+
+Congress Papers:
+  -  3D Human Pose Estimation Based on Monocular RGB Images and Domain Adaptation
+  -  Hate Speech Detection in Portuguese Using BERTimbau
+  -  Dog Face Recognition Using Vision Transformer
+  -  Human Identification Based on Gait and Soft Biometrics
+  -  Human Action Recognition Based in 2D Poses and Skeleton Joints
+  -  A Survey of Recent Advances on Two-Step 3D Human Pose Estimation
+  -  Gait Recognition Using 2D Poses
+  -  Cross-Domain Deep Face Matching for Real Banking Security Systems
+  -  People Identification Based on Soft Biometrics Features Obtained from 2D Poses
+  -  Ocular Recognition Using Deep Features for Identity Authentication
+
+Projects:
+  - Detection of Hate Speech Using Natural Language Processing Techniques and Attention Mechanisms
+  - Estimação de Poses Humanas Tridimensionais Baseada em Imagens Monoculares Auxiliada por Adaptação de Domínio
+  - Identificação Biométrica de Animais Baseada em Aprendizado de Máquina
+  - Domain Adaptation and its Applications to Cancer Diagnosis
+  - Human Action Recognition in Videos
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - Unconstrained 3D Facial Recognition
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+  - Sistema de Monitoramento e Diagnóstico por meio de Processamento de Imagens na Identificação de Ocorrências  e Falhas na Segurança em Áreas de  Preservação Permanente (APPs) e Reservatórios de UHEs
+  - Detecção de Ataques a Sistemas Biométricos Utilizando Técnicas de Aprendizado de Máquina
+  - Identificação Biométrica Forense Via Características dos Seios Paranasais
+  - Liveness Detection for Biometric Systems
+  - Avaliação do Potencial Biométrico do Eletroencefalograma (EEG)
+  - Análise de Formas Planas em Imagens Digitais
+  - Reconhecimento de Impressões Digitais Baseado em Características Biométricas de Nível 3
+  - Novas Tendências em Reconhecimento de Padrões baseado em Floresta de Caminhos Ótimos
+  - Autenticação Biométrica Usando o Reconhecimento Facial em Dispositivos Móveis
+  - Autenticação Biométrica de Usuários em Sistemas WEB
+  - Reconhecimento de Faces Baseado na Fusão dos Espectros Visível e Infravermelho
+  - Detecção Precoce de Problemas de Perfuração de Poços de Petróleo por Meio da Análise de Cascalhos
+  - Identificação Humana Automática Baseada em Registros Dentários
+  - Identificação e Reconhecimento Automático de Pessoas Utilizando Técnicas Biométricas
+  - Sistema WEB de Acesso a Banco de Dados de DNA para Identificação Humana
+  - Mecanismo de Busca de Imagens por Análise de Conteúdo
+  - Comparação de Seqüências Genéticas em Ambientes de Processamento Paralelo
+  - Utilização de algoritmos genéticos em ambientes paralelos para determinação de parâmetros ótimos de técnica de autenticação e identificação de impressões digitais baseada na transformada de Hough
+  - OMR para execução automática de partituras musicais
+  - Desenvolvimento de aplicações de visão computacional em ambientes paralelos
+  - Autenticação de Pessoas Utilizando a Transformada de Hough no Reconhecimento de Impressões Digitais
+  - Desenvolvimento de algoritmos paralelos para análise e classificação de textura
+  - Sistema Para Acesso a Bancos de Dados de Imagens Via Internet
+  - Reconhecimento de Dígitos Manuscritos Usando Transformada de Hough, Redes Neurais e Algoritmos Genéticos
+  - Estimação de Densidades de Multidões Utilizando Wavelets
+  - Estimação de Densidades de Multidões Utilizando Campos Aleatórios de Markov
+  - Monitoração de Multidões Utilizando Técnicas de Visão Computacional
+
+
+
+
+--- Professor Information ---
+Name: Lucas Correia Ribas
+Lattes ID: 6432781856434931
+
+Research Areas:
+  - Visão Computacional
+  - Reconhecimento de Padrões
+  - Computação Móvel
+  - Aprendizado de Máquina
+  - Grupo de Reconhecimento de Padrões e Análise de Imagens
+
+Periodic Papers:
+  -  Advanced wood species identification based on multiple anatomical sections and using deep feature transfer and fusion
+  -  Conditional Generative Adversarial Networks and Deep Learning Data Augmentation: A Multi-Perspective Data-Driven Survey Across Multiple Application Fields and Classification Architectures
+  -  A Comparative Survey of Vision Transformers for Feature Extraction in Texture Analysis
+  -  Color-texture classification based on spatio-spectral complex network representations
+  -  Learning a complex network representation for shape classification
+  -  A network classification method based on density time evolution patterns extracted from network automata
+  -  Local complex features learned by randomized neural networks for texture analysis
+  - , OSVALDO N
+  -  RADAM: Texture recognition through randomized aggregated encoding of deep activation maps
+  -  A network classification method based on density time evolution patterns extracted from network automata
+
+Congress Papers:
+  -  Exploring Local Graphs via Random Encoding for Texture Representation Learning
+  -  Volumetric Color-Texture Representation for Colorectal Polyp Classification in Histopathology Images
+  -  A New Approach to Learn Spatio-Spectral Texture Representation with Randomized Networks: Application to Brazilian Plant Species Identification
+  -  Randomized Encoding Ensemble: A New Approach for Texture Representation
+  -  Exploring neighborhood variancy for rule search optimization in Life-like Network Automata
+  -  Deep Texture Feature Aggregation on Leaf Microscopy Images for Brazilian Plant Species Recognition
+  -  Randomized Autoencoder-based Representation for Dynamic Texture Recognition
+  -  Deep Topological Embedding with Convolutional Neural Networks for Complex Network Classification
+  -  A complex network approach for fish species recognition based on otolith shape
+  -  Complex Texture Features Learned by Applying Randomized Neural Network on Graphs
+
+Projects:
+  - Desenvolvimento de técnicas de reconhecimento de padrões com redes neurais artificiais e sistemas complexos com aplicações em análise de imagens -  TRIENAL
+  - Cortex: IA Generativa aplicada à base de operações diárias de Poços
+  - Reconhecimento de padrões em imagens baseado em redes neurais artificiais e sistemas complexos: da extração de descritores manuais ao aprendizado automático
+  - Aprendizado de representações usando redes neurais artificiais e redes complexas com aplicações em sensores e biossensores
+  - Grupo de Reconhecimento de Padrões e Análise de Imagens
+  - Rumo à convergência de tecnologias: de sensores e biossensores à visualização de informação e aprendizado de máquina para análise de dados em diagnóstico clínico
+  - Explorando um paradigma de geração de imagens quânticas para aplicações em imagens biomédicas e agricultura
+  - Reconhecimento de Padrões em Redes Complexas usando Transformada da Distância
+  - Modelagem e análise de redes complexas para visão computacional
+  - Deep learning e redes complexas aplicados em visão computacional
+  - Visão Artificial e reconhecimento de padrões aplicados em plasticidade vegetal
+
+
+
+
+--- Professor Information ---
+Name: Wallace Correa de Oliveira Casaca
+Lattes ID: 3272121223733592
+
+Research Areas:
+  - Processamento e Análise de Imagens
+  - Matemática Aplicada e Computacional
+  - Inteligência Computacional
+  - Sensoriamento Remoto
+  - Ciência de Dados
+  - Inteligência Artificial
+  - Aprendizado de Máquina
+  - Análise Exploratória de Dados
+  - Modelagem de Dados Energéticos
+  - Visualização da Informação
+  - Visão Computacional
+  - Processamento de Imagens
+  - Equações Diferenciais Parciais
+  - Visão de Máquina
+  - Machine Vision
+  - Computational Geometry
+  - Machine Learning
+  - Image and Pattern Analysis
+
+Periodic Papers:
+  -  Conditional Generative Adversarial Networks and Deep Learning Data Augmentation: A Multi-Perspective Data-Driven Survey Across Multiple Application Fields and Classification Architectures
+  -  Assessing Machine Learning Models on Temporal and Multi-Sensor Data for Mapping Flooded Areas
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  A Study of COVID-19 Diagnosis Applying Artificial Intelligence to X-Rays Images
+  -  Artificial Intelligence for Forensic Image Analysis in Bullet Hole Comparison: A Preliminary Study
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  Unsupervised Multitemporal Triclass Change Detection
+  -  A Robust Dual-Mode Machine Learning Framework for Classifying Deforestation Patterns in Amazon Native Lands
+  -  Learning label diffusion maps for semi-automatic segmentation of lung CT images with COVID-19
+  -  Integrating Unsupervised Machine Intelligence and Anomaly Detection for Spatio-Temporal Dynamic Mapping Using Remote Sensing Image Series
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  GECET e a Promoção da Liderança Feminina em STEM: Relato de Experiência em um Projeto de Extensão Universitária
+  -  Assessing the Performance of Deep Learning Networks for Real-Time Deforestation Segmentation in the Amazon and Atlantic Biomes
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  Fire Detection with Multitemporal Multispectral Data and a Probabilistic Unsupervised Technique
+  -  Detecção de Áreas Queimadas utilizando Dados Temporais e Modelagem Estatística Não Supervisionada
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Retinal Images Registration via Unsupervised Deep Learning
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+
+Projects:
+  - Bolsista de Produtividade em Pesquisa do CNPq: Avanços e Desenvolvimentos com Redes Profundas Sinérgicas em Visão Computacional e Mapeamento Remoto
+  - Cortex - IA  Generativa Aplicada à Base de Operações Diárias de Poços
+  - Centro de Pesquisa Aplicada (CPA) FAPESP: Ciência de Dados para a Indústria Inteligente (CDII)
+  - Programas de Inovação Tecnológica eScience FAPESP: Criminalidade, Insegurança e Legitimidade: uma abordagem transdisciplinar
+  - Bolsista de Produtividade em Pesquisa do CNPq: Desafios da Inteligência Computacional em Visão de Máquina, Sensoriamento Remoto e Pandemia da COVID-19
+  - Rede CAPES Print: Pesquisa Avançada em Matemática Pura e Aplicada
+  - FAPESP Research Grant: Theoretical Advances on Anomaly Detection and Environmental Monitoring Systems
+  - Auxílio à Pesquisa FAPESP: Desenvolvimento de Novas Metodologias e Soluções Tecnológicas Inteligentes em Segmentação de Imagens Digitais e Enfrentamento da COVID-19
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - FAPESP Internships Abroad and Scientific Cooperation: Segmentation and Inpainting of Sensor Failures in Remote Sensing Images
+  - Programa Brasil-Angola de Desenvolvimento de Pesquisas e Inovação Tecnológica
+  - Research and Innovation for Industry (CEPID-FAPESP): Center for Mathematical Sciences Applied to Industry (CeMEAI)
+  - Projeto Temático: Desafios em Visualização Exploratória de Dados Multidimensionais: Novos Paradigmas, Escalabilidade e Aplicações
+  - Projeto Universal CNPq: Métodos Espectrais e Topológicos para Processamento, Modelagem e Visualização a partir de Dados Massivo
+  - Consórcio INCT-MACC (Instituto Nacional de Ciência e Tecnologia em Medicina Assistida por Computação Científica) - Processo CNPq 573710/2008-2
+
+
+
+
+--- Professor Information ---
+Name: João Paulo Papa
+Lattes ID: 9039182932747194
+
+Research Areas:
+  - Reconhecimento de Padrões
+
+Periodic Papers:
+  -  Brain Age Prediction Using a Lightweight Convolutional Neural Network
+  -  A pilot study for speech assessment to detect the severity of Parkinson?s disease: An ensemble approach
+  -  Facial Expression Analysis in Parkinson's Disease Using Machine Learning: A Review
+  -  TransConv: a lightweight architecture based on transformers and convolutional neural networks for adenocarcinoma and Barrett?s esophagus identification
+  -  Enhancing Explainability in Pacu Fish Image Segmentation using Saliency Maps and Combined Explainable AI Methods
+  -  Robust Opposition-Based Jellyfish Search Algorithms for Large-Scale and Bound-Constrained Optimization
+  -  Evaluating Large Language Models for Brazilian Portuguese Sentiment Analysis: A Comparative Study of Multilingual State-of-the-Art vs
+  -  The Bode Family of Large Language Models: Investigating the Frontiers of LLMs in Brazilian Portuguese
+  -  Quantum Neural Networks Successfully Calibrate Language Models
+  -  Urban tree failure probability prediction based on dendrometric aspects and machine learning models
+
+Congress Papers:
+  -  A Convolutional Recurrent Mixer Network For Radar Meteorological Image Super-Resolution
+  -  Customized Atrous Spatial Pyramid Pooling with Joint Convolutions for Urban Tree Segmentation
+  -  Optimum-Path Forest Ensembles to Estimate the Internal Decay in Urban Trees
+  -  A Step Forward for Medical LLMs in Brazilian Portuguese: Establishing a Benchmark and a Strong Baseline
+  -  A Hybrid Quantum-Classical Model for Breast Cancer Diagnosis with Quanvolutions
+  -  Learning a Kernel-Based Beran Estimator Using Nearest-Neighbours and Its Application to Reliability Analysis
+  -  Influence of Pixel Perturbation on eXplainable Artificial Intelligence Methods
+  -  Facial Point Graphs for Amyotrophic Lateral Sclerosis Identification
+  -  Strategies for Classifier Selection Based on Genetic Programming for Multimedia Data Recognition
+  -  Convolutional Neural Networks and Image Patches for Lithological Classification of Brazilian Pre-Salt Rocks
+
+Projects:
+  - Aplicações de Modelos de Linguagem em Português - TRIENAL
+  - PD-00063-3101/2025   Plataforma computacional para gestão de relacionamento com cliente baseada em economia comportamental e inteligência analítica
+  - CePEX - Centro Paulista de integração de dados para monitoramento de Eventos eXtremos
+  - HIDE - Detecção de Hipomímia Utilizando Arquiteturas Leves
+  - EXTRACT - Extraindo Aplicações e Recomendações de Pesquisas em Saúde Usando Inteligência Artificial
+  - WISDOM - Sistema Integrado de Suporte a Tomada de Decisão em Tempo Real para Gestão de Risco em Poços - Desenvolvimento de novos modelos de confiabilidade de conjunto solidário de barreiras de poços
+  - QOPF - A Quantum Optimum-Path Forest Framework for Optimization and Machine Learning Problems
+  - LAGRANGE - Análise Tribólogica Utilizando Inteligência Artificial
+  - Centro Multidisciplinar para o Desenvolvimento de Tecnologia Assistiva (CMDTA)
+  - Entendendo o Comportamento Tribológico de Medidas XRD de Cobre Utilizando Aprendizado de Máquina
+  - Aprendizado de Modelos Profundos Utilizando Metaheurísticas
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços
+  - Aprendizado Fracamente Supervisionado para Análise de Vídeos no Domínio Comprimido em Tarefas de Recuperação e Classificação para Alertas Visuais
+  - PD-00063-3067/2019? Plataforma para Detecção de Falhas Incipientes em Transformadores de Óleo Isolante a partir do Uso e Desenvolvimento de Nanosensores
+  - Adaptação de Domínio e suas Aplicações para o Diagnóstico de Câncer
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - AnImaLS: Anotação de Imagem em Larga Escala: O que máquinas e especialistas podem aprender interagindo?
+  - RADIAR: Método para a disseminação do conhecimento
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+  - Modelos Probabilísticos para Detecção de Perdas Comerciais
+  - Sistema de Monitoramento  e Diagnóstico por Meio de Processamento de Imagens na Identificação Ocorrências e Falhas na Segurança em Áreas de Preservação Permanente (APPs) e Reservatórios de UHEs
+  - Development of Cardiovascular Disease and Diabetes Risk Assessment model for Ethnically diverse Populations
+  - Meta-Heuristic-based Optimization of Probabilistic Neural Networks
+  - Sobre a Aplicação de Floresta de Caminhos Ótimos em Ambientes de Aprendizado em Profundidade
+  - Sobre a Detecção de Anomalias em Redes de Computadores Utilizando Floresta de Caminhos Ótimos: Avanços e Aplicações em Redes de Computadores
+  - Sobre a Otimização de Parâmetros em Técnicas de Aprendizado de Máquina: Avanços e Paradigmas
+  - ARPaVid: Aprendizado e Reconhecimento de Padrões em Vídeos
+  - Além das Técnicas Tradicionais de Reconhecimento Supervisionado de Padrões: Explorando Aprendizado Sequencial e Suporte a Múltiplos Rótulos por Floresta de Caminhos Ótimos
+  - Reconhecimento Automático Robusto de Impressões Digitais Baseado em Características Biométricas de Terceiro Nível
+  - Novas Tendências em Reconhecimento de Padrões baseado em Floresta de Caminhos Ótimos (FAPESP - Jovem Pesquisador)
+  - Desenvolvimento e Avaliação de Técnicas de Localização de Faltas em Sistemas de Distribuição Subterrâneos
+  - Inteligência Artificial Aplicada na Identificação e Classificação de Harmônicos em Redes de Distribuição de Energia Elétrica
+  - Reconhecimento Facial Humano Utilizando Transformada Census Modificada e Floresta de Caminhos Ótimos
+  - Classificação de padrões por Floresta de Caminhos Ótimos: Avanços e Aplicações
+  - Projeto ARPIs: Aprendizado e Reconhecimento de Padrões em Imagens por Floresta de Caminhos Ótimos
+  - DAPI -- Automatização do Diagnóstico de Parasitos Intestinais do Homem por Análise de Imagens
+  - Métodos de Aproximação para Computação Visual
+  - Detecção Precoce de Problemas de Perfuração de Poços de Petróleo por Meio da Análise de Cascalhos
+  - Análise de Imagens de Parasitos Intestinais do Homem
+  - Algoritmos Para Reconstrução Tomográfica: Otimização, Reconstrução, Quantificação e Aplicação Clínica
+  - Carcinoma escamoso basalóide na mucosa bucal: Análise dos índices proliferativo e apoptótico
+  - Análise morfométrica comparativa do bulbo cardíaco de (Corydoras aeneus e Moenkhausia intermedia)
+  - Estilo reprodutivo em fêmeas de Corydoras aeneus (GILL, 1858) (SILURIFORMES, CALLICHTHYDAE). Características estruturais da ovogênse
+  - Expressão da eotaxina em carcinomas espinocelulares de boca
+  - Análise estrutural e comparativa do ventrículo cardíaco de peixes teleósteos (Corydoras aeneus e Moenkhausia intermedia)
+  - Biologia da reprodução e cinética da espermatogênese de peixes teleósteos de água doce
+  - Características ultraestruturais e cinética da espermatogênese em Liposarcus anisitsi
+
+

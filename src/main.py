@@ -5,6 +5,7 @@ from commitee.professors import Member
 from logger import init_logger, log
 from scraping.LattesParser import LattesParser
 from similarity.similarity import SentenceTransformerSimilarity
+from embedding.tfidf import TFIDFSimilarity
 from tqdm import tqdm
 
 import warnings
@@ -87,8 +88,11 @@ def main():
     DATA_DIR = "../data/ppgcc"
 
     html_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".html")]
-    
-    similarity = SentenceTransformerSimilarity(args.model)
+
+    if args.model == "tf-idf":
+        similarity = TFIDFSimilarity()
+    else: 
+        similarity = SentenceTransformerSimilarity(args.model)
 
     member_list = []
     for html_file in tqdm(html_files, desc="Processando currículos", unit="arquivo"):
