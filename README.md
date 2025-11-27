@@ -16,7 +16,7 @@ Dentro do diretório principal do projeto:
 ```
   pip install .
 ```
-Isso instala todas os pacotes usados para rodar o trabalho. É recomendado fazer isso num ambiente isolado como um ambiente conda
+Isso instala todos os pacotes usados para rodar o trabalho. É recomendado fazer isso num ambiente isolado como um ambiente conda
 
 ### Rodando o código
 Dentro do diretório src/:
