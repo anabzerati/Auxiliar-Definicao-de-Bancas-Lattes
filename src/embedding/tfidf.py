@@ -1,333 +1,282 @@
-import numpy as np
-import pandas as pd
 import os
-from collections import defaultdict
-
+import numpy as np
+from typing import List, Dict, Optional
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from deep_translator import GoogleTranslator
 import nltk
 from nltk.corpus import stopwords
-from deep_translator import GoogleTranslator
-
-from ..scraping.LattesParser import LattesParser
 
 try:
     nltk.data.find("corpora/stopwords")
 except:
     nltk.download("stopwords")
+
 stopwords_pt = stopwords.words("portuguese")
 
-def translate_block(text: str, max_chars: int = 4000) -> str:
+
+class TFIDFSimilarity:
     """
-    Translates a long text by splitting it into blocks of size max_chars
+    TF-IDF based similarity engine to compare a student's (theme + summary)
+    against professor profiles.
 
-    Parameters
-        text: the full text to be translated.
-        max_chars : maximum number of characters per block. Optional, default = 4000.
-
-    Return
-        str: translation of text
+    The class supports two usage patterns:
+    1) Incremental / immediate usage in a loop: if no global corpus was fitted,
+       similarity_score will fit the vectorizer on a mini-corpus composed of
+       the query (theme+summary) and the professor's texts and compute similarity.
+    2) Pre-fit usage: call embed_professors(candidates) to fit the TF-IDF
+       vectorizer on a full corpus of all candidates and compute per-section
+       embeddings once. After that, similarity_score will use precomputed
+       section vectors (faster and consistent).
     """
 
-    if not text.strip():
-        return ""
-    
-    translator = GoogleTranslator(source='auto', target='pt')
+    DELIM_ITEM = "\n<ITEM_SPLIT>\n"
+    DELIM_SECTION = "\n<SECTION_SPLIT>\n"
 
-    blocks = []
-    start = 0
-    while start < len(text):
-        # block of size max_chars
-        end = min(start + max_chars, len(text))
-        
-        # splits between two words
-        if end < len(text):
-            while end > start and text[end] != " ":
-                end -= 1
+    def __init__(self, max_features: int = 8000, candidates: Optional[List[Dict]] = None):
+        """
+        Initialize the engine.
 
-        block = text[start:end].strip()
-        blocks.append(block)
-        start = end
+        Parameters
+        ----------
+        max_features : int
+            Maximum number of TF-IDF features.
+        candidates : Optional[List[Dict]]
+            Optional list of professor dicts. If provided, the vectorizer
+            is fitted and section embeddings are precomputed.
+        """
+        self.vectorizer = TfidfVectorizer(
+            lowercase=True,
+            stop_words=stopwords_pt,
+            max_features=max_features,
+            ngram_range=(1, 2),
+        )
+        self._fitted = False
+        self.prof_sections = None
+        if candidates:
+            self.prof_sections = self.embed_professors(candidates)
 
-    translated_blocks = []
-    for b in blocks:
-        try:
-            translated = translator.translate(b)
-            translated_blocks.append(translated)
-        except Exception as e:
-            print("Translation error:", e)            
-            translated_blocks.append(b)  # keep original block
+    def translate_block(self, text: str, max_chars: int = 4000) -> str:
+        """
+        Translate a long text into Portuguese by splitting it into chunks.
 
-    return " ".join(translated_blocks)
+        Parameters
+        ----------
+        text : str
+            Text to translate.
+        max_chars : int
+            Maximum characters per chunk.
 
+        Returns
+        -------
+        str
+            Translated text.
+        """
+        if not text or not text.strip():
+            return ""
 
-# def lattes_embedding(lattes_list: list, vectorizer: TfidfVectorizer) -> dict:
-#     """
-#     Builds TF-IDF embeddings for each Lattes researcher profile.
+        translator = GoogleTranslator(source="auto", target="pt")
+        blocks = []
+        start = 0
+        L = len(text)
+        while start < L:
+            end = min(start + max_chars, L)
+            if end < L:
+                while end > start and text[end] != " ":
+                    end -= 1
+            block = text[start:end].strip()
+            blocks.append(block)
+            start = end
 
-#     Parameters
-#         lattes_list : list of dictionaries from LattesParser
-#         vectorizer : TfidfVectorizer
+        translated = []
+        for b in blocks:
+            try:
+                translated.append(translator.translate(b))
+            except:
+                translated.append(b)
+        return " ".join(translated)
 
-#     Return
-#         dict: researcher ID to TF-IDF vector 
-#     """    
+    def create_corpus(self, candidates: List[Dict]):
+        """
+        Build corpus and per-professor section lists from candidates.
 
-#     corpus = []
-#     metadata = []
+        Parameters
+        ----------
+        candidates : List[Dict]
+            List of professor dictionaries containing keys:
+            'congress_papers', 'periodic_papers', 'projects', 'research_areas'.
 
-#     for entry in lattes_list:
-#         sections = []
+        Returns
+        -------
+        tuple
+            (corpus, congress_list, periodic_list, projects_list, areas_list)
+        """
+        corpus = []
+        congress_list = []
+        periodic_list = []
+        projects_list = []
+        areas_list = []
 
-#         # relevant text fields = papers, projects and areas
-#         for field in ["congress_papers", "periodic_papers", "projects", "research_areas"]:
-#             content = entry.get(field, [])
-#             sections.extend(content)
+        for entry in candidates:
+            congress = entry.get("congress_papers", [])[:10]
+            periodic = entry.get("periodic_papers", [])[:10]
 
-#         full_text = " ".join(sections)
+            block_congress = self.DELIM_ITEM.join(congress)
+            block_periodic = self.DELIM_ITEM.join(periodic)
+            big_block = block_congress + self.DELIM_SECTION + block_periodic
+            translated_big = self.translate_block(big_block)
+            sections = translated_big.split(self.DELIM_SECTION)
 
-#         print("Translating Lattes profile…")
-#         full_text_pt = translate_block(full_text)
-#         print("Translation completed.")
+            translated_congress = sections[0].split(self.DELIM_ITEM) if congress else []
+            translated_periodic = sections[-1].split(self.DELIM_ITEM) if periodic else []
 
-#         corpus.append(full_text_pt)
-#         metadata.append({
-#             "lattes_id": entry["lattes_id"],
-#             "name": entry["name"],
-#         })
+            congress_list.append(translated_congress)
+            periodic_list.append(translated_periodic)
 
-#     # embeddings
-#     tfidf_matrix = vectorizer.fit_transform(corpus)
+            corpus.extend(translated_congress)
+            corpus.extend(translated_periodic)
 
-#     final_embeddings = {}
-#     for vec, info in zip(tfidf_matrix, metadata):
-#         final_embeddings[info["lattes_id"]] = vec.toarray()[0]
+            projects = entry.get("projects", [])[:10]
+            projects_list.append(projects)
+            corpus.extend(projects)
 
-#     return final_embeddings
+            areas = entry.get("research_areas", [])[:10]
+            areas_list.append(areas)
+            corpus.extend(areas)
 
-DELIM_ITEM = "\n<ITEM_SPLIT>\n"
-DELIM_SECTION = "\n<SECTION_SPLIT>\n"
+        return corpus, congress_list, periodic_list, projects_list, areas_list
 
-def create_corpus(candidates):
-    """
-    Build a text corpus and lists of translated content for each candidate professor. 
+    def embed_professors(self, candidates: List[Dict]):
+        """
+        Fit the TF-IDF vectorizer on a corpus built from candidates and
+        compute per-section embeddings (mean TF-IDF vectors) for each professor.
 
-    Parameters
-        candidates : list of professor entries: "congress_papers", "periodic_papers",
-        "projects", "research_areas"
+        Parameters
+        ----------
+        candidates : List[Dict]
+            List of professor dictionaries.
 
-    Return
-        corpus : list of all items across all candidates
-        congress_list : for each candidate, a list of translated congress paper titles
-        periodic_list a list of translated periodic paper titles
-        projects_list : list of projects
-        areas_list : list of research areas
-    """
-    corpus = []
+        Returns
+        -------
+        List[Dict]
+            One dictionary per professor containing keys:
+            'lattes_id', 'name', 'congress_papers', 'periodic_papers',
+            'projects', 'research_areas' where section values are np.ndarray or None.
+        """
+        corpus, congress_list, periodic_list, projects_list, areas_list = self.create_corpus(candidates)
+        if not corpus:
+            self._fitted = False
+            return []
 
-    congress_list = []
-    periodic_list = []
-    projects_list = []
-    areas_list = []
+        self.vectorizer.fit(corpus)
+        self._fitted = True
+        section_vectors = []
 
-    # creating corpus
-    for entry in candidates:
-        congress = entry.get("congress_papers", [])[:10] # 10 newest papers
-        periodic = entry.get("periodic_papers", [])[:10]
+        for i, entry in enumerate(candidates):
+            vec = {"lattes_id": entry.get("lattes_id"), "name": entry.get("name")}
+            def _mean_vec(lst):
+                if not lst:
+                    return None
+                mat = self.vectorizer.transform(lst).toarray()
+                return mat.mean(axis=0)
 
-        # create one block for fast translation (one API call)
-        block_congress = DELIM_ITEM.join(congress)
-        block_periodic = DELIM_ITEM.join(periodic)
+            vec["congress_papers"] = _mean_vec(congress_list[i])
+            vec["periodic_papers"] = _mean_vec(periodic_list[i])
+            vec["projects"] = _mean_vec(projects_list[i])
+            vec["research_areas"] = _mean_vec(areas_list[i])
+            section_vectors.append(vec)
 
-        big_block = block_congress + DELIM_SECTION + block_periodic
-        translated_big = translate_block(big_block)
-        translated_sections = translated_big.split(DELIM_SECTION)
+        return section_vectors
 
-        if congress:
-            translated_congress = translated_sections[0].split(DELIM_ITEM)
+    def _fit_on_mini_corpus(self, theme: str, summary: str, info: Dict):
+        """
+        Internal helper to fit the vectorizer on a small corpus composed of
+        the query (theme + summary) and professor fields. This enables
+        immediate usage inside a loop without pre-fitting.
+        """
+        fields = []
+        fields.extend(info.get("research_areas", []))
+        fields.extend(info.get("periodic_papers", []))
+        fields.extend(info.get("congress_papers", []))
+        fields.extend(info.get("projects", []))
+        query_text = (theme or "") + " " + (summary or "")
+        corpus = [query_text, " ".join(fields) if fields else ""]
+        self.vectorizer.fit(corpus)
+        self._fitted = True
+        return corpus
+
+    def embed_student(self, theme: str, summary: str, method: str = "mean"):
+        """
+        Compute TF-IDF embedding for a student's theme + summary using the
+        currently fitted vectorizer.
+
+        Parameters
+        ----------
+        theme : str
+        summary : str
+        method : str
+            'mean' or 'concatenate'
+
+        Returns
+        -------
+        np.ndarray
+        """
+        theme_pt = self.translate_block(theme) if theme else ""
+        summary_pt = self.translate_block(summary) if summary else ""
+        if method == "mean":
+            arr = self.vectorizer.transform([theme_pt, summary_pt]).toarray()
+            return arr.mean(axis=0)
+        if method == "concatenate":
+            text = theme_pt + " " + summary_pt
+            return self.vectorizer.transform([text]).toarray()[0]
+        raise ValueError("method must be 'mean' or 'concatenate'")
+
+    def similarity_score(self, theme: str, summary: str, info: Dict) -> float:
+        """
+        Compute similarity between a student's work and a professor profile.
+
+        The method accepts either:
+        - info as the raw professor dict (with textual lists), or
+        - info as a precomputed section-vector dict produced by embed_professors().
+
+        Parameters
+        ----------
+        theme : str
+        summary : str
+        info : Dict
+
+        Returns
+        -------
+        float
+            Mean cosine similarity across available sections (0.0 - 1.0).
+        """
+        if not self._fitted:
+            _ = self._fit_on_mini_corpus(theme, summary, info)
+
+        student_vec = self.embed_student(theme, summary)
+
+        # If info contains precomputed numpy vectors (from embed_professors)
+        if all(k in info and (info[k] is None or isinstance(info[k], np.ndarray)) for k in ["congress_papers", "periodic_papers", "projects", "research_areas"]):
+            section_vals = [info.get("congress_papers"), info.get("periodic_papers"), info.get("projects"), info.get("research_areas")]
         else:
-            translated_congress = []
+            fields = []
+            fields.extend(info.get("research_areas", []))
+            fields.extend(info.get("periodic_papers", []))
+            fields.extend(info.get("congress_papers", []))
+            fields.extend(info.get("projects", []))
+            if not fields:
+                return 0.0
+            professor_text = " ".join(fields)
+            prof_vec = self.vectorizer.transform([professor_text]).toarray()[0]
+            section_vals = [prof_vec]
 
-        if periodic:
-            translated_periodic = translated_sections[-1].split(DELIM_ITEM)
-        else:
-            translated_periodic = []
+        scores = []
+        for vec in section_vals:
+            if vec is None:
+                continue
+            sim = cosine_similarity([student_vec], [vec])[0][0]
+            scores.append(float(sim))
 
-        congress_list.append(translated_congress)
-        periodic_list.append(translated_periodic)
+        return float(np.mean(scores)) if scores else 0.0
 
-        corpus.extend(translated_congress)
-        corpus.extend(translated_periodic)
-
-        projects = entry.get("projects", [])[:10]
-        projects_list.append(projects)
-        corpus.extend(projects)
-
-        research_areas = entry.get("research_areas", [])[:10]
-        areas_list.append(research_areas)
-        corpus.extend(research_areas)
-
-    return corpus, congress_list, periodic_list, projects_list, areas_list
-
-def embed_professor_sections(candidates, vectorizer):
-    """
-    Create a TF-IDF embedding for each professor's section
-
-    Parameters
-        candidates : list of dicts of candidate professors from LattesParser
-        vectorizer : TfidfVectorizer
-
-    Returns
-        section_vectors : list, one dictionary per professor with one embedding per section
-    """
-
-    corpus, congress_list, periodic_list, projects_list, areas_list = create_corpus(candidates)    
-
-    # fit TF-IDF on corpus
-    vectorizer.fit(corpus)
-
-    section_vectors = []
-
-    # create embeddings per section per professor
-    for i, entry in enumerate(candidates):
-        section_vector = {
-            "lattes_id": entry["lattes_id"],
-            "name": entry["name"],
-        }
-
-        if congress_list[i]:
-            vecs = vectorizer.transform(congress_list[i]).toarray()
-            section_vector["congress_papers"] = vecs.mean(axis=0)
-        else:
-            section_vector["congress_papers"] = None
-
-        if periodic_list[i]:
-            vecs = vectorizer.transform(periodic_list[i]).toarray()
-            section_vector["periodic_papers"] = vecs.mean(axis=0)
-        else:
-            section_vector["periodic_papers"] = None
-            
-        if projects_list[i]:
-            vecs = vectorizer.transform(projects_list[i]).toarray()
-            section_vector["projects"] = vecs.mean(axis=0)
-        else:
-            section_vector["projects"] = None
-
-        if areas_list[i]:
-            vecs = vectorizer.transform(areas_list[i]).toarray()
-            section_vector["research_areas"] = vecs.mean(axis=0)
-        else:
-            section_vector["research_areas"] = None
-            
-        section_vectors.append(section_vector)
-
-    return section_vectors
-
-
-def similarity_prof_student(student_vec, prof_sections):
-    sim_values = []
-
-    for field in ["congress_papers", "periodic_papers", "projects", "research_areas"]:
-        vec = prof_sections.get(field)
-
-        if vec is None:
-            continue
-
-        sim = float(cosine_similarity(
-            [student_vec],
-            [vec]
-        )[0][0])
-
-        sim_values.append(sim)
-
-    # total sim = mean of section sims
-    return float(np.mean(sim_values)) if sim_values else 0.0
-
-
-def student_embedding(theme: str, abstract: str, vectorizer, type="mean"):
-    """
-    Builds a TF-IDF embedding for the student based on theme and abstract.
-
-    Parameters
-        theme
-        abstract
-        vectorizer : TfidfVectorizer
-        type: 'mean' or 'concatenate'. Default = 'mean'
-
-    Return
-        np.ndarray: TF-IDF vector
-    """
-
-    theme_pt = translate_block(theme)
-    abstract_pt = translate_block(abstract)
-    
-    if type == "mean":
-        embeddings = vectorizer.transform([theme_pt, abstract_pt]).toarray()
-        student_vec = embeddings.mean(axis=0)
-
-    elif type == "concatenate":
-        text = theme_pt + " " + abstract_pt
-        student_vec = vectorizer.transform([text]).toarray()[0]
-
-    else:
-        raise ValueError("Unknown parameter. Options: 'mean' or 'concatenate'")
-    
-    return student_vec
-
-if __name__ == "__main__":
-    DATA_DIR = "data/ppgcc"
-    html_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".html")]
-
-    print("Parsing Lattes files")
-
-    candidates = []
-    for html_file in html_files:
-        file_path = os.path.join(DATA_DIR, html_file)
-
-        parser = LattesParser(file_path)
-        candidates.append(parser.get_info())
-
-    aluno = {
-        'theme': "Aprendizado de representações multivisão para análise de imagens com aplicações em biossensores",
-        'abstract': "Diante da crescente complexidade e diversidade das imagens capturadas por diferentes dispositivos, surge a necessidade de métodos de análise de imagens mais sofisticados. As imagens capturadas por biossensores são exemplos de dados contemporâneos e ainda pouco estudados. Elas são compostas por padrões complexos que demandam métodos altamente discriminativos, capazes de descrever sua complexidade para efetuar tarefas de reconhecimento. Atualmente, muitas técnicas de análise de imagens concentram-se numa única perspectiva da imagem, limitando a capacidade de extrair informações complexas e robustas. Nesse sentido, o principal objetivo deste projeto é desenvolver métodos baseados em aprendizado de representações multivisão para análise de imagens. Tal abordagem permite a integração de múltiplas perspectivas da mesma imagem, aumentando assim a complementariedade de informações e a robustez da representação. Assim, este projeto foca em três pontos-chaves de pesquisa para desenvolvimento de métodos: (i) estudo, obtenção e gerações de visões de imagens. (ii) aprendizado de representações multivisão; (iii) agregação de características multivisão. Além da frente teórica, este projeto objetiva aplicar os métodos desenvolvidos na caracterização e classificação de imagens de biossensores visando novas estratégias para aplicações como diagnóstico precoce de câncer e detecção de vírus ou contaminações. Essas imagens são fornecidas por colaboradores do projeto temático (processo, 2018/22214-6) em que este projeto de mestrado está vinculado. Desta forma, espera-se que os métodos desenvolvidos contribuam com avanços na área análise de imagens com métodos mais robustos, além de novas estratégias de detecção e diagnóstico nas áreas de físico-química e medicina. "
-    }
-
-    vectorizer = TfidfVectorizer(
-        lowercase=True,
-        stop_words=stopwords_pt,
-        max_features=8000,
-        ngram_range=(1,2)
-    )
-
-    print("Creating Lattes Profile's Embeddings")
-    prof_sections = []
-    # lattes_embeddings = lattes_embedding(candidates, vectorizer)
-    prof_sections = embed_professor_sections(candidates, vectorizer)
-
-    print("Creating Students's Embedding")
-    student_vec = student_embedding(aluno["theme"], aluno["abstract"], vectorizer)
-
-    print("Creating Lattes Profile's Embeddings")
-    ranking = []
-    # lattes_embeddings = lattes_embedding(candidates, vectorizer)
-    for prof in prof_sections:
-        print(prof["name"])
-        score = similarity_prof_student(student_vec, prof)
-
-        ranking.append((prof["lattes_id"], prof["name"], score))
-
-    # Ordena por maior similaridade
-    ranking.sort(key=lambda x: x[2], reverse=True)
-
-    # print("Calculating Cosine Similarity")
-    # scores = {
-    #     pid: float(cosine_similarity([student_vec], [emb])[0][0])
-    #     for pid, emb in lattes_embeddings.items()
-    # }
-
-    # ranking = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-    
-    print("Ranking")
-    for pid, name, score in ranking:
-        # name = next(p["name"] for p in candidates if p["lattes_id"] == pid)
-        print(f"{name:40s}({pid})  ->  {score:.4f}")
+ 

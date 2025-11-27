@@ -1,0 +1,341 @@
+Título do trabalho: Segmentação e Detecção de Buracos em vias Utilizando Visão Computacional em Sistemas Embarcados Críticos em Prol de ADAS e Veículos Autônomos
+Resumo do trabalho:  A infraestrutura viária deficiente, especialmente a presença de buracos, representa um risco significativo tanto para a segurança pública quanto para a indústria automotiva, sendo um problema crítico no Brasil. Nesse contexto, a adoção de tecnologias assistivas à direção, com foco na detecção de irregularidades na via, torna-se essencial para mitigar esses riscos, permitindo que os condutores reajam de forma mais eficiente. Para isso, abordagens baseadas em Redes Neurais Profundas têm se mostrado promissoras na detecção e segmentação de objetos, superando métodos tradicionais que frequentemente apresentam limitações em cenários complexos.Este projeto propõe o desenvolvimento e a avaliação de modelos de Aprendizado Profundo aplicados à Visão Computacional para essa finalidade, explorando arquiteturas como Redes Neurais Convolucionais (CNNs) e Vision Transformers. O objetivo é superar as limitações das abordagens existentes, que muitas vezes dependem de conjuntos de dados inadequados ou de modelos computacionalmente intensivos, inviáveis para dispositivos embarcados. Como resultado, os modelos desenvolvidos serão aplicados em uma solução de baixo custo para detecção de buracos em tempo real, auxiliando condutores com Sistemas Avançados de Assistência ao Condutor (ADAS) e/ou enviando informações para um módulo decisor, no caso de veículos autônomos, permitindo realizar uma manobra corretiva. Destacando que esta pesquisa está inserida junto ao projeto do primeiro caminhão autônomo da América Latina junto ao Instituto De Ciências Matemáticas e de Computação da Universidade de São Paulo, intitulado como CaRINA (Carro Robótico Inteligente de Navegação Autônoma), possibilitando gerar novas contribuições. 
+
+
+
+--- Ranking ---
+Diego Renan Bruno                         ->  0.7158
+Ivan Rizzo Guilherme                      ->  0.6882
+Danillo Roberto Pereira                   ->  0.6871
+Wallace Correa de Oliveira Casaca         ->  0.6787
+Marilaine Colnago                         ->  0.6767
+Mauricio Araujo Dias                      ->  0.6658
+João Paulo Papa                           ->  0.6559
+Danilo Medeiros Eler                      ->  0.6525
+Rodolfo Ipolito Meneguette                ->  0.6458
+Leonardo Castro Botega                    ->  0.6431
+Rogério Eduardo Garcia                    ->  0.6341
+Adriano Mauro Cansian                     ->  0.6307
+Arnaldo Candido Junior                    ->  0.6267
+Ronaldo Celso Messias Correia             ->  0.6229
+Clayton Reginaldo Pereira                 ->  0.6042
+Antonio Carlos Sementille                 ->  0.6028
+Jose Remo Ferreira Brega                  ->  0.5893
+Lucas Correia Ribas                       ->  0.5761
+Rogéria Cristiane Gratão de Souza         ->  0.5753
+Renata Spolon Lobato                      ->  0.5751
+Fabricio Aparecido Breve                  ->  0.5651
+Caetano Mazzoni Ranieri                   ->  0.5555
+Denis Henrique Pinheiro Salvadeo          ->  0.5527
+Geraldo Francisco Donegá Zafalon          ->  0.5472
+Alexandro José Baldassin                  ->  0.5454
+Carlos Roberto Valêncio                   ->  0.5442
+Leandro Alves Neves                       ->  0.5396
+Kelton Augusto Pontara da Costa           ->  0.5395
+Veronica Oliveira de Carvalho             ->  0.5369
+Rodrigo Capobianco Guido                  ->  0.5237
+Daniel Carlos Guimarães Pedronette        ->  0.5185
+Leonardo Tórtoro Pereira                  ->  0.4841
+Aparecido Nilceu Marana                   ->  0.4764
+Felipe Fernandes Fanchini                 ->  0.4031
+Frank José Affonso                        ->  0.4026
+Cassio Machiaveli Oishi                   ->  0.2853
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Diego Renan Bruno
+Lattes ID: 6996168862993134
+
+Research Areas:
+  - Arquitetura de Computadores
+  - Sistemas Embarcados Críticos
+  - Visão Computacional
+  - Robótica
+  - Veículos Autônomos
+  - Robótica Móvel Autônoma, Redes Neurais Artificiais, Algoritmos Genéticos e Controle
+  - Veículos Autônomos
+  - Inteligência Artificial
+  - Sistemas Avançados de Assistência ao Motorista (ADAS)
+  - Visão Computacional Robótica
+  - Machine Learning - (Deep Learning 2D/ MLP 3D)
+  - Robótica / Mecatrônica / Automação
+  - LARA - (Laboratório de Automação e Robótica Aplicada)
+
+Periodic Papers:
+  -  EVOLUÇÃO E O DESENVOLVIMENTO DO CHATBOT GPT-3 E GPT-4
+  -  IA - INTELIGENCIA ARTIFICIAL: IMPACTOS, RISCOS E BENEFICIOS QUE DESAFIAM A SOCIEDADE MODERNA
+  -  USO DE IA PARA AUTOMATIZAR TAREFAS DE DESENVOLVIMENTO
+  -  CARINA Project:
+ Visual Perception Systems Applied for Autonomous Vehicles and Advanced 
+Driver Assistance Systems (ADAS)
+  -  ERA DA RECOMENDAÇÃO
+  -  LEI GERAL DE PROTEÇÃO DE DADOS EM UMA SOCIEDADE PANDÊMICA
+  -  APLICATIVO GERENCIAL PARA DISPOSITIVOS MÓVEIS
+  -  PRODUÇÃO MAIS LIMPA: CONTRIBUIÇÕES DA INDÚSTRIA 4
+  -  GANs - REDES ADVERSARIAS GENERATIVAS
+  -  IMPLEMENTAÇÃO DA INTERNET EM NOSSO COTIDIANO
+
+Congress Papers:
+  -  Robotic Visual 
+Attention Architecture for ADAS in Critical Embedded Systems for Smart 
+Vehicles
+  -  Real Time Deep Learning Based Pothole Detection on Low Cost Embedded 
+Devices for ADAS
+  -  BRAIN: dataBase para Pesquisa em Análise de  
+Intrusões Automotivas
+  -  Lexical 
+Analysis of Automatic Transcriptions Using Speech-to-Text Services: A 
+Statistically Evaluated Case Study
+  -  Enhancing Learning Objects Accessibility Through 
+Speech-To-Text Based Architecture: A Comprehensive Triangulation Study
+  -  Real-Time Pedestrian Detection and Tracking 
+System Using Deep Learning and Kalman filter: Applications on Embedded 
+Systems in Advanced Driver Assistance Systems
+  -  A literature review on the detection and tracking
+ of obstacles applied for Advanced Driver Assistance Systems (ADAS) in 
+Robotic Vehicle'
+  -  ADAS classifier for driver monitoring and 
+driving qualification using both internal and external vehicle data
+  -  Development of a robotic sensing 
+system to assist visually impaired people in their task of locomotion in
+ urban environments
+  -  Robotic Computer Vision System with 2D and 3D 
+Data Fusion for Traffic Sign Detection
+
+Projects:
+  - Modelos de Inteligência Artificial para Detecção de Correlação e Predição em redes IoT
+  - Rota2030
+ - SegurAuto: Detecção e Avaliação de Obstáculos e Pedestres Baseada em 
+Reconstrução de imagens 3D e Análise Temporal Aplicada para ADAS 
+veiculares
+  - Robô móvel autônomo para suporte de deficientes visuais na tarefa de locomoção em ambientes urbanos
+  - Análise
+ e fusão de imagens 2D e 3D com vistas para detecção de placas de 
+trânsito em prol da segurança viária com veículos robóticos inteligentes
+  - Algoritmo Neurogenético com vistas para o Planejamento de Rotas de Robôs Móveis Autônomos
+  - Modelagem e Simulação de Sistemas a Eventos Discretos com vistas para processos industriais automáticos
+
+
+
+
+--- Professor Information ---
+Name: Ivan Rizzo Guilherme
+Lattes ID: 0140365057016044
+
+Research Areas:
+  - Inteligência Artificial Aplicada a Medicina
+  - Sistemas de apoio a decisão médica
+  - Sistemas especialistas
+  - Web Semântica
+  - Ontologias
+  - Processamento da Linguagem Natural
+  - Inteligência Artificial
+  - Bioinformatica
+  - Inteligência Artificial Aplicada a Petróleo
+
+Periodic Papers:
+  -  A multi-agent approach to monitor and manage container-based distributed systems
+  -  RaDE+: A semantic rank-based graph embedding algorithm
+  -  Evolving Neural Conditional Random Fields for drilling report classification
+  -  Semantic Guided Interactive Image Retrieval for Plant Identification
+  -  Unsupervised Manifold Learning through Reciprocal kNN Graph and Connected Components for Image Retrieval Tasks
+  -  UMA ABORDAGEM PARA GESTÃO DE CONTEÚDOS EDUCACIONAIS
+  -  ARQUITETURA DE UM SISTEMA MULTIAGENTE AUTÔNOMO PARA SUPERVISÃO E CONTROLE
+  -  Improving operational safety on subsea wells with quantitative and dynamic risk assessment
+  -  Petroleum well drilling monitoring through cutting image analysis and artificial intelligence techniques
+  -  Expressed sequence tags from Atta laevigata and identification of candidate genes for the control of pest leaf-cutting ants
+
+Congress Papers:
+  -  PsyBERTpt: A Clinical Entity Recognition Model for Psychiatric Narratives
+  -  An Ontology-Based Approach For Risk Evaluation In Human-Machine Interaction
+  -  A Meta-Feature Model for Exploiting Different Regressors to Estimate Sugarcane Crop Yield
+  -  Estudo comparativo entre diferentes regressores para estimar produtividade de cana-de-açúcar
+  -  Development and implementation of an IA based system to automate textual classification on Daily Drilling Reports
+  -  PetroBERT: a domain adaptation language model for oil and gas applications in Portuguese
+  -  SMS Spam Detection Through Skip-gram Embeddingsand Shallow Networks
+  -  When External Knowledge Does Not Aggregate in Named Entity Recognition
+  -  Manifold Learning-based Clustering Approach applied to Anomaly Detection in Surveillance Videos
+  -  RaDE: A Rank-base Graph Embedding Approach
+
+Projects:
+  - Desenvolvimento de Software de Reconhecimento Automático de Microfósseis
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços.
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - RADIAR: Método para disseminação do conhecimento
+  - Exploração de Paralelismo em Hardware e Software (PROCAD 2966/2014)
+  - Concepção do Centro de Pesquisa Tecnológica em Petróleo e Gás da Baixada Santista
+  - Proposta de uma Arquitetura Web Semântica Multiagente para Análise de Dados
+  - Sistemas Multiagente Web Semântico aplicado ao suporte a  educação.
+  - Análise da Viabilidade Técnica de Implementação do SIACas - Sistema Inteligente para Análise do Cascalho Produzido na Perfuração
+  - Um Estudo de Ontologias aplicadas a Geociências e Meio Ambiente
+  - METODOLOGIA PARA A CLASSIFICAÇÃO DE ANORMALIDADES NA PERFURAÇÃO - Edital MCT/CNPq 02/2006 - Universal
+  - Concepção, desenvolvimento e implementação de um sistema de informação aplicado à elaboração de cartas de sensibilidade ambiental a derrames de petróleo: litoral paulista
+  - Proposta de um Sistema Multiagente para Automação e Controle
+  - Desenvolvimento de metodologias para avaliar a segurança de poços de petróleo em águas profundas (Edital CT-Petro/CNPq 17/2004)
+  - SISCPO  - SISTEMA INTELIGENTE SUPERVISÓRIO PARA CONTROLE DE PRODUÇÃO OFFSHORE
+  - Desenvolvimento de metodologia para análise de parâmetros de perfuração
+
+
+
+
+--- Professor Information ---
+Name: Danillo Roberto Pereira
+Lattes ID: 0122307432250869
+
+Research Areas:
+
+Periodic Papers:
+  -  Reconhecimento de cédulas de real usando inteligência artificial para auxiliar pessoas com deficiência visual
+  -  Common bean under different water availability reveals classifiable stimuli-specific signatures in plant electrome
+  -  DETECÇÃO E RECONHECIMENTO DE PLANTAS DE PEQUENO PORTE UTILIZANDO APRENDIZAGEM DE MÁQUINA
+  -  DETECÇÃO DE FALHAS EM LINHAS DE PLANTIO EM IMAGENS OBTIDAS POR VANT UTILIZANDO CNN E OPERADORES MORFOLÓGICOS
+  -  UTILIZANDO PROCESSAMENTO DE IMAGENS E YOLO PARA A CONSTRUÇÃO DE UM SISTEMA DE NAVEGAÇÃO DE UM DRONE COM APLICAÇÃO EM UMA INDÚSTRIA
+  -  APRENDIZADO DE MÁQUINA APLICADO EM IMAGEM NDVI PARA PREVISÃO DA PRODUTIVIDADE DA CANA-DE-AÇÚCAR
+  -  O USO DE SERVIÇO RESTFUL PARA GERENCIAR E GERAR CONTEÚDO TURÍSTICO PARA APLICATIVO MÓVEL
+  -  Digital image processing: a useful tool in the analysis of lung injuries caused by chronic inhalation of agricultural herbicides
+  -  Machine Learning for Automatic Classification of Tomato Ripening Stages Using Electrophysiological Recordings
+  -  CONSTRUÇÃO DE IMAGENS PANORÂMICAS EM MÚLTIPLAS FAIXAS DE ALTURA E LARGURA USANDO ALGORITMOS WATERSHED E GRAPH-CUT
+
+Congress Papers:
+  -  Implementação das Cotas na UNESP: Impactos na Evasão e Desempenho no Curso de Ciência da Computação
+  -  FEMa-FS: Finite Element Machines for Feature Selection
+  -  ComplexWoundDB: A Database for Automatic Complex Wound Tissue Categorization
+  -  Visual Approach to Support Analysis of Optimum-Path Forest Classifier
+  -  Land-use Classification using Finite Element Machines
+  -  Stroke Lesion Detection Using Convolutional Neural Networks
+  -  FEMaR: A Finite Element Machine for Regression Problems
+  -  Kernel-based Optimum-Path Forest Classifier
+  -  Facial Recognition in Digital Images using Local Binary Pattern Methods
+  -  On the Harmony Search Using QuaternionsOn the Harmony Search Using Quaternions
+
+Projects:
+  - ChurnLearn: Sistema Inteligente para Predição de Churn em Ambientes de Telefonia Móvel
+  - Aplicação de Inteligência Artificial em Identificação de Padrões Ambientais
+  - Aplicações e calibração de algoritmos de Fluxo Óptico
+  - Aplicações em Computação Forense
+  - Otimização de parâmetros e seleção de característica para métodos de Aprendizagem de Máquina
+  - Métodos de Aproximação para Computação Visual
+
+
+
+
+--- Professor Information ---
+Name: Wallace Correa de Oliveira Casaca
+Lattes ID: 3272121223733592
+
+Research Areas:
+  - Processamento e Análise de Imagens
+  - Matemática Aplicada e Computacional
+  - Inteligência Computacional
+  - Sensoriamento Remoto
+  - Ciência de Dados
+  - Inteligência Artificial
+  - Aprendizado de Máquina
+  - Análise Exploratória de Dados
+  - Modelagem de Dados Energéticos
+  - Visualização da Informação
+  - Visão Computacional
+  - Processamento de Imagens
+  - Equações Diferenciais Parciais
+  - Visão de Máquina
+  - Machine Vision
+  - Computational Geometry
+  - Machine Learning
+  - Image and Pattern Analysis
+
+Periodic Papers:
+  -  Conditional Generative Adversarial Networks and Deep Learning Data Augmentation: A Multi-Perspective Data-Driven Survey Across Multiple Application Fields and Classification Architectures
+  -  Assessing Machine Learning Models on Temporal and Multi-Sensor Data for Mapping Flooded Areas
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  A Study of COVID-19 Diagnosis Applying Artificial Intelligence to X-Rays Images
+  -  Artificial Intelligence for Forensic Image Analysis in Bullet Hole Comparison: A Preliminary Study
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  Unsupervised Multitemporal Triclass Change Detection
+  -  A Robust Dual-Mode Machine Learning Framework for Classifying Deforestation Patterns in Amazon Native Lands
+  -  Learning label diffusion maps for semi-automatic segmentation of lung CT images with COVID-19
+  -  Integrating Unsupervised Machine Intelligence and Anomaly Detection for Spatio-Temporal Dynamic Mapping Using Remote Sensing Image Series
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  GECET e a Promoção da Liderança Feminina em STEM: Relato de Experiência em um Projeto de Extensão Universitária
+  -  Assessing the Performance of Deep Learning Networks for Real-Time Deforestation Segmentation in the Amazon and Atlantic Biomes
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  Fire Detection with Multitemporal Multispectral Data and a Probabilistic Unsupervised Technique
+  -  Detecção de Áreas Queimadas utilizando Dados Temporais e Modelagem Estatística Não Supervisionada
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Retinal Images Registration via Unsupervised Deep Learning
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+
+Projects:
+  - Bolsista de Produtividade em Pesquisa do CNPq: Avanços e Desenvolvimentos com Redes Profundas Sinérgicas em Visão Computacional e Mapeamento Remoto
+  - Cortex - IA  Generativa Aplicada à Base de Operações Diárias de Poços
+  - Centro de Pesquisa Aplicada (CPA) FAPESP: Ciência de Dados para a Indústria Inteligente (CDII)
+  - Programas de Inovação Tecnológica eScience FAPESP: Criminalidade, Insegurança e Legitimidade: uma abordagem transdisciplinar
+  - Bolsista de Produtividade em Pesquisa do CNPq: Desafios da Inteligência Computacional em Visão de Máquina, Sensoriamento Remoto e Pandemia da COVID-19
+  - Rede CAPES Print: Pesquisa Avançada em Matemática Pura e Aplicada
+  - FAPESP Research Grant: Theoretical Advances on Anomaly Detection and Environmental Monitoring Systems
+  - Auxílio à Pesquisa FAPESP: Desenvolvimento de Novas Metodologias e Soluções Tecnológicas Inteligentes em Segmentação de Imagens Digitais e Enfrentamento da COVID-19
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - FAPESP Internships Abroad and Scientific Cooperation: Segmentation and Inpainting of Sensor Failures in Remote Sensing Images
+  - Programa Brasil-Angola de Desenvolvimento de Pesquisas e Inovação Tecnológica
+  - Research and Innovation for Industry (CEPID-FAPESP): Center for Mathematical Sciences Applied to Industry (CeMEAI)
+  - Projeto Temático: Desafios em Visualização Exploratória de Dados Multidimensionais: Novos Paradigmas, Escalabilidade e Aplicações
+  - Projeto Universal CNPq: Métodos Espectrais e Topológicos para Processamento, Modelagem e Visualização a partir de Dados Massivo
+  - Consórcio INCT-MACC (Instituto Nacional de Ciência e Tecnologia em Medicina Assistida por Computação Científica) - Processo CNPq 573710/2008-2
+
+
+
+
+--- Professor Information ---
+Name: Marilaine Colnago
+Lattes ID: 8764225815253091
+
+Research Areas:
+  - Análise Numérica
+  - Modelagem de Dados Energéticos
+  - Ciência de Dados
+  - Processamento Digital de Imagens
+  - Matemática Aplicada
+  - Mecânica dos Fluidos Computacional
+  - Matemática Computacional
+  - Análise de Dados
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  ABD: A machine intelligent-based algal bloom detector for remote sensing images
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  Leak Detection in Hermetic Compressors using Computer Vision and Artificial Intelligence
+  -  ASSESSING THE EFFECTIVENESS OF INPAINTING TECHNIQUES FOR ENHANCING FEATURE EXTRACTION QUALITY IN REMOTE SENSING IMAGERY
+  -  Predicting Energy Generation in Large Wind Farms: A Data-Driven Study with Open Data and Machine Learning
+  -  Data-driven analysis and machine learning for energy prediction in distributed photovoltaic generation plants: A case study in Queensland, Australia
+  -  Mapping Fire Susceptibility in the Brazilian Amazon Forests Using Multitemporal Remote Sensing and Time-Varying Unsupervised Anomaly Detection
+  -  A Fully Unsupervised Deep Learning Framework for Non-Rigid Fundus Image Registration
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  GECET: Garotas nas Engenharias, Ciências Exatas e Tecnologias: Projeto de Extensão voltado para a participação feminina nas áreas STEM
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+  -  Um Estudo de Gênero a partir da Distribuição de Bolsas do Programa Universidade para Todos
+  -  Automatically Detecting Textual Content in High-Resolution Images
+  -  Inpainting Digital Via Replicação por Blocos e o Método SPH
+  -  Lockdown contra a Covid-19 funciona ou não? Um estudo de caso com o município de Araraquara
+
+Projects:
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo - TRIENAL
+  - Aprimorando a Eficiência na Previsão Sucroalcooleira via Técnicas de Inteligência Artificial e Análise de Dados Integrada
+  - Inteligência Artificial e suas Aplicações no setor de Biocombustíveis
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo
+  - Análise Exploratória de Dados da Covid-19 no Estado de São Paulo: Avaliação de Indicadores e das Ações de Enfrentamento da Pandemia por Parte dos Governos Municipais e Estadual
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - Cooperação Brasil-Angola de Pesquisa e Criação de Redes Internacionais
+  - Desenvolvimentos Computacionais Aplicados a Processos de Refino - Escoamentos Multifásicos
+
+

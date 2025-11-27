@@ -1,0 +1,322 @@
+Título do trabalho: Segmentação e Detecção de Buracos em vias Utilizando Visão Computacional em Sistemas Embarcados Críticos em Prol de ADAS e Veículos Autônomos
+Resumo do trabalho:  A infraestrutura viária deficiente, especialmente a presença de buracos, representa um risco significativo tanto para a segurança pública quanto para a indústria automotiva, sendo um problema crítico no Brasil. Nesse contexto, a adoção de tecnologias assistivas à direção, com foco na detecção de irregularidades na via, torna-se essencial para mitigar esses riscos, permitindo que os condutores reajam de forma mais eficiente. Para isso, abordagens baseadas em Redes Neurais Profundas têm se mostrado promissoras na detecção e segmentação de objetos, superando métodos tradicionais que frequentemente apresentam limitações em cenários complexos.Este projeto propõe o desenvolvimento e a avaliação de modelos de Aprendizado Profundo aplicados à Visão Computacional para essa finalidade, explorando arquiteturas como Redes Neurais Convolucionais (CNNs) e Vision Transformers. O objetivo é superar as limitações das abordagens existentes, que muitas vezes dependem de conjuntos de dados inadequados ou de modelos computacionalmente intensivos, inviáveis para dispositivos embarcados. Como resultado, os modelos desenvolvidos serão aplicados em uma solução de baixo custo para detecção de buracos em tempo real, auxiliando condutores com Sistemas Avançados de Assistência ao Condutor (ADAS) e/ou enviando informações para um módulo decisor, no caso de veículos autônomos, permitindo realizar uma manobra corretiva. Destacando que esta pesquisa está inserida junto ao projeto do primeiro caminhão autônomo da América Latina junto ao Instituto De Ciências Matemáticas e de Computação da Universidade de São Paulo, intitulado como CaRINA (Carro Robótico Inteligente de Navegação Autônoma), possibilitando gerar novas contribuições. 
+
+
+
+--- Ranking ---
+Diego Renan Bruno                         ->  0.9313
+Rodolfo Ipolito Meneguette                ->  0.9185
+Leonardo Castro Botega                    ->  0.9142
+Mauricio Araujo Dias                      ->  0.9077
+Marilaine Colnago                         ->  0.9014
+Antonio Carlos Sementille                 ->  0.9014
+Danillo Roberto Pereira                   ->  0.9006
+Wallace Correa de Oliveira Casaca         ->  0.8995
+Ivan Rizzo Guilherme                      ->  0.8986
+Kelton Augusto Pontara da Costa           ->  0.8946
+Ronaldo Celso Messias Correia             ->  0.8922
+Renata Spolon Lobato                      ->  0.8913
+Adriano Mauro Cansian                     ->  0.8895
+Danilo Medeiros Eler                      ->  0.8895
+Rogério Eduardo Garcia                    ->  0.8894
+Caetano Mazzoni Ranieri                   ->  0.8890
+Jose Remo Ferreira Brega                  ->  0.8849
+Lucas Correia Ribas                       ->  0.8848
+Arnaldo Candido Junior                    ->  0.8823
+Alexandro José Baldassin                  ->  0.8821
+Rodrigo Capobianco Guido                  ->  0.8816
+Carlos Roberto Valêncio                   ->  0.8810
+Aparecido Nilceu Marana                   ->  0.8804
+Clayton Reginaldo Pereira                 ->  0.8799
+João Paulo Papa                           ->  0.8789
+Denis Henrique Pinheiro Salvadeo          ->  0.8783
+Rogéria Cristiane Gratão de Souza         ->  0.8756
+Leandro Alves Neves                       ->  0.8736
+Geraldo Francisco Donegá Zafalon          ->  0.8732
+Fabricio Aparecido Breve                  ->  0.8698
+Felipe Fernandes Fanchini                 ->  0.8650
+Daniel Carlos Guimarães Pedronette        ->  0.8633
+Leonardo Tórtoro Pereira                  ->  0.8575
+Veronica Oliveira de Carvalho             ->  0.8500
+Cassio Machiaveli Oishi                   ->  0.8491
+Frank José Affonso                        ->  0.8464
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Diego Renan Bruno
+Lattes ID: 6996168862993134
+
+Research Areas:
+  - Arquitetura de Computadores
+  - Sistemas Embarcados Críticos
+  - Visão Computacional
+  - Robótica
+  - Veículos Autônomos
+  - Robótica Móvel Autônoma, Redes Neurais Artificiais, Algoritmos Genéticos e Controle
+  - Veículos Autônomos
+  - Inteligência Artificial
+  - Sistemas Avançados de Assistência ao Motorista (ADAS)
+  - Visão Computacional Robótica
+  - Machine Learning - (Deep Learning 2D/ MLP 3D)
+  - Robótica / Mecatrônica / Automação
+  - LARA - (Laboratório de Automação e Robótica Aplicada)
+
+Periodic Papers:
+  -  EVOLUÇÃO E O DESENVOLVIMENTO DO CHATBOT GPT-3 E GPT-4
+  -  IA - INTELIGENCIA ARTIFICIAL: IMPACTOS, RISCOS E BENEFICIOS QUE DESAFIAM A SOCIEDADE MODERNA
+  -  USO DE IA PARA AUTOMATIZAR TAREFAS DE DESENVOLVIMENTO
+  -  CARINA Project:
+ Visual Perception Systems Applied for Autonomous Vehicles and Advanced 
+Driver Assistance Systems (ADAS)
+  -  ERA DA RECOMENDAÇÃO
+  -  LEI GERAL DE PROTEÇÃO DE DADOS EM UMA SOCIEDADE PANDÊMICA
+  -  APLICATIVO GERENCIAL PARA DISPOSITIVOS MÓVEIS
+  -  PRODUÇÃO MAIS LIMPA: CONTRIBUIÇÕES DA INDÚSTRIA 4
+  -  GANs - REDES ADVERSARIAS GENERATIVAS
+  -  IMPLEMENTAÇÃO DA INTERNET EM NOSSO COTIDIANO
+
+Congress Papers:
+  -  Robotic Visual 
+Attention Architecture for ADAS in Critical Embedded Systems for Smart 
+Vehicles
+  -  Real Time Deep Learning Based Pothole Detection on Low Cost Embedded 
+Devices for ADAS
+  -  BRAIN: dataBase para Pesquisa em Análise de  
+Intrusões Automotivas
+  -  Lexical 
+Analysis of Automatic Transcriptions Using Speech-to-Text Services: A 
+Statistically Evaluated Case Study
+  -  Enhancing Learning Objects Accessibility Through 
+Speech-To-Text Based Architecture: A Comprehensive Triangulation Study
+  -  Real-Time Pedestrian Detection and Tracking 
+System Using Deep Learning and Kalman filter: Applications on Embedded 
+Systems in Advanced Driver Assistance Systems
+  -  A literature review on the detection and tracking
+ of obstacles applied for Advanced Driver Assistance Systems (ADAS) in 
+Robotic Vehicle'
+  -  ADAS classifier for driver monitoring and 
+driving qualification using both internal and external vehicle data
+  -  Development of a robotic sensing 
+system to assist visually impaired people in their task of locomotion in
+ urban environments
+  -  Robotic Computer Vision System with 2D and 3D 
+Data Fusion for Traffic Sign Detection
+
+Projects:
+  - Modelos de Inteligência Artificial para Detecção de Correlação e Predição em redes IoT
+  - Rota2030
+ - SegurAuto: Detecção e Avaliação de Obstáculos e Pedestres Baseada em 
+Reconstrução de imagens 3D e Análise Temporal Aplicada para ADAS 
+veiculares
+  - Robô móvel autônomo para suporte de deficientes visuais na tarefa de locomoção em ambientes urbanos
+  - Análise
+ e fusão de imagens 2D e 3D com vistas para detecção de placas de 
+trânsito em prol da segurança viária com veículos robóticos inteligentes
+  - Algoritmo Neurogenético com vistas para o Planejamento de Rotas de Robôs Móveis Autônomos
+  - Modelagem e Simulação de Sistemas a Eventos Discretos com vistas para processos industriais automáticos
+
+
+
+
+--- Professor Information ---
+Name: Rodolfo Ipolito Meneguette
+Lattes ID: 4981889689994770
+
+Research Areas:
+  - Redes de Computadores
+  - Gerenciamento de Recurso
+  - Visão Computacional
+  - Cidade Inteligente
+  - Sistema de Transporte Inteligente
+
+Periodic Papers:
+  -  Towards an efficient solution to mitigate the forest fire problem based on unmanned aerial vehicles and wireless sensors
+  -  Lightweight Malware Classification with FORTUNATE: Precision Meets Computational Efficiency
+  -  ONSPRIDE: An Ontology-based Framework for Privacy by Design in Distributed Networks Apps
+  -  New Model for Weather Stations Integrated to Intelligent Meteorological Forecasts in Brasilia
+  -  Influence of Sequence Length and Geographic Representation on Optimal Prediction Architectures for Stolen Vehicle Geolocation
+  -  An Empirically Validated Framework for Automated and Personalized Residential Energy-Management Integrating Large Language Models and the Internet of Energy
+  -  IHRAS: Automated Medical Report Generation from Chest X-Rays via Classification, Segmentation, and LLMs
+  -  Adaptive Priority-Based Edge-Centric Resource Management for the Internet of Vehicles
+  -  FORENSICS: Deciphering and Detecting Malware Through Variable-Length Instruction Sequences
+  -  Evaluating YOLO architectures for detecting road killed endangered Brazilian animals
+
+Congress Papers:
+  -  Multi-Layered Resource Allocation in IoV Networks Using VEC Paradigms
+  -  A Framework to Develop a Cost-Effective Charging Policy for Electric Vehicles
+  -  Mobility-Oriented Virtual Cell Handover Management in 5G Vehicular Networks
+  -  LOPRIVE: LOA-Based Priority-Driven Task Allocation in the Vehicular Edge
+  -  CAN-ESP: Rede CAN de Baixo Custo para Veículos Elétricos
+  -  Avaliação de Desempenho de Redes Veiculares Ad Hoc com RSUs e Filas de Prioridade
+  -  De Olho na Segurança: Como o Safe-Drive Detecta Distrações e Comportamentos Inseguros de Motoristas
+  -  Hórus-CDS: O Olho Digital na Segurança das Smart Grids
+  -  Ontology Capture Based On Interpretive Structural Modeling
+  -  Mpat: Mecanismo Para Priorização de Alocação de Tarefas Em Vec Por Função de Tarefas Inspirado Em Algoritmo Bioinspirado
+
+Projects:
+  - H.IAAC - Hub de Inteligência Artificial e Arquiteturas Cognitivas
+  - ASSIST - Arquitetura de Suporte a Servicos Inteligentes para Sistemas de Transporte inteligente baseado em Aprendizado Federado
+  - AAM-CYBER: Levantamento de Condições de Segurança Cibernética
+  - IARA - Inteligência Artificial Recriando Ambientes
+  - Um arquitetura multi-camadas para provisão de recursos e serviços e um ambiente urbanno
+  - Serviços cientes dos espaços urbanos via federated learning em sistemas de transporte inteligente
+  - Gerenciamento de recursos dinâmicos para aplicativos de sistema de transporte inteligente
+  - Serviços para um Sistema de Transporte Inteligente
+  - CeMEAI - Centro de Ciências Matemática Aplicadas à Indústria
+  - Um Sistema de Transporte Inteligente para Otimização e  Gerenciamento de Mobilidade Urbana
+  - SEnTINEL - SistEma de Transporte INtELigente para o Auxílio da Gestão de Tráfego em Cidades do Interior
+  - Soluções para Sistemas de Transporte Inteligentes baseados em Computação Urbana
+  - Serviços de nuvens para redes veiculares em auxílio na gestão de transporte inteligente das grandes cidades
+  - Um framework para redes veiculares em auxílio na gestão de grandes cidades
+  - iCities: Desenvolvimento de Serviços de nova Geração Inteligentes e Aplicações para Cidades Inteligentes
+  - Reconhecimento de Tumores Cerebrais
+  - Web Service para Ovinocultura
+
+
+
+
+--- Professor Information ---
+Name: Leonardo Castro Botega
+Lattes ID: 6027755717265622
+
+Research Areas:
+  - Redes Veiculares
+  - Redes de Sensores Sem Fio
+  - Informação e Tecnologia
+
+Periodic Papers:
+  -  Modelo de mapeamento semântico entre as terminologias de saúde CID-10 e SNOMED-CT
+  -  Bug Localization Model in Source Code using Ontologies
+  -  CLASIFICACIÓN DE TEXTOS: UN ENFOQUE CON USO DE MACHINE LEARNINGTEXT CLASSIFICATION: AN APPROACH USING MACHINE LEARNINGCLASSIFICAÇÃO DE TEXTOS: UMA ABORDAGEM COM USO DE MACHINE LEARNING
+  -  Qualidade de dados em gestão de dados de pesquisa: um estudo bibliométrico
+  -  Critérios de qualidade de dados em saúde: uma análise quantitativa
+  -  A experiência do usuário em ambientes de gestão da aprendizagem: análise de casos de uso com as ferramentas Moodle e Google Classroom
+  -  Fusão de dados para análise de imagens registradas por satélites: proposta de modelo de metadados
+  -  A Filosofia da informação e a Sociedade da informação e do conhecimento: reflexões diante do progresso tecnológico
+  -  Enriquecimento semântico para a disponibilização de dados abertos: teoria e prática
+  -  A Qualidade na Recuperação de Dados Governamentais: Um Estudo Sobre Dados de Políticas Públicas na Internet
+
+Congress Papers:
+  -  Improving Medication Identification Accuracy and Regulatory Compliance through NLP and Ontologies: An Analysis of Otorhinolaryngology Prescriptions
+  -  OWL-Sharp: Source Code Semantic Generator
+  -  Servidor de terminologias para a identiﬁcação e padronização de conceitos médicos a partir de anotações clínicas
+  -  MODELO DE MAPEAMENTO SEMÂNTICO ENTRE TERMINOLOGIAS DE SAÚDE
+  -  Acesso e disponibilização de dados abertos em educação nas capitais das regiões sul e sudeste do Brasil: Um estudo exploratório
+  -  RELAÇÃO JURÍDICA CONTRATUAL CONTEMPORÂNEA A LUZ DE NOVAS TECNOLOGIAS
+  -  Development of a Semantic Representation Model of Criminal Information to Support the Assessment of Risk Situations
+  -  Assessing Situation Awareness on Fusion-Driven Emergency Management Systems
+  -  Development of Criminal Ontologies to Enhance Situation Assessment
+  -  Fusão de dados para compreensão de fenômenos ambientais por meio de fotografias
+
+Projects:
+  - Abordagem de análise criminal para a ampliação da consciência situacional utilizando fusão de dados e informações
+  - Avaliação da Qualidade de Dados e Informações para a Ampliação de Consciência Situacional em Processos Decisórios.
+  - Sistema de alerta DF100Fogo: a produção voluntária de informação geográfica, paisagens e incêndios florestais
+  - Desenvolvimento de soluções para a melhoria da consciência situacional em ambientes de gerenciamento de emergências
+  - Desenvolvimento de interface tangível para aplicações multidisciplinares
+  - Análise de Imagens Tomográficas da Ciência do Solo em Ambiente de Realidade Virtual
+  - Utilização de Realidade Virtual para construção de ferramentas de treinamento médico
+
+
+
+
+--- Professor Information ---
+Name: Mauricio Araujo Dias
+Lattes ID: 2740441033907310
+
+Research Areas:
+  - Análise de Imagens
+  - Projeto e Desenvolvimento de Processadores e Coprocessadores
+  - Projeto e Desenvolvimento de Circuitos Criptográficos Baseados em Curvas Elípticas
+  - Processamento Morfológico de Imagens
+  - Tecnologia Educacional
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  A Study of COVID-19 Diagnosis Applying Artificial Intelligence to X-Rays Images
+  -  Recognition of Brazilian Banknotes Using Artificial Intelligence to Assist Visually Impaired Individuals
+  -  Threshold-Based Approach for Disaster Mapping Using Long-Term Multispectral Image Series
+  -  Artificial Intelligence for Forensic Image Analysis in Bullet Hole Comparison: A Preliminary Study
+  -  A Robust Dual-Mode Machine Learning Framework for Classifying Deforestation Patterns in Amazon Native Lands
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  ABF: A data-driven approach for algal bloom forecasting using machine intelligence and remotely sensed data series
+  -  Dimensionality Reduction and Anomaly Detection Based on Kittler?s Taxonomy: Analyzing Water Bodies in Two Dimensional Spaces
+  -  Associating Anomaly Detection Strategy Based on Kittler?s Taxonomy with Image Editing to Extend the Mapping of Polluted Water Bodies
+
+Congress Papers:
+  -  Diferente Abordagem do Algoritmo de Crescimento por Região Aplicado em Extração de Feições Cartográficas
+  -  Avaliação e Comparação de Metodologias de Extração de Malhas Viárias em Imagens de Sensoriamento Remoto
+  -  Combining Feature Extraction Techniques for Fruit Classification
+  -  Comparison of feature spaces in fruit recognition
+  -  Eklof And Ringertz Bone Age Estimation Using Adaptive Neuro Fuzzy Inference System
+  -  Appling a semiautomatic methodology for cartographic features extraction using high-resolution remote sensing images
+  -  An Inverter Architecture for ECC-GF(2m) Based on the Stein's Algorithm
+  -  Curvas Elípticas aplicadas à criptografia: uma proposta alternativa para implementação de um circito digital
+  -  Aplicação de curvas elípticas para a criptografia
+
+Projects:
+  - Detecção de anomalias em dados para monitoramento de eventos extremos.
+  - Jogos educativos: pesquisa baseada no modelo da teoria unificada de aceitação e uso da tecnologia
+  - Jogo educativo para sistemas operacionais: aceitação e uso pelos estudantes
+  - Avaliação da aceitação e uso de um jogo educacional na ciência da computação com base na teoria unificada da aceitação e uso de tecnologia
+  - Estudo de uma estratégia de aprendizado de máquina baseada na Taxonomia de Kittler para detectar anomalias e reconhecer desmatamento no meio ambiente
+  - Sistema criptográfico baseado em curvas elípticas implementado em FPGA
+  - Análise de séries temporais de imagens de sensoriamento remoto para a detecção de anomalias
+  - Anomaly Detection, Analysis and Localization: a Case Study on Digital Static Images from Remote Sensing Applied to Cartography
+  - Arquiteturas de Computadores Reconfiguráveis
+
+
+
+
+--- Professor Information ---
+Name: Marilaine Colnago
+Lattes ID: 8764225815253091
+
+Research Areas:
+  - Análise Numérica
+  - Modelagem de Dados Energéticos
+  - Ciência de Dados
+  - Processamento Digital de Imagens
+  - Matemática Aplicada
+  - Mecânica dos Fluidos Computacional
+  - Matemática Computacional
+  - Análise de Dados
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  ABD: A machine intelligent-based algal bloom detector for remote sensing images
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  Leak Detection in Hermetic Compressors using Computer Vision and Artificial Intelligence
+  -  ASSESSING THE EFFECTIVENESS OF INPAINTING TECHNIQUES FOR ENHANCING FEATURE EXTRACTION QUALITY IN REMOTE SENSING IMAGERY
+  -  Predicting Energy Generation in Large Wind Farms: A Data-Driven Study with Open Data and Machine Learning
+  -  Data-driven analysis and machine learning for energy prediction in distributed photovoltaic generation plants: A case study in Queensland, Australia
+  -  Mapping Fire Susceptibility in the Brazilian Amazon Forests Using Multitemporal Remote Sensing and Time-Varying Unsupervised Anomaly Detection
+  -  A Fully Unsupervised Deep Learning Framework for Non-Rigid Fundus Image Registration
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  GECET: Garotas nas Engenharias, Ciências Exatas e Tecnologias: Projeto de Extensão voltado para a participação feminina nas áreas STEM
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+  -  Um Estudo de Gênero a partir da Distribuição de Bolsas do Programa Universidade para Todos
+  -  Automatically Detecting Textual Content in High-Resolution Images
+  -  Inpainting Digital Via Replicação por Blocos e o Método SPH
+  -  Lockdown contra a Covid-19 funciona ou não? Um estudo de caso com o município de Araraquara
+
+Projects:
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo - TRIENAL
+  - Aprimorando a Eficiência na Previsão Sucroalcooleira via Técnicas de Inteligência Artificial e Análise de Dados Integrada
+  - Inteligência Artificial e suas Aplicações no setor de Biocombustíveis
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo
+  - Análise Exploratória de Dados da Covid-19 no Estado de São Paulo: Avaliação de Indicadores e das Ações de Enfrentamento da Pandemia por Parte dos Governos Municipais e Estadual
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - Cooperação Brasil-Angola de Pesquisa e Criação de Redes Internacionais
+  - Desenvolvimentos Computacionais Aplicados a Processos de Refino - Escoamentos Multifásicos
+
+
