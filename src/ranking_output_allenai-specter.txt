@@ -1,0 +1,350 @@
+Título do trabalho: Segmentação e Detecção de Buracos em vias Utilizando Visão Computacional em Sistemas Embarcados Críticos em Prol de ADAS e Veículos Autônomos
+Resumo do trabalho:  A infraestrutura viária deficiente, especialmente a presença de buracos, representa um risco significativo tanto para a segurança pública quanto para a indústria automotiva, sendo um problema crítico no Brasil. Nesse contexto, a adoção de tecnologias assistivas à direção, com foco na detecção de irregularidades na via, torna-se essencial para mitigar esses riscos, permitindo que os condutores reajam de forma mais eficiente. Para isso, abordagens baseadas em Redes Neurais Profundas têm se mostrado promissoras na detecção e segmentação de objetos, superando métodos tradicionais que frequentemente apresentam limitações em cenários complexos.Este projeto propõe o desenvolvimento e a avaliação de modelos de Aprendizado Profundo aplicados à Visão Computacional para essa finalidade, explorando arquiteturas como Redes Neurais Convolucionais (CNNs) e Vision Transformers. O objetivo é superar as limitações das abordagens existentes, que muitas vezes dependem de conjuntos de dados inadequados ou de modelos computacionalmente intensivos, inviáveis para dispositivos embarcados. Como resultado, os modelos desenvolvidos serão aplicados em uma solução de baixo custo para detecção de buracos em tempo real, auxiliando condutores com Sistemas Avançados de Assistência ao Condutor (ADAS) e/ou enviando informações para um módulo decisor, no caso de veículos autônomos, permitindo realizar uma manobra corretiva. Destacando que esta pesquisa está inserida junto ao projeto do primeiro caminhão autônomo da América Latina junto ao Instituto De Ciências Matemáticas e de Computação da Universidade de São Paulo, intitulado como CaRINA (Carro Robótico Inteligente de Navegação Autônoma), possibilitando gerar novas contribuições. 
+
+
+
+--- Ranking ---
+Leonardo Castro Botega                    ->  0.9197
+Rodolfo Ipolito Meneguette                ->  0.9076
+Ronaldo Celso Messias Correia             ->  0.9020
+Diego Renan Bruno                         ->  0.9018
+Antonio Carlos Sementille                 ->  0.8942
+Marilaine Colnago                         ->  0.8934
+Mauricio Araujo Dias                      ->  0.8917
+Adriano Mauro Cansian                     ->  0.8910
+Danillo Roberto Pereira                   ->  0.8889
+Wallace Correa de Oliveira Casaca         ->  0.8874
+Ivan Rizzo Guilherme                      ->  0.8869
+Rogério Eduardo Garcia                    ->  0.8863
+Renata Spolon Lobato                      ->  0.8856
+Jose Remo Ferreira Brega                  ->  0.8853
+Alexandro José Baldassin                  ->  0.8824
+Rogéria Cristiane Gratão de Souza         ->  0.8819
+Leonardo Tórtoro Pereira                  ->  0.8772
+Danilo Medeiros Eler                      ->  0.8757
+Felipe Fernandes Fanchini                 ->  0.8703
+João Paulo Papa                           ->  0.8686
+Carlos Roberto Valêncio                   ->  0.8671
+Geraldo Francisco Donegá Zafalon          ->  0.8641
+Caetano Mazzoni Ranieri                   ->  0.8604
+Lucas Correia Ribas                       ->  0.8581
+Kelton Augusto Pontara da Costa           ->  0.8538
+Arnaldo Candido Junior                    ->  0.8529
+Fabricio Aparecido Breve                  ->  0.8505
+Frank José Affonso                        ->  0.8504
+Leandro Alves Neves                       ->  0.8444
+Veronica Oliveira de Carvalho             ->  0.8431
+Rodrigo Capobianco Guido                  ->  0.8404
+Clayton Reginaldo Pereira                 ->  0.8394
+Denis Henrique Pinheiro Salvadeo          ->  0.8354
+Aparecido Nilceu Marana                   ->  0.8230
+Daniel Carlos Guimarães Pedronette        ->  0.8129
+Cassio Machiaveli Oishi                   ->  0.7601
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Leonardo Castro Botega
+Lattes ID: 6027755717265622
+
+Research Areas:
+  - Redes Veiculares
+  - Redes de Sensores Sem Fio
+  - Informação e Tecnologia
+
+Periodic Papers:
+  -  Modelo de mapeamento semântico entre as terminologias de saúde CID-10 e SNOMED-CT
+  -  Bug Localization Model in Source Code using Ontologies
+  -  CLASIFICACIÓN DE TEXTOS: UN ENFOQUE CON USO DE MACHINE LEARNINGTEXT CLASSIFICATION: AN APPROACH USING MACHINE LEARNINGCLASSIFICAÇÃO DE TEXTOS: UMA ABORDAGEM COM USO DE MACHINE LEARNING
+  -  Qualidade de dados em gestão de dados de pesquisa: um estudo bibliométrico
+  -  Critérios de qualidade de dados em saúde: uma análise quantitativa
+  -  A experiência do usuário em ambientes de gestão da aprendizagem: análise de casos de uso com as ferramentas Moodle e Google Classroom
+  -  Fusão de dados para análise de imagens registradas por satélites: proposta de modelo de metadados
+  -  A Filosofia da informação e a Sociedade da informação e do conhecimento: reflexões diante do progresso tecnológico
+  -  Enriquecimento semântico para a disponibilização de dados abertos: teoria e prática
+  -  A Qualidade na Recuperação de Dados Governamentais: Um Estudo Sobre Dados de Políticas Públicas na Internet
+
+Congress Papers:
+  -  Improving Medication Identification Accuracy and Regulatory Compliance through NLP and Ontologies: An Analysis of Otorhinolaryngology Prescriptions
+  -  OWL-Sharp: Source Code Semantic Generator
+  -  Servidor de terminologias para a identiﬁcação e padronização de conceitos médicos a partir de anotações clínicas
+  -  MODELO DE MAPEAMENTO SEMÂNTICO ENTRE TERMINOLOGIAS DE SAÚDE
+  -  Acesso e disponibilização de dados abertos em educação nas capitais das regiões sul e sudeste do Brasil: Um estudo exploratório
+  -  RELAÇÃO JURÍDICA CONTRATUAL CONTEMPORÂNEA A LUZ DE NOVAS TECNOLOGIAS
+  -  Development of a Semantic Representation Model of Criminal Information to Support the Assessment of Risk Situations
+  -  Assessing Situation Awareness on Fusion-Driven Emergency Management Systems
+  -  Development of Criminal Ontologies to Enhance Situation Assessment
+  -  Fusão de dados para compreensão de fenômenos ambientais por meio de fotografias
+
+Projects:
+  - Abordagem de análise criminal para a ampliação da consciência situacional utilizando fusão de dados e informações
+  - Avaliação da Qualidade de Dados e Informações para a Ampliação de Consciência Situacional em Processos Decisórios.
+  - Sistema de alerta DF100Fogo: a produção voluntária de informação geográfica, paisagens e incêndios florestais
+  - Desenvolvimento de soluções para a melhoria da consciência situacional em ambientes de gerenciamento de emergências
+  - Desenvolvimento de interface tangível para aplicações multidisciplinares
+  - Análise de Imagens Tomográficas da Ciência do Solo em Ambiente de Realidade Virtual
+  - Utilização de Realidade Virtual para construção de ferramentas de treinamento médico
+
+
+
+
+--- Professor Information ---
+Name: Rodolfo Ipolito Meneguette
+Lattes ID: 4981889689994770
+
+Research Areas:
+  - Redes de Computadores
+  - Gerenciamento de Recurso
+  - Visão Computacional
+  - Cidade Inteligente
+  - Sistema de Transporte Inteligente
+
+Periodic Papers:
+  -  Towards an efficient solution to mitigate the forest fire problem based on unmanned aerial vehicles and wireless sensors
+  -  Lightweight Malware Classification with FORTUNATE: Precision Meets Computational Efficiency
+  -  ONSPRIDE: An Ontology-based Framework for Privacy by Design in Distributed Networks Apps
+  -  New Model for Weather Stations Integrated to Intelligent Meteorological Forecasts in Brasilia
+  -  Influence of Sequence Length and Geographic Representation on Optimal Prediction Architectures for Stolen Vehicle Geolocation
+  -  An Empirically Validated Framework for Automated and Personalized Residential Energy-Management Integrating Large Language Models and the Internet of Energy
+  -  IHRAS: Automated Medical Report Generation from Chest X-Rays via Classification, Segmentation, and LLMs
+  -  Adaptive Priority-Based Edge-Centric Resource Management for the Internet of Vehicles
+  -  FORENSICS: Deciphering and Detecting Malware Through Variable-Length Instruction Sequences
+  -  Evaluating YOLO architectures for detecting road killed endangered Brazilian animals
+
+Congress Papers:
+  -  Multi-Layered Resource Allocation in IoV Networks Using VEC Paradigms
+  -  A Framework to Develop a Cost-Effective Charging Policy for Electric Vehicles
+  -  Mobility-Oriented Virtual Cell Handover Management in 5G Vehicular Networks
+  -  LOPRIVE: LOA-Based Priority-Driven Task Allocation in the Vehicular Edge
+  -  CAN-ESP: Rede CAN de Baixo Custo para Veículos Elétricos
+  -  Avaliação de Desempenho de Redes Veiculares Ad Hoc com RSUs e Filas de Prioridade
+  -  De Olho na Segurança: Como o Safe-Drive Detecta Distrações e Comportamentos Inseguros de Motoristas
+  -  Hórus-CDS: O Olho Digital na Segurança das Smart Grids
+  -  Ontology Capture Based On Interpretive Structural Modeling
+  -  Mpat: Mecanismo Para Priorização de Alocação de Tarefas Em Vec Por Função de Tarefas Inspirado Em Algoritmo Bioinspirado
+
+Projects:
+  - H.IAAC - Hub de Inteligência Artificial e Arquiteturas Cognitivas
+  - ASSIST - Arquitetura de Suporte a Servicos Inteligentes para Sistemas de Transporte inteligente baseado em Aprendizado Federado
+  - AAM-CYBER: Levantamento de Condições de Segurança Cibernética
+  - IARA - Inteligência Artificial Recriando Ambientes
+  - Um arquitetura multi-camadas para provisão de recursos e serviços e um ambiente urbanno
+  - Serviços cientes dos espaços urbanos via federated learning em sistemas de transporte inteligente
+  - Gerenciamento de recursos dinâmicos para aplicativos de sistema de transporte inteligente
+  - Serviços para um Sistema de Transporte Inteligente
+  - CeMEAI - Centro de Ciências Matemática Aplicadas à Indústria
+  - Um Sistema de Transporte Inteligente para Otimização e  Gerenciamento de Mobilidade Urbana
+  - SEnTINEL - SistEma de Transporte INtELigente para o Auxílio da Gestão de Tráfego em Cidades do Interior
+  - Soluções para Sistemas de Transporte Inteligentes baseados em Computação Urbana
+  - Serviços de nuvens para redes veiculares em auxílio na gestão de transporte inteligente das grandes cidades
+  - Um framework para redes veiculares em auxílio na gestão de grandes cidades
+  - iCities: Desenvolvimento de Serviços de nova Geração Inteligentes e Aplicações para Cidades Inteligentes
+  - Reconhecimento de Tumores Cerebrais
+  - Web Service para Ovinocultura
+
+
+
+
+--- Professor Information ---
+Name: Ronaldo Celso Messias Correia
+Lattes ID: 2420360066008780
+
+Research Areas:
+  - Ambientes Virtuais Distribuídos
+  - Desenvolvimento de Aplicações Distribuídas
+  - Realidade Virtual
+  - Banco de Dados
+  - Armazenamento e Recuperação de Grande Volume de Dados
+  - Ciência de Dados
+  - Mineração de Dados
+  - Banco de Dados
+  - Ensino de Computação na Educação Básica
+  - Ensino de Computação
+
+Periodic Papers:
+  -  Potential Factors for Retention and Intent to Drop-out in Brazilian Computing Programs
+  -  Visual analytics of COVID-19 dissemination in São Paulo state, Brazil
+  -  Análise de Escalabilidade Horizontal em um cluster HBase
+  -  Framework para Armazenamento e Recuperação de Dados baseado em Serviços para Cidades Inteligentes
+  -  Simuladores de processos geológicos e geomorfológicos: contribuições para o ensino e formação em geociências e ciências da terra
+  -  PROTÓTIPO DE REALIDADE AUMENTA EM DISPOSITIVOS MÓVEIS NA ABORDAGEM DE SÓLIDOS GEOMÉTRICOS
+  -  Analysis of Document Pre-Processing Effects in Text and Opinion Mining
+  -  Hadoop Cluster Deployment: A Methodological Approach
+  -  Integração e Virtualização de Banco de Dados Relacionais e Não Relacionais
+  -  PGCP ? Plataforma para Gerenciamento Colaborativo de Projetos
+
+Congress Papers:
+  -  Análise dos principais fatores que influenciam a evasão no ensino superior utilizando técnicas de mineração de dados educacionais
+  -  O Bacharelado Interdisciplinar em Tecnologia da Informação EaD da Univesp
+  -  A Computational Thinking Course for Pre-Service Teachers
+  -  Fireasy: a tool to aid security policy modeling, translation and understanding firewall configuration
+  -  Evaluating a Computational Thinking and Computing Attitudes Instrument for Educational Purposes
+  -  Software Quality as a Subsidy for Teaching Programming
+  -  A Strategy to Enhance Computer Science Teaching Material Using Topic Modelling
+  -  A Hybrid Visualization Approach to Perform Analysis of Feature Spaces
+  -  URecommender: An API for Recommendation Systems
+  -  A visual approach to support Change Impact Analysis in object-oriented source code
+
+Projects:
+  - Mineração de Dados Educacionais aplicada na gestão do desempenho acadêmico no ensino Superior
+  - Ensino de Computação e Pensamento Computacional
+  - Pontal Transparente
+  - Representação visual multinível para auxiliar a exploração de conjuntos de dados
+  - Cadastro dos Cursos do PRONERA realizados no período de 2011-2017
+  - Sistema Evidência
+  - DATAPRONERA - Banco de dados sobre a Educação na Reforma Agrária (PRONERA)
+  - Sistema de Gestão Administrativa dos Cursos do PRONERA - Residência Agrária
+  - Atlas Ambiental Escolar de Presidente Prudente
+  - Análise de Escalabilidade e Desempenho em Armazenamento, Recuperação e Mineração de Grande Volume de Dados
+  - Impactos da Tecnologia da Informação e Comunicação na Agricultura Camponesa
+  - MAPEAMENTO E ANÁLISE DO TERRITÓRIO DO AGROHIDRONEGÓCIO CANAVIEIRO NO PONTAL DO PARANAPANEMA-SÃO PAULO-BRASIL: Relações de trabalho, conflitos e formas de uso da terra e da água, e a saúde ambiental
+  - Desenvolvimento do atlas da questão agrária brasileira e análise da agricultura camponesa
+  - Especificação e implementação do banco de dados  sobre Educação na  Reforma Agrária - DATAPRONERA
+  - WebDataluta ? Sistema de Informação Web do Banco de Dados da Luta pela Terra (DATALUTA)
+  - Escalabilidade em Ambientes Virtuais Distribuídos e MMOGs
+  - AVDNet ? Uma Arquitetura para Ambientes Virtuais Distribuídos baseada na Infra-Estrutura Atual da Internet
+
+
+
+
+--- Professor Information ---
+Name: Diego Renan Bruno
+Lattes ID: 6996168862993134
+
+Research Areas:
+  - Arquitetura de Computadores
+  - Sistemas Embarcados Críticos
+  - Visão Computacional
+  - Robótica
+  - Veículos Autônomos
+  - Robótica Móvel Autônoma, Redes Neurais Artificiais, Algoritmos Genéticos e Controle
+  - Veículos Autônomos
+  - Inteligência Artificial
+  - Sistemas Avançados de Assistência ao Motorista (ADAS)
+  - Visão Computacional Robótica
+  - Machine Learning - (Deep Learning 2D/ MLP 3D)
+  - Robótica / Mecatrônica / Automação
+  - LARA - (Laboratório de Automação e Robótica Aplicada)
+
+Periodic Papers:
+  -  EVOLUÇÃO E O DESENVOLVIMENTO DO CHATBOT GPT-3 E GPT-4
+  -  IA - INTELIGENCIA ARTIFICIAL: IMPACTOS, RISCOS E BENEFICIOS QUE DESAFIAM A SOCIEDADE MODERNA
+  -  USO DE IA PARA AUTOMATIZAR TAREFAS DE DESENVOLVIMENTO
+  -  CARINA Project:
+ Visual Perception Systems Applied for Autonomous Vehicles and Advanced 
+Driver Assistance Systems (ADAS)
+  -  ERA DA RECOMENDAÇÃO
+  -  LEI GERAL DE PROTEÇÃO DE DADOS EM UMA SOCIEDADE PANDÊMICA
+  -  APLICATIVO GERENCIAL PARA DISPOSITIVOS MÓVEIS
+  -  PRODUÇÃO MAIS LIMPA: CONTRIBUIÇÕES DA INDÚSTRIA 4
+  -  GANs - REDES ADVERSARIAS GENERATIVAS
+  -  IMPLEMENTAÇÃO DA INTERNET EM NOSSO COTIDIANO
+
+Congress Papers:
+  -  Robotic Visual 
+Attention Architecture for ADAS in Critical Embedded Systems for Smart 
+Vehicles
+  -  Real Time Deep Learning Based Pothole Detection on Low Cost Embedded 
+Devices for ADAS
+  -  BRAIN: dataBase para Pesquisa em Análise de  
+Intrusões Automotivas
+  -  Lexical 
+Analysis of Automatic Transcriptions Using Speech-to-Text Services: A 
+Statistically Evaluated Case Study
+  -  Enhancing Learning Objects Accessibility Through 
+Speech-To-Text Based Architecture: A Comprehensive Triangulation Study
+  -  Real-Time Pedestrian Detection and Tracking 
+System Using Deep Learning and Kalman filter: Applications on Embedded 
+Systems in Advanced Driver Assistance Systems
+  -  A literature review on the detection and tracking
+ of obstacles applied for Advanced Driver Assistance Systems (ADAS) in 
+Robotic Vehicle'
+  -  ADAS classifier for driver monitoring and 
+driving qualification using both internal and external vehicle data
+  -  Development of a robotic sensing 
+system to assist visually impaired people in their task of locomotion in
+ urban environments
+  -  Robotic Computer Vision System with 2D and 3D 
+Data Fusion for Traffic Sign Detection
+
+Projects:
+  - Modelos de Inteligência Artificial para Detecção de Correlação e Predição em redes IoT
+  - Rota2030
+ - SegurAuto: Detecção e Avaliação de Obstáculos e Pedestres Baseada em 
+Reconstrução de imagens 3D e Análise Temporal Aplicada para ADAS 
+veiculares
+  - Robô móvel autônomo para suporte de deficientes visuais na tarefa de locomoção em ambientes urbanos
+  - Análise
+ e fusão de imagens 2D e 3D com vistas para detecção de placas de 
+trânsito em prol da segurança viária com veículos robóticos inteligentes
+  - Algoritmo Neurogenético com vistas para o Planejamento de Rotas de Robôs Móveis Autônomos
+  - Modelagem e Simulação de Sistemas a Eventos Discretos com vistas para processos industriais automáticos
+
+
+
+
+--- Professor Information ---
+Name: Antonio Carlos Sementille
+Lattes ID: 1882712230914196
+
+Research Areas:
+  - Sistemas de Computação
+  - Realidade Virtual
+  - Sistemas Distribuídos
+  - Realidade Aumentada
+
+Periodic Papers:
+  -  Non-deterministic method for semi-automatic calibration of smartphone-based OST HMDs
+  -  Pinch gesture interaction in the peripersonal space using VST smartphone-based HMDs
+  -  A Realidade Aumentada e Realidade Virtual para a Conservação do Patrimônio Cultural do Artesanato de Tradição
+  -  Optimizing a medical image registration algorithm based on profiling data for real-time performance
+  -  Detection of computationally intensive functions in a medical image segmentation algorithm based on an active contour model
+  -  Geração de efeitos especiais em tempo real para programas jornalísticos em TV com utilização de sistema de partículas do motor de jogos
+  -  Recommendations for evaluating the performance of background subtraction algorithms for surveillance systems
+  -  Challenging situations for background subtraction algorithms
+  -  PAD: a perceptual application-dependent metric for quality assessment of segmentation algorithms
+  -  ARStudio
+
+Congress Papers:
+  -  A Mapping of Visual SLAM Algorithms and Their Applications in Augmented Reality
+  -  Uma análise do uso de mídias sociais por comunidades  acadêmicas: Utilizando a linguagem R
+  -  Handling Occlusions in Augmented Reality for Mobile Devices
+  -  Os Processos de Dinamismo e Desafios nos Setores da Educação: a Inserção do Ambiente de Tecnologias de Aprendizagem e Conhecimento (TAC?s)
+  -  The Development of a Facial Animation System Based on Performance and the Use of an RGB-D Camera
+  -  Development of a Method for Capturing Human Motion Using a RGB-D Camera
+  -  Aspects of User Profiles That Can Improve Mobile Augmented Reality Usage
+  -  O Uso de Representações Tridimensionais no Entendimento de Projetos Arquitetônicos
+  -  Segmentation Quality for Augmented Reality: An Objective Metric
+  -  Qualidade de segmentação em realidade aumentada: definição e identificação de erros mais perceptíveis
+
+Projects:
+  - Estudo e implementação de um sistema de tradução automática de sinais de LIBRAS para a língua portuguesa
+  - HMDs optical see-through baseados em smartphone: um método de calibração automática e a percepção e interação no espaço peripessoal de realidade aumentada
+  - Estudo e implementação de um sistema de estúdio virtual interativo com realidade aumentada e holografia
+  - Um sistema de baixo custo para a geração de conteúdos com realidade aumentada voltado a educação a distância e baseado no uso de display semi-holográfico
+  - Um suporte à captura de movimentos e conteúdo interativo 3D para o sistema ARSTUDIO
+  - Aspectos Teóricos e Práticos da Ciência Cognitiva para o auxilio no Projeto de Produto
+  - ARSTUDIO - Inovação na Geração de Conteúdo digital para Televisão, Cinema e Educação à Distância utilizando Técnicas de Realidade Aumentada
+  - Um Suporte para a Reconstrução Tridimensional de Cenas direcionado à Estúdios Virtuais
+  - O Desenvolvimento de um Sistema de Estúdio Virtual Aumentado para a TV Digital
+  - Programação Visual de Robôs Móveis utilizando Técnicas de Realidade Aumentada
+  - Sistema de realidade virtual (RV) para estruturas dentárias
+  - A Utilização de Marcadores Passivos no Rastreamento de Movimentos Corporais
+  - PUMA- Ferramenta para Simulação de Exame de Punção Mamária
+  - Estudo, Projeto e Implementação de Ambientes de Realidade Combinada
+  - Ambientes Virtuais Distribuídos: Projeto e Implementação
+  - Um Ambiente Virtual Integrado com Interfaces Multiformes Orientado a LIBRAS
+  - Utilização de Realidade Virtual para Construção de Ferramentas de Treinamento em Medicina
+  - Um Sistema de Informação Policial
+  - A Utilização da Técnica de Dead-reckoning no desenvolvimento de uma aplicação virtual distribuída baseada na arquitetura CORBA
+  - Sistema de Informação Gráfico-Espacial Virtual Distribuído
+  - O Desenvolvimento de uma Aplicação Virtual Distribuída utilizando-se a Arquitetura Corba e Técnicas para a Minimização da Latência de Comunicação
+  - AVVIC - Ambiente Virtual para Visualização Interativa Compartilhada
+  - A Utilização de uma Arquitetura baseada em Objetos Interoperáveis para o Suporte de Aplicações Distribuídas de Tempo-Real
+  - VESIV - Virtual Environment for Shared Interactive Visualization
+  - Um Suporte de Comunicação Tolerante a Falhas para Aplicações Distribuídas de Tempo-Real no C.P.E.R
+  - Um Módulo de Comunicação Remota Tolerante a Falhas para Sistema Operacional sobre a Arquitetura CPER
+
+
