@@ -1,0 +1,341 @@
+Título do trabalho: Analise de Modelos de Lingua de Baixo Custo
+Resumo do trabalho:  A infraestrutura viária deficiente, especialmente a presença de buracos, representa um risco significativo tanto para a segurança pública quanto para a indústria automotiva, sendo um problema crítico no Brasil. Nesse contexto, a adoção de tecnologias assistivas à direção, com foco na detecção de irregularidades na via, torna-se essencial para mitigar esses riscos, permitindo que os condutores reajam de forma mais eficiente. Para isso, abordagens baseadas em Redes Neurais Profundas têm se mostrado promissoras na detecção e segmentação de objetos, superando métodos tradicionais que frequentemente apresentam limitações em cenários complexos.Este projeto propõe o desenvolvimento e a avaliação de modelos de Aprendizado Profundo aplicados à Visão Computacional para essa finalidade, explorando arquiteturas como Redes Neurais Convolucionais (CNNs) e Vision Transformers. O objetivo é superar as limitações das abordagens existentes, que muitas vezes dependem de conjuntos de dados inadequados ou de modelos computacionalmente intensivos, inviáveis para dispositivos embarcados. Como resultado, os modelos desenvolvidos serão aplicados em uma solução de baixo custo para detecção de buracos em tempo real, auxiliando condutores com Sistemas Avançados de Assistência ao Condutor (ADAS) e/ou enviando informações para um módulo decisor, no caso de veículos autônomos, permitindo realizar uma manobra corretiva. Destacando que esta pesquisa está inserida junto ao projeto do primeiro caminhão autônomo da América Latina junto ao Instituto De Ciências Matemáticas e de Computação da Universidade de São Paulo, intitulado como CaRINA (Carro Robótico Inteligente de Navegação Autônoma), possibilitando gerar novas contribuições. 
+
+
+
+--- Ranking ---
+Marilaine Colnago                         ->  0.6777
+Arnaldo Candido Junior                    ->  0.6635
+Ivan Rizzo Guilherme                      ->  0.6623
+João Paulo Papa                           ->  0.6585
+Leonardo Castro Botega                    ->  0.6449
+Wallace Correa de Oliveira Casaca         ->  0.6307
+Mauricio Araujo Dias                      ->  0.6264
+Rodolfo Ipolito Meneguette                ->  0.6077
+Danilo Medeiros Eler                      ->  0.6030
+Ronaldo Celso Messias Correia             ->  0.6005
+Danillo Roberto Pereira                   ->  0.5960
+Diego Renan Bruno                         ->  0.5882
+Carlos Roberto Valêncio                   ->  0.5714
+Lucas Correia Ribas                       ->  0.5459
+Rogério Eduardo Garcia                    ->  0.5386
+Adriano Mauro Cansian                     ->  0.5379
+Rodrigo Capobianco Guido                  ->  0.5349
+Antonio Carlos Sementille                 ->  0.5324
+Jose Remo Ferreira Brega                  ->  0.5209
+Renata Spolon Lobato                      ->  0.5160
+Clayton Reginaldo Pereira                 ->  0.5144
+Fabricio Aparecido Breve                  ->  0.5079
+Denis Henrique Pinheiro Salvadeo          ->  0.5072
+Alexandro José Baldassin                  ->  0.4940
+Leandro Alves Neves                       ->  0.4932
+Veronica Oliveira de Carvalho             ->  0.4773
+Geraldo Francisco Donegá Zafalon          ->  0.4767
+Daniel Carlos Guimarães Pedronette        ->  0.4765
+Rogéria Cristiane Gratão de Souza         ->  0.4752
+Caetano Mazzoni Ranieri                   ->  0.4743
+Kelton Augusto Pontara da Costa           ->  0.4581
+Leonardo Tórtoro Pereira                  ->  0.4371
+Aparecido Nilceu Marana                   ->  0.4127
+Felipe Fernandes Fanchini                 ->  0.4119
+Cassio Machiaveli Oishi                   ->  0.3426
+Frank José Affonso                        ->  0.3117
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Marilaine Colnago
+Lattes ID: 8764225815253091
+
+Research Areas:
+  - Análise Numérica
+  - Modelagem de Dados Energéticos
+  - Ciência de Dados
+  - Processamento Digital de Imagens
+  - Matemática Aplicada
+  - Mecânica dos Fluidos Computacional
+  - Matemática Computacional
+  - Análise de Dados
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  ABD: A machine intelligent-based algal bloom detector for remote sensing images
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  Leak Detection in Hermetic Compressors using Computer Vision and Artificial Intelligence
+  -  ASSESSING THE EFFECTIVENESS OF INPAINTING TECHNIQUES FOR ENHANCING FEATURE EXTRACTION QUALITY IN REMOTE SENSING IMAGERY
+  -  Predicting Energy Generation in Large Wind Farms: A Data-Driven Study with Open Data and Machine Learning
+  -  Data-driven analysis and machine learning for energy prediction in distributed photovoltaic generation plants: A case study in Queensland, Australia
+  -  Mapping Fire Susceptibility in the Brazilian Amazon Forests Using Multitemporal Remote Sensing and Time-Varying Unsupervised Anomaly Detection
+  -  A Fully Unsupervised Deep Learning Framework for Non-Rigid Fundus Image Registration
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  GECET: Garotas nas Engenharias, Ciências Exatas e Tecnologias: Projeto de Extensão voltado para a participação feminina nas áreas STEM
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+  -  Um Estudo de Gênero a partir da Distribuição de Bolsas do Programa Universidade para Todos
+  -  Automatically Detecting Textual Content in High-Resolution Images
+  -  Inpainting Digital Via Replicação por Blocos e o Método SPH
+  -  Lockdown contra a Covid-19 funciona ou não? Um estudo de caso com o município de Araraquara
+
+Projects:
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo - TRIENAL
+  - Aprimorando a Eficiência na Previsão Sucroalcooleira via Técnicas de Inteligência Artificial e Análise de Dados Integrada
+  - Inteligência Artificial e suas Aplicações no setor de Biocombustíveis
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo
+  - Análise Exploratória de Dados da Covid-19 no Estado de São Paulo: Avaliação de Indicadores e das Ações de Enfrentamento da Pandemia por Parte dos Governos Municipais e Estadual
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - Cooperação Brasil-Angola de Pesquisa e Criação de Redes Internacionais
+  - Desenvolvimentos Computacionais Aplicados a Processos de Refino - Escoamentos Multifásicos
+
+
+
+
+--- Professor Information ---
+Name: Arnaldo Candido Junior
+Lattes ID: 8769928331729891
+
+Research Areas:
+
+Periodic Papers:
+  -  Interpretability analysis of deep models for COVID-19 detection
+  -  Determination of Harmonic Parameters in Pathological Voices-Efficient Algorithm
+  -  Algoritmo genético aplicado no refinamento de adubação em experimento com alfaces
+  -  TTS-Portuguese Corpus: a corpus for speech synthesis in Brazilian Portuguese
+  -  Performance evaluation in the reconstruction of 2D images of computed tomography using massively parallel programming CUDA / Avaliação de desempenho na reconstrução de imagens 2D de tomografia computadorizada usando programação maciçamente paralela CUDA
+  -  Predictive Analysis of COVID-19 Symptoms in Social Networks through Machine Learning
+  -  CORAA ASR: a large corpus of spontaneous and prepared speech manually validated for speech recognition in Brazilian Portuguese
+  -  Automatic detection and classification of honey bee comb cells using deep learning
+  -  Reducing efforts of software engineering systematic literature reviews updates using text classification
+  -  Estimação de Iidade em Imagens Digitais a Partir de Deep Learning para Apoiar Análise Pericial
+
+Congress Papers:
+  -  FreeSVC: Towards Zero-shot Multilingual Singing Voice Conversion
+  -  MuPe Life Stories Dataset: Spontaneous Speech in Brazilian Portuguese with a Case Study Evaluation on ASR Bias against Speakers Groups and Topic Modeling
+  -  Portal NURC-SP: Design, Development, and Speech Processing Corpora Resources to Support the Public Dissemination of Portuguese Spoken Language
+  -  Accent Classification is Challenging but Pre-training Helps: a case study with novel Brazilian Portuguese datasets
+  -  Dual-Bandwidth Spectrogram Analysis for Speaker Verification
+  -  EyetrackingMOS: proposta de um método de avaliação online para modelos de sı́ntese de fala
+  -  A Large Dataset of Spontaneous Speech with the Accent Spoken in São Paulo for Automatic Speech Recognition Evaluation
+  -  Comparison of Relation Extraction Models for Generating Knowledge Graphs in the Oil Drilling Domain
+  -  Yin Yang Convolutional Nets: Image Manifold Extraction by the Analysis of Opposites
+  -  Acoustic Analysis of Prosodic Features in Natural versus Synthesized Speech Samples from YourTTS and SYNTACC Models
+
+Projects:
+  - Cortex: IA Generativa aplicada à base de operações diárias de Poços
+  - PROINDL: Tecnologias de Inteligência Artificial no Fortalecimento das Línguas Indígenas do Brasil
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços
+  - AgroFábrica Vertical Urbana 5.0 de Alimentos e Bioativos Seguros para o Cenário Covid-19
+  - SISNE19 - Sistema aeropônico, autônomo e inteligente da produção de novas olerícolas para o cenário pandemia covid-19
+  - AvIoT: Avicultura Conectada, Inteligente e Otimizada
+  - Melhoramento de plantas para nutracêuticos. bioativos e fragrâncias com tecnologias 4.0 para ambientes controlados e iluminados artificialmente
+  - Utfarm: Urban Tech Farm
+  - CORAA ASR: Corpus of Annotated Audios for Automatic Speech Recognition
+  - BrazSpeechData: plataforma de anotação de recursos de áudio
+  - TaRSila: Reconhecimento Automático de Fala e Síntese de Fala no Centro de Inteligência Artificial (C4AI)
+  - Projeto SPIRA: Sistema de Detecção Precoce de Insuficiência Respiratória por meio de Análise de Áudio
+  - Inteligência Artificial para Auxílio de Ações que Visam à Redução da Evasão no Ensino Superior - MEC
+  - Inteligência Computacional Aplicada à Agroindústria
+  - Speech-to-Text: Processamento da Voz no Contexto de Atas
+  - Portal Min@s: Corpora de Fala e Escrita
+  - ARTIZIMA: Evolução in silico de enzimas para biorefinarias: um incremento na produção de bioetanol
+  - AbEvo (Antibodies Evolution): fase I e II. Sistema inteligente para o desenho de anticorpos baseado na estrutura do antígeno
+  - PorSimples: Simplificação Textual do Português para Inclusão e Acessibilidade Digital
+  - Terminologia de Biocombustíveis: descrição semântica e morfológica com vistas à sistematização
+  - Terminologia em Língua Portuguesa da Nanociência e Nanotecnologia: Sistematização do Repertório Vocabular e Elaboração de Dicionário-Piloto
+  - Dicionário Histórico do Português do Brasil (séculos XVI, XVII e XVIII)
+
+
+
+
+--- Professor Information ---
+Name: Ivan Rizzo Guilherme
+Lattes ID: 0140365057016044
+
+Research Areas:
+  - Inteligência Artificial Aplicada a Medicina
+  - Sistemas de apoio a decisão médica
+  - Sistemas especialistas
+  - Web Semântica
+  - Ontologias
+  - Processamento da Linguagem Natural
+  - Inteligência Artificial
+  - Bioinformatica
+  - Inteligência Artificial Aplicada a Petróleo
+
+Periodic Papers:
+  -  A multi-agent approach to monitor and manage container-based distributed systems
+  -  RaDE+: A semantic rank-based graph embedding algorithm
+  -  Evolving Neural Conditional Random Fields for drilling report classification
+  -  Semantic Guided Interactive Image Retrieval for Plant Identification
+  -  Unsupervised Manifold Learning through Reciprocal kNN Graph and Connected Components for Image Retrieval Tasks
+  -  UMA ABORDAGEM PARA GESTÃO DE CONTEÚDOS EDUCACIONAIS
+  -  ARQUITETURA DE UM SISTEMA MULTIAGENTE AUTÔNOMO PARA SUPERVISÃO E CONTROLE
+  -  Improving operational safety on subsea wells with quantitative and dynamic risk assessment
+  -  Petroleum well drilling monitoring through cutting image analysis and artificial intelligence techniques
+  -  Expressed sequence tags from Atta laevigata and identification of candidate genes for the control of pest leaf-cutting ants
+
+Congress Papers:
+  -  PsyBERTpt: A Clinical Entity Recognition Model for Psychiatric Narratives
+  -  An Ontology-Based Approach For Risk Evaluation In Human-Machine Interaction
+  -  A Meta-Feature Model for Exploiting Different Regressors to Estimate Sugarcane Crop Yield
+  -  Estudo comparativo entre diferentes regressores para estimar produtividade de cana-de-açúcar
+  -  Development and implementation of an IA based system to automate textual classification on Daily Drilling Reports
+  -  PetroBERT: a domain adaptation language model for oil and gas applications in Portuguese
+  -  SMS Spam Detection Through Skip-gram Embeddingsand Shallow Networks
+  -  When External Knowledge Does Not Aggregate in Named Entity Recognition
+  -  Manifold Learning-based Clustering Approach applied to Anomaly Detection in Surveillance Videos
+  -  RaDE: A Rank-base Graph Embedding Approach
+
+Projects:
+  - Desenvolvimento de Software de Reconhecimento Automático de Microfósseis
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços.
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - RADIAR: Método para disseminação do conhecimento
+  - Exploração de Paralelismo em Hardware e Software (PROCAD 2966/2014)
+  - Concepção do Centro de Pesquisa Tecnológica em Petróleo e Gás da Baixada Santista
+  - Proposta de uma Arquitetura Web Semântica Multiagente para Análise de Dados
+  - Sistemas Multiagente Web Semântico aplicado ao suporte a  educação.
+  - Análise da Viabilidade Técnica de Implementação do SIACas - Sistema Inteligente para Análise do Cascalho Produzido na Perfuração
+  - Um Estudo de Ontologias aplicadas a Geociências e Meio Ambiente
+  - METODOLOGIA PARA A CLASSIFICAÇÃO DE ANORMALIDADES NA PERFURAÇÃO - Edital MCT/CNPq 02/2006 - Universal
+  - Concepção, desenvolvimento e implementação de um sistema de informação aplicado à elaboração de cartas de sensibilidade ambiental a derrames de petróleo: litoral paulista
+  - Proposta de um Sistema Multiagente para Automação e Controle
+  - Desenvolvimento de metodologias para avaliar a segurança de poços de petróleo em águas profundas (Edital CT-Petro/CNPq 17/2004)
+  - SISCPO  - SISTEMA INTELIGENTE SUPERVISÓRIO PARA CONTROLE DE PRODUÇÃO OFFSHORE
+  - Desenvolvimento de metodologia para análise de parâmetros de perfuração
+
+
+
+
+--- Professor Information ---
+Name: João Paulo Papa
+Lattes ID: 9039182932747194
+
+Research Areas:
+  - Reconhecimento de Padrões
+
+Periodic Papers:
+  -  Brain Age Prediction Using a Lightweight Convolutional Neural Network
+  -  A pilot study for speech assessment to detect the severity of Parkinson?s disease: An ensemble approach
+  -  Facial Expression Analysis in Parkinson's Disease Using Machine Learning: A Review
+  -  TransConv: a lightweight architecture based on transformers and convolutional neural networks for adenocarcinoma and Barrett?s esophagus identification
+  -  Enhancing Explainability in Pacu Fish Image Segmentation using Saliency Maps and Combined Explainable AI Methods
+  -  Robust Opposition-Based Jellyfish Search Algorithms for Large-Scale and Bound-Constrained Optimization
+  -  Evaluating Large Language Models for Brazilian Portuguese Sentiment Analysis: A Comparative Study of Multilingual State-of-the-Art vs
+  -  The Bode Family of Large Language Models: Investigating the Frontiers of LLMs in Brazilian Portuguese
+  -  Quantum Neural Networks Successfully Calibrate Language Models
+  -  Urban tree failure probability prediction based on dendrometric aspects and machine learning models
+
+Congress Papers:
+  -  A Convolutional Recurrent Mixer Network For Radar Meteorological Image Super-Resolution
+  -  Customized Atrous Spatial Pyramid Pooling with Joint Convolutions for Urban Tree Segmentation
+  -  Optimum-Path Forest Ensembles to Estimate the Internal Decay in Urban Trees
+  -  A Step Forward for Medical LLMs in Brazilian Portuguese: Establishing a Benchmark and a Strong Baseline
+  -  A Hybrid Quantum-Classical Model for Breast Cancer Diagnosis with Quanvolutions
+  -  Learning a Kernel-Based Beran Estimator Using Nearest-Neighbours and Its Application to Reliability Analysis
+  -  Influence of Pixel Perturbation on eXplainable Artificial Intelligence Methods
+  -  Facial Point Graphs for Amyotrophic Lateral Sclerosis Identification
+  -  Strategies for Classifier Selection Based on Genetic Programming for Multimedia Data Recognition
+  -  Convolutional Neural Networks and Image Patches for Lithological Classification of Brazilian Pre-Salt Rocks
+
+Projects:
+  - Aplicações de Modelos de Linguagem em Português - TRIENAL
+  - PD-00063-3101/2025   Plataforma computacional para gestão de relacionamento com cliente baseada em economia comportamental e inteligência analítica
+  - CePEX - Centro Paulista de integração de dados para monitoramento de Eventos eXtremos
+  - HIDE - Detecção de Hipomímia Utilizando Arquiteturas Leves
+  - EXTRACT - Extraindo Aplicações e Recomendações de Pesquisas em Saúde Usando Inteligência Artificial
+  - WISDOM - Sistema Integrado de Suporte a Tomada de Decisão em Tempo Real para Gestão de Risco em Poços - Desenvolvimento de novos modelos de confiabilidade de conjunto solidário de barreiras de poços
+  - QOPF - A Quantum Optimum-Path Forest Framework for Optimization and Machine Learning Problems
+  - LAGRANGE - Análise Tribólogica Utilizando Inteligência Artificial
+  - Centro Multidisciplinar para o Desenvolvimento de Tecnologia Assistiva (CMDTA)
+  - Entendendo o Comportamento Tribológico de Medidas XRD de Cobre Utilizando Aprendizado de Máquina
+  - Aprendizado de Modelos Profundos Utilizando Metaheurísticas
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços
+  - Aprendizado Fracamente Supervisionado para Análise de Vídeos no Domínio Comprimido em Tarefas de Recuperação e Classificação para Alertas Visuais
+  - PD-00063-3067/2019? Plataforma para Detecção de Falhas Incipientes em Transformadores de Óleo Isolante a partir do Uso e Desenvolvimento de Nanosensores
+  - Adaptação de Domínio e suas Aplicações para o Diagnóstico de Câncer
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - AnImaLS: Anotação de Imagem em Larga Escala: O que máquinas e especialistas podem aprender interagindo?
+  - RADIAR: Método para a disseminação do conhecimento
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+  - Modelos Probabilísticos para Detecção de Perdas Comerciais
+  - Sistema de Monitoramento  e Diagnóstico por Meio de Processamento de Imagens na Identificação Ocorrências e Falhas na Segurança em Áreas de Preservação Permanente (APPs) e Reservatórios de UHEs
+  - Development of Cardiovascular Disease and Diabetes Risk Assessment model for Ethnically diverse Populations
+  - Meta-Heuristic-based Optimization of Probabilistic Neural Networks
+  - Sobre a Aplicação de Floresta de Caminhos Ótimos em Ambientes de Aprendizado em Profundidade
+  - Sobre a Detecção de Anomalias em Redes de Computadores Utilizando Floresta de Caminhos Ótimos: Avanços e Aplicações em Redes de Computadores
+  - Sobre a Otimização de Parâmetros em Técnicas de Aprendizado de Máquina: Avanços e Paradigmas
+  - ARPaVid: Aprendizado e Reconhecimento de Padrões em Vídeos
+  - Além das Técnicas Tradicionais de Reconhecimento Supervisionado de Padrões: Explorando Aprendizado Sequencial e Suporte a Múltiplos Rótulos por Floresta de Caminhos Ótimos
+  - Reconhecimento Automático Robusto de Impressões Digitais Baseado em Características Biométricas de Terceiro Nível
+  - Novas Tendências em Reconhecimento de Padrões baseado em Floresta de Caminhos Ótimos (FAPESP - Jovem Pesquisador)
+  - Desenvolvimento e Avaliação de Técnicas de Localização de Faltas em Sistemas de Distribuição Subterrâneos
+  - Inteligência Artificial Aplicada na Identificação e Classificação de Harmônicos em Redes de Distribuição de Energia Elétrica
+  - Reconhecimento Facial Humano Utilizando Transformada Census Modificada e Floresta de Caminhos Ótimos
+  - Classificação de padrões por Floresta de Caminhos Ótimos: Avanços e Aplicações
+  - Projeto ARPIs: Aprendizado e Reconhecimento de Padrões em Imagens por Floresta de Caminhos Ótimos
+  - DAPI -- Automatização do Diagnóstico de Parasitos Intestinais do Homem por Análise de Imagens
+  - Métodos de Aproximação para Computação Visual
+  - Detecção Precoce de Problemas de Perfuração de Poços de Petróleo por Meio da Análise de Cascalhos
+  - Análise de Imagens de Parasitos Intestinais do Homem
+  - Algoritmos Para Reconstrução Tomográfica: Otimização, Reconstrução, Quantificação e Aplicação Clínica
+  - Carcinoma escamoso basalóide na mucosa bucal: Análise dos índices proliferativo e apoptótico
+  - Análise morfométrica comparativa do bulbo cardíaco de (Corydoras aeneus e Moenkhausia intermedia)
+  - Estilo reprodutivo em fêmeas de Corydoras aeneus (GILL, 1858) (SILURIFORMES, CALLICHTHYDAE). Características estruturais da ovogênse
+  - Expressão da eotaxina em carcinomas espinocelulares de boca
+  - Análise estrutural e comparativa do ventrículo cardíaco de peixes teleósteos (Corydoras aeneus e Moenkhausia intermedia)
+  - Biologia da reprodução e cinética da espermatogênese de peixes teleósteos de água doce
+  - Características ultraestruturais e cinética da espermatogênese em Liposarcus anisitsi
+
+
+
+
+--- Professor Information ---
+Name: Leonardo Castro Botega
+Lattes ID: 6027755717265622
+
+Research Areas:
+  - Redes Veiculares
+  - Redes de Sensores Sem Fio
+  - Informação e Tecnologia
+
+Periodic Papers:
+  -  Modelo de mapeamento semântico entre as terminologias de saúde CID-10 e SNOMED-CT
+  -  Bug Localization Model in Source Code using Ontologies
+  -  CLASIFICACIÓN DE TEXTOS: UN ENFOQUE CON USO DE MACHINE LEARNINGTEXT CLASSIFICATION: AN APPROACH USING MACHINE LEARNINGCLASSIFICAÇÃO DE TEXTOS: UMA ABORDAGEM COM USO DE MACHINE LEARNING
+  -  Qualidade de dados em gestão de dados de pesquisa: um estudo bibliométrico
+  -  Critérios de qualidade de dados em saúde: uma análise quantitativa
+  -  A experiência do usuário em ambientes de gestão da aprendizagem: análise de casos de uso com as ferramentas Moodle e Google Classroom
+  -  Fusão de dados para análise de imagens registradas por satélites: proposta de modelo de metadados
+  -  A Filosofia da informação e a Sociedade da informação e do conhecimento: reflexões diante do progresso tecnológico
+  -  Enriquecimento semântico para a disponibilização de dados abertos: teoria e prática
+  -  A Qualidade na Recuperação de Dados Governamentais: Um Estudo Sobre Dados de Políticas Públicas na Internet
+
+Congress Papers:
+  -  Improving Medication Identification Accuracy and Regulatory Compliance through NLP and Ontologies: An Analysis of Otorhinolaryngology Prescriptions
+  -  OWL-Sharp: Source Code Semantic Generator
+  -  Servidor de terminologias para a identiﬁcação e padronização de conceitos médicos a partir de anotações clínicas
+  -  MODELO DE MAPEAMENTO SEMÂNTICO ENTRE TERMINOLOGIAS DE SAÚDE
+  -  Acesso e disponibilização de dados abertos em educação nas capitais das regiões sul e sudeste do Brasil: Um estudo exploratório
+  -  RELAÇÃO JURÍDICA CONTRATUAL CONTEMPORÂNEA A LUZ DE NOVAS TECNOLOGIAS
+  -  Development of a Semantic Representation Model of Criminal Information to Support the Assessment of Risk Situations
+  -  Assessing Situation Awareness on Fusion-Driven Emergency Management Systems
+  -  Development of Criminal Ontologies to Enhance Situation Assessment
+  -  Fusão de dados para compreensão de fenômenos ambientais por meio de fotografias
+
+Projects:
+  - Abordagem de análise criminal para a ampliação da consciência situacional utilizando fusão de dados e informações
+  - Avaliação da Qualidade de Dados e Informações para a Ampliação de Consciência Situacional em Processos Decisórios.
+  - Sistema de alerta DF100Fogo: a produção voluntária de informação geográfica, paisagens e incêndios florestais
+  - Desenvolvimento de soluções para a melhoria da consciência situacional em ambientes de gerenciamento de emergências
+  - Desenvolvimento de interface tangível para aplicações multidisciplinares
+  - Análise de Imagens Tomográficas da Ciência do Solo em Ambiente de Realidade Virtual
+  - Utilização de Realidade Virtual para construção de ferramentas de treinamento médico
+
+

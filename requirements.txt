@@ -43,3 +43,5 @@ triton==3.5.1
 typing-extensions==4.15.0
 urllib3==2.5.0
 wheel==0.45.1
+nltk==3.9.2
+deep_translator==1.11.4
