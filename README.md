@@ -16,7 +16,7 @@ O sistema realiza as seguintes etapas:
 ## Estrutura do projeto
 - data/ppgcc - contém o código HTML de currículos Lattes extraídos manualmente e individualmente de docentes do PPGCC da Unesp  
 - docs - rascunhos e documentos auxiliares
-- src - o código em si, incluindo o parsing dos currículos, geração de embeddings, cálculo de similaridade e o pipeline principal (main.py)
+- src - o código em si, com arquivos de resumos, parsing dos currículos, geração de embeddings, cálculo de similaridade, o pipeline principal (main.py) e a saída
 
 ## Como rodar
 ### Instalando dependências
