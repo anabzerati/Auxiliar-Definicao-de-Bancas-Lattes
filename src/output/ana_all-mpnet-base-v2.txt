@@ -1,0 +1,285 @@
+Título do trabalho: Análise de texturas em imagens de sensores para diagnóstico de doenças: um estudo sobre transformadas baseadas em redes complexas
+Resumo do trabalho:  Texturas são atributos essenciais em reconhecimento de padrões em imagens e têm aplicações práticas em áreas como medicina, ciência dos materiais e botânica. Embora algumas texturas possam apresentar padrões visuais simples, em geral, texturas reais, como aquelas de sensores, envolvem processos não lineares em sua formação, o que adiciona complexidade e dificulta a análise. Este projeto visa estudar e implementar transformadas em imagens usando conceitos de redes complexas para aprimorar a análise e classificação de texturas, com foco em texturas de unidades sensoriais utilizadas em diagnósticos. A principal vantagem das redes complexas reside na sua capacidade de modelar padrões e oferecer características interpretáveis, especialmente ao enfrentar os desafios decorrentes da não-linearidade em cenários práticos.Nesse sentido, o procedimento de transformada que se pretende investigar pode ser interpretado como uma transformação de uma rede complexa que modela uma imagem de textura em várias novas imagens, oferecendo uma perspectiva alternativa que pode resultar em uma descrição mais completa e rica da textura. Em termos de aplicação, as abordagens estudadas serão aplicadas em imagens de microscopia (como de unidades sensoriais) com a finalidade diagnóstico de doenças. Com isso, espera-se que esta pesquisa contribua para o campo computacional, desenvolvendo técnicas aprimoradas para a análise de texturas, e também avance nas áreas de aplicação, melhorando o desempenho dos diagnósticos de doenças. Estas contribuições estão alinhadas com os objetivos do projeto temático (processo 2018/22214-6), do qual este projeto faz parte, cuja meta é a convergência de tecnologias para diagnóstico. 
+
+
+
+--- Ranking ---
+Mauricio Araujo Dias                      ->  0.7067
+Lucas Correia Ribas                       ->  0.7037
+Leandro Alves Neves                       ->  0.6974
+Danillo Roberto Pereira                   ->  0.6852
+Clayton Reginaldo Pereira                 ->  0.6637
+Denis Henrique Pinheiro Salvadeo          ->  0.6430
+Danilo Medeiros Eler                      ->  0.6305
+Wallace Correa de Oliveira Casaca         ->  0.6199
+João Paulo Papa                           ->  0.6180
+Leonardo Castro Botega                    ->  0.5763
+Daniel Carlos Guimarães Pedronette        ->  0.5619
+Marilaine Colnago                         ->  0.5613
+Rodrigo Capobianco Guido                  ->  0.5307
+Ivan Rizzo Guilherme                      ->  0.5242
+Caetano Mazzoni Ranieri                   ->  0.5231
+Fabricio Aparecido Breve                  ->  0.5187
+Aparecido Nilceu Marana                   ->  0.5158
+Arnaldo Candido Junior                    ->  0.5078
+Adriano Mauro Cansian                     ->  0.4925
+Jose Remo Ferreira Brega                  ->  0.4762
+Geraldo Francisco Donegá Zafalon          ->  0.4609
+Diego Renan Bruno                         ->  0.4595
+Antonio Carlos Sementille                 ->  0.4581
+Kelton Augusto Pontara da Costa           ->  0.4501
+Rogério Eduardo Garcia                    ->  0.4418
+Carlos Roberto Valêncio                   ->  0.4302
+Ronaldo Celso Messias Correia             ->  0.4259
+Veronica Oliveira de Carvalho             ->  0.4120
+Rodolfo Ipolito Meneguette                ->  0.3936
+Renata Spolon Lobato                      ->  0.3513
+Rogéria Cristiane Gratão de Souza         ->  0.3501
+Felipe Fernandes Fanchini                 ->  0.3284
+Alexandro José Baldassin                  ->  0.3198
+Cassio Machiaveli Oishi                   ->  0.2715
+Leonardo Tórtoro Pereira                  ->  0.2518
+Frank José Affonso                        ->  0.1977
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Mauricio Araujo Dias
+Lattes ID: 2740441033907310
+
+Research Areas:
+  - Análise de Imagens
+  - Projeto e Desenvolvimento de Processadores e Coprocessadores
+  - Projeto e Desenvolvimento de Circuitos Criptográficos Baseados em Curvas Elípticas
+  - Processamento Morfológico de Imagens
+  - Tecnologia Educacional
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  A Study of COVID-19 Diagnosis Applying Artificial Intelligence to X-Rays Images
+  -  Recognition of Brazilian Banknotes Using Artificial Intelligence to Assist Visually Impaired Individuals
+  -  Threshold-Based Approach for Disaster Mapping Using Long-Term Multispectral Image Series
+  -  Artificial Intelligence for Forensic Image Analysis in Bullet Hole Comparison: A Preliminary Study
+  -  A Robust Dual-Mode Machine Learning Framework for Classifying Deforestation Patterns in Amazon Native Lands
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  ABF: A data-driven approach for algal bloom forecasting using machine intelligence and remotely sensed data series
+  -  Dimensionality Reduction and Anomaly Detection Based on Kittler?s Taxonomy: Analyzing Water Bodies in Two Dimensional Spaces
+  -  Associating Anomaly Detection Strategy Based on Kittler?s Taxonomy with Image Editing to Extend the Mapping of Polluted Water Bodies
+
+Congress Papers:
+  -  Diferente Abordagem do Algoritmo de Crescimento por Região Aplicado em Extração de Feições Cartográficas
+  -  Avaliação e Comparação de Metodologias de Extração de Malhas Viárias em Imagens de Sensoriamento Remoto
+  -  Combining Feature Extraction Techniques for Fruit Classification
+  -  Comparison of feature spaces in fruit recognition
+  -  Eklof And Ringertz Bone Age Estimation Using Adaptive Neuro Fuzzy Inference System
+  -  Appling a semiautomatic methodology for cartographic features extraction using high-resolution remote sensing images
+  -  An Inverter Architecture for ECC-GF(2m) Based on the Stein's Algorithm
+  -  Curvas Elípticas aplicadas à criptografia: uma proposta alternativa para implementação de um circito digital
+  -  Aplicação de curvas elípticas para a criptografia
+
+Projects:
+  - Detecção de anomalias em dados para monitoramento de eventos extremos.
+  - Jogos educativos: pesquisa baseada no modelo da teoria unificada de aceitação e uso da tecnologia
+  - Jogo educativo para sistemas operacionais: aceitação e uso pelos estudantes
+  - Avaliação da aceitação e uso de um jogo educacional na ciência da computação com base na teoria unificada da aceitação e uso de tecnologia
+  - Estudo de uma estratégia de aprendizado de máquina baseada na Taxonomia de Kittler para detectar anomalias e reconhecer desmatamento no meio ambiente
+  - Sistema criptográfico baseado em curvas elípticas implementado em FPGA
+  - Análise de séries temporais de imagens de sensoriamento remoto para a detecção de anomalias
+  - Anomaly Detection, Analysis and Localization: a Case Study on Digital Static Images from Remote Sensing Applied to Cartography
+  - Arquiteturas de Computadores Reconfiguráveis
+
+
+
+
+--- Professor Information ---
+Name: Lucas Correia Ribas
+Lattes ID: 6432781856434931
+
+Research Areas:
+  - Visão Computacional
+  - Reconhecimento de Padrões
+  - Computação Móvel
+  - Aprendizado de Máquina
+  - Grupo de Reconhecimento de Padrões e Análise de Imagens
+
+Periodic Papers:
+  -  Advanced wood species identification based on multiple anatomical sections and using deep feature transfer and fusion
+  -  Conditional Generative Adversarial Networks and Deep Learning Data Augmentation: A Multi-Perspective Data-Driven Survey Across Multiple Application Fields and Classification Architectures
+  -  A Comparative Survey of Vision Transformers for Feature Extraction in Texture Analysis
+  -  Color-texture classification based on spatio-spectral complex network representations
+  -  Learning a complex network representation for shape classification
+  -  A network classification method based on density time evolution patterns extracted from network automata
+  -  Local complex features learned by randomized neural networks for texture analysis
+  - , OSVALDO N
+  -  RADAM: Texture recognition through randomized aggregated encoding of deep activation maps
+  -  A network classification method based on density time evolution patterns extracted from network automata
+
+Congress Papers:
+  -  Exploring Local Graphs via Random Encoding for Texture Representation Learning
+  -  Volumetric Color-Texture Representation for Colorectal Polyp Classification in Histopathology Images
+  -  A New Approach to Learn Spatio-Spectral Texture Representation with Randomized Networks: Application to Brazilian Plant Species Identification
+  -  Randomized Encoding Ensemble: A New Approach for Texture Representation
+  -  Exploring neighborhood variancy for rule search optimization in Life-like Network Automata
+  -  Deep Texture Feature Aggregation on Leaf Microscopy Images for Brazilian Plant Species Recognition
+  -  Randomized Autoencoder-based Representation for Dynamic Texture Recognition
+  -  Deep Topological Embedding with Convolutional Neural Networks for Complex Network Classification
+  -  A complex network approach for fish species recognition based on otolith shape
+  -  Complex Texture Features Learned by Applying Randomized Neural Network on Graphs
+
+Projects:
+  - Desenvolvimento de técnicas de reconhecimento de padrões com redes neurais artificiais e sistemas complexos com aplicações em análise de imagens -  TRIENAL
+  - Cortex: IA Generativa aplicada à base de operações diárias de Poços
+  - Reconhecimento de padrões em imagens baseado em redes neurais artificiais e sistemas complexos: da extração de descritores manuais ao aprendizado automático
+  - Aprendizado de representações usando redes neurais artificiais e redes complexas com aplicações em sensores e biossensores
+  - Grupo de Reconhecimento de Padrões e Análise de Imagens
+  - Rumo à convergência de tecnologias: de sensores e biossensores à visualização de informação e aprendizado de máquina para análise de dados em diagnóstico clínico
+  - Explorando um paradigma de geração de imagens quânticas para aplicações em imagens biomédicas e agricultura
+  - Reconhecimento de Padrões em Redes Complexas usando Transformada da Distância
+  - Modelagem e análise de redes complexas para visão computacional
+  - Deep learning e redes complexas aplicados em visão computacional
+  - Visão Artificial e reconhecimento de padrões aplicados em plasticidade vegetal
+
+
+
+
+--- Professor Information ---
+Name: Leandro Alves Neves
+Lattes ID: 2139053814879312
+
+Research Areas:
+  - Análise e Sintetização de Imagens
+  - Processamento Gráfico (Graphics)
+  - Reconhecimento de Padrões e Aprendizagem de Máquina
+
+Periodic Papers:
+  -  Exploring percolation features with polynomial algorithms for classifying Covid-19 in chest X-ray images
+  -  Classification of Multiple H&E Images via an Ensemble Computational Scheme
+  -  Ensemble Learning-Based Solutions: An Approach for Evaluating Multiple Features in the Context of H&E Histological Images
+  -  Exploring DeepDream and XAI Representations for Classifying Histological Images
+  -  OralEpitheliumDB: A Dataset for Oral Epithelial Dysplasia Image Segmentation and Classification
+  -  Higuchi Fractal Dimension with a multidimensional approach for color images
+  -  An ensemble of learned features and reshaping of fractal geometry-based descriptors for classification of histological images
+  -  Data Augmentation in Histopathological Classification: An Analysis Exploring GANs with XAI and Vision Transformers
+  -  Class Incremental Deep Learning: A Computational Scheme to Avoid Catastrophic Forgetting in Domain Generation Algorithm Multiclass Classification
+  -  A stain color normalization with robust dictionary learning for breast cancer histological images processing
+
+Congress Papers:
+  -  Convolutional Neural Networks Enriched by Handcrafted Attributes (Enriched-CNN): An Innovative Approach to Pattern Recognition in Histological Images
+  -  Association of Fractal Geometry and Data Augmentation Through GANs and XAI for Classification of Histology Images
+  -  DO NASCIMENTO, MARCELO 
+  -  Association of Grad-CAM, LIME and Multidimensional Fractal Techniques for the Classification of H&E Images
+  -  DO NASCIMENTO, MARCELO 
+  -  Improving Explainability of the Attention Branch Network with CAM Fostering Techniques in the Context of Histological Images
+  -  Deep Convolutional Neural Network and Character Level Embedding for DGA Detection
+  -  X-GAN: Generative Adversarial Networks Training Guided with Explainable Artificial Intelligence
+  -  Ensemble of Semantic Segmentation Models for Oral Epithelial Dysplasia Images
+  -  DO 
+
+Projects:
+  - Normalização de corantes HE por autocodificadores com análises de ensemble learning para imagens histológicas (FAPESP:  2022/03020-1)
+  - Projeto de Pesquisa - Temático: Criminalidade, Insegurança e Legitimidade: uma abordagem transdisciplinar (FAPESP 2022/09091-8)
+  - Ensemble Learning com Atributos Fractais, Gramian Angular Field e Mapas de Ativação de Classe para Análises de Imagens (CNPQ 313643/2021-0)
+  - Deep Safety: Uma Rede de Segurança Inteligente para Auxiliar o Radiologista no Combate ao Câncer Não Identificado - CNPq/FAPEAL/SESAU-AL (00021871)
+  - Estudo das alterações histológicas em leucoplasias por meio da classificação polinomial (FAPEMIG APQ-01129-21)
+  - Associação de características multidimensional e multiresolução para análise de imagens e extração de conhecimento (CNPq -  313365/2018-0)
+  - Métodos Baseados em Multiresolução para Detecção de Lesões em Imagens da Cavidade Bucal - Proc. No. 430965/2018-4 - MCTIC/CNPq No 28/2018 - Universal
+  - Identificação de Alterações Histológicas de Cavidade Bucal por Meio de Técnica Multiescala Curvelet e Geometria Fractal (Projeto de Pesquisa, Fapemig - APQ-00578-18)
+  - Investigação e aprimoramento de Classificadores Polinomiais baseado em descritores Wavelet para imagens histológicas
+  - Classificação de tecidos histológicos de linfoma por meio de técnicas não lineares multiescalas
+  - Delaunay e Voronoi 3D como Estratégias para Distribuição de Nodos Sensores em Redes de Sensores Sem Fio (RSSF)
+  - Processamento Gráfico como Estratégia para Extração de Conhecimento e Simulações Computacionais
+  - Técnicas Fractais Multiescalas e Aprendizado de Máquina Simbólico para Quantificar Câncer de Próstata - UNESP/PROPe
+  - Geração de Malhas Tetraédricas do Esôfago e Estômago para Estudos da Injúria Esofágica em Procedimentos de Ablação Cardíaca - UNESP/PROPe RENOVE 14/2012
+  - Análise da Rejeição em Imagens de Biópsias Miocárdicas de Transplantados Cardíacos com Técnicas Não Lineares - UNESP/PROPe
+  - Técnicas Computacionais Não Lineares para Análise da Rejeição em Imagens de Biópsias Miocárdicas de Transplantados Cardíacos
+  - Redes de Computadores e Modelagem de Estruturas (FAPEMIG processo DEG-2616/06)
+  - Modelagem de estruturas anatômicas e simulação de imagens tomográficas pulmonares (FAPEMIG APQ-04374-07)
+
+
+
+
+--- Professor Information ---
+Name: Danillo Roberto Pereira
+Lattes ID: 0122307432250869
+
+Research Areas:
+
+Periodic Papers:
+  -  Reconhecimento de cédulas de real usando inteligência artificial para auxiliar pessoas com deficiência visual
+  -  Common bean under different water availability reveals classifiable stimuli-specific signatures in plant electrome
+  -  DETECÇÃO E RECONHECIMENTO DE PLANTAS DE PEQUENO PORTE UTILIZANDO APRENDIZAGEM DE MÁQUINA
+  -  DETECÇÃO DE FALHAS EM LINHAS DE PLANTIO EM IMAGENS OBTIDAS POR VANT UTILIZANDO CNN E OPERADORES MORFOLÓGICOS
+  -  UTILIZANDO PROCESSAMENTO DE IMAGENS E YOLO PARA A CONSTRUÇÃO DE UM SISTEMA DE NAVEGAÇÃO DE UM DRONE COM APLICAÇÃO EM UMA INDÚSTRIA
+  -  APRENDIZADO DE MÁQUINA APLICADO EM IMAGEM NDVI PARA PREVISÃO DA PRODUTIVIDADE DA CANA-DE-AÇÚCAR
+  -  O USO DE SERVIÇO RESTFUL PARA GERENCIAR E GERAR CONTEÚDO TURÍSTICO PARA APLICATIVO MÓVEL
+  -  Digital image processing: a useful tool in the analysis of lung injuries caused by chronic inhalation of agricultural herbicides
+  -  Machine Learning for Automatic Classification of Tomato Ripening Stages Using Electrophysiological Recordings
+  -  CONSTRUÇÃO DE IMAGENS PANORÂMICAS EM MÚLTIPLAS FAIXAS DE ALTURA E LARGURA USANDO ALGORITMOS WATERSHED E GRAPH-CUT
+
+Congress Papers:
+  -  Implementação das Cotas na UNESP: Impactos na Evasão e Desempenho no Curso de Ciência da Computação
+  -  FEMa-FS: Finite Element Machines for Feature Selection
+  -  ComplexWoundDB: A Database for Automatic Complex Wound Tissue Categorization
+  -  Visual Approach to Support Analysis of Optimum-Path Forest Classifier
+  -  Land-use Classification using Finite Element Machines
+  -  Stroke Lesion Detection Using Convolutional Neural Networks
+  -  FEMaR: A Finite Element Machine for Regression Problems
+  -  Kernel-based Optimum-Path Forest Classifier
+  -  Facial Recognition in Digital Images using Local Binary Pattern Methods
+  -  On the Harmony Search Using QuaternionsOn the Harmony Search Using Quaternions
+
+Projects:
+  - ChurnLearn: Sistema Inteligente para Predição de Churn em Ambientes de Telefonia Móvel
+  - Aplicação de Inteligência Artificial em Identificação de Padrões Ambientais
+  - Aplicações e calibração de algoritmos de Fluxo Óptico
+  - Aplicações em Computação Forense
+  - Otimização de parâmetros e seleção de característica para métodos de Aprendizagem de Máquina
+  - Métodos de Aproximação para Computação Visual
+
+
+
+
+--- Professor Information ---
+Name: Clayton Reginaldo Pereira
+Lattes ID: 9083697774870852
+
+Research Areas:
+  - Análise de Imagens
+  - Reconhecimento de Padrões
+  - Fusão de Informações
+
+Periodic Papers:
+  -  Hierarchical Learning Using Deep Optimum-Path Forest
+  -  A recurrence plot-based approach for Parkinson?s disease identification
+  -  A survey on computer-assisted Parkinson's Disease diagnosis
+  -  Handwritten pattern recognition for early Parkinson’s disease diagnosis
+  -  Handwritten dynamics assessment through convolutional neural networks: An application to Parkinson's disease identification
+  -  Automated recognition of lung diseases in CT images based on the optimum-path forest classifier
+  -  A new computer vision-based approach to aid the diagnosis of parkinson's disease
+  -  A nature-inspired approach to speed up optimum-path forest clustering and its application to intrusion detection in computer networks
+  -  A comparison about evolutionary algorithms for optimum-path forest clustering optimization
+  -  An Optimum-Path Forest framework for intrusion detection in computer networks
+
+Congress Papers:
+  -  Strategies for Classifier Selection Based on Genetic Programming for Multimedia Data Recognition
+  -  Convolutional Neural Networks and Image Patches for Lithological Classification of Brazilian Pre-Salt Rocks
+  -  Assessing Levodopa Effectiveness in Parkison?s Disease During Gait Using Electroencephalogram and Machine Learning
+  -  ComplexWoundDB: A Database for Automatic Complex Wound Tissue Categorization
+  -  A Layer-Wise Information Reinforcement Approach to Improve Learning
+  -  BreastNet: Breast Cancer Categorization Using Convolutional Neural Networks
+  -  Multiple-Instance Learning through Optimum-Path Forest
+  -  A Hybrid Approach For Breast Mass Categorization
+  -  JADE-based Feature Selection for Non-Technical Losses Detection
+  -  Parkinson Disease Identification using Residual Networks and Optimum-Path Forest
+
+Projects:
+  - Bracelete para Análise do Comportamento Neuromotor de Indivíduos com Doença de Parkinson.
+  - Análise de Imagem Histopatológica de Tumor em Cavalos
+  - Wearable em Sistema Embarcado na Assistência ao Tratamento de Indivíduos com Doença de Parkinson: Uma Abordagem de Aprendizado de Máquina - Trienal.
+  - Adaptação de Domínio e suas Aplicações para o Diagnóstico de Câncer
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+
+
