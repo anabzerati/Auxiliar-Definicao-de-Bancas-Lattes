@@ -1,0 +1,310 @@
+Título do trabalho: Analise de Modelos de Lingua de Baixo Custo
+Resumo do trabalho: A tecnologia é historicamente uma área de estudos inacessível ao grande público, com essa inacessibilidade se estendendo até tecnologias de aprendizado de máquina e de processamento de linguagem natural modernas. Existe uma crescente necessidade de desenvolvimento de aplicações que sejam acessíveis e eficazes de tais tecnologias, capazes de obter resultados satisfatórios com custos acessíveis para o pesquisador comum. Este trabalho propõe o treinamento e avaliação de diferentes modelos de linguagem, sendo dentre as várias abordagens possíveis estudados principalmente dois tipos de modelos: Transformer e xLSTM. Os dados foram obtidos da Wikipedia e outras fontes na internet, pré-processados a fim de reduzir recursos computacionais exigidos e otimizar a tarefa. O objetivo deste trabalho é treinar e avaliar os modelos de linguagem de escolha, utilizando a métrica de perplexidade e testes auto-regressivos para o fim de medir a coerência e a capacidade preditiva. Os resultados obtidos explicitam as dificuldades acerca de estudos sobre a área, sendo o modelo de melhor performance o GPT-2 pré-treinado com a adição de ajustes finos.
+
+
+--- Ranking ---
+Arnaldo Candido Junior                    ->  0.6922
+Ivan Rizzo Guilherme                      ->  0.6577
+Leonardo Castro Botega                    ->  0.5782
+Carlos Roberto Valêncio                   ->  0.5765
+Renata Spolon Lobato                      ->  0.5750
+Rodolfo Ipolito Meneguette                ->  0.5734
+Ronaldo Celso Messias Correia             ->  0.5732
+Diego Renan Bruno                         ->  0.5480
+Rogério Eduardo Garcia                    ->  0.5460
+Alexandro José Baldassin                  ->  0.5360
+Rogéria Cristiane Gratão de Souza         ->  0.5349
+Marilaine Colnago                         ->  0.5332
+João Paulo Papa                           ->  0.5304
+Jose Remo Ferreira Brega                  ->  0.5301
+Rodrigo Capobianco Guido                  ->  0.5219
+Geraldo Francisco Donegá Zafalon          ->  0.5153
+Antonio Carlos Sementille                 ->  0.5073
+Danillo Roberto Pereira                   ->  0.5011
+Wallace Correa de Oliveira Casaca         ->  0.4904
+Mauricio Araujo Dias                      ->  0.4861
+Adriano Mauro Cansian                     ->  0.4731
+Clayton Reginaldo Pereira                 ->  0.4621
+Kelton Augusto Pontara da Costa           ->  0.4498
+Daniel Carlos Guimarães Pedronette        ->  0.4468
+Lucas Correia Ribas                       ->  0.4409
+Danilo Medeiros Eler                      ->  0.4308
+Aparecido Nilceu Marana                   ->  0.4299
+Leonardo Tórtoro Pereira                  ->  0.4242
+Denis Henrique Pinheiro Salvadeo          ->  0.4227
+Leandro Alves Neves                       ->  0.4205
+Veronica Oliveira de Carvalho             ->  0.4145
+Frank José Affonso                        ->  0.4117
+Caetano Mazzoni Ranieri                   ->  0.4110
+Felipe Fernandes Fanchini                 ->  0.4071
+Fabricio Aparecido Breve                  ->  0.3707
+Cassio Machiaveli Oishi                   ->  0.2838
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Arnaldo Candido Junior
+Lattes ID: 8769928331729891
+
+Research Areas:
+
+Periodic Papers:
+  -  Interpretability analysis of deep models for COVID-19 detection
+  -  Determination of Harmonic Parameters in Pathological Voices-Efficient Algorithm
+  -  Algoritmo genético aplicado no refinamento de adubação em experimento com alfaces
+  -  TTS-Portuguese Corpus: a corpus for speech synthesis in Brazilian Portuguese
+  -  Performance evaluation in the reconstruction of 2D images of computed tomography using massively parallel programming CUDA / Avaliação de desempenho na reconstrução de imagens 2D de tomografia computadorizada usando programação maciçamente paralela CUDA
+  -  Predictive Analysis of COVID-19 Symptoms in Social Networks through Machine Learning
+  -  CORAA ASR: a large corpus of spontaneous and prepared speech manually validated for speech recognition in Brazilian Portuguese
+  -  Automatic detection and classification of honey bee comb cells using deep learning
+  -  Reducing efforts of software engineering systematic literature reviews updates using text classification
+  -  Estimação de Iidade em Imagens Digitais a Partir de Deep Learning para Apoiar Análise Pericial
+
+Congress Papers:
+  -  FreeSVC: Towards Zero-shot Multilingual Singing Voice Conversion
+  -  MuPe Life Stories Dataset: Spontaneous Speech in Brazilian Portuguese with a Case Study Evaluation on ASR Bias against Speakers Groups and Topic Modeling
+  -  Portal NURC-SP: Design, Development, and Speech Processing Corpora Resources to Support the Public Dissemination of Portuguese Spoken Language
+  -  Accent Classification is Challenging but Pre-training Helps: a case study with novel Brazilian Portuguese datasets
+  -  Dual-Bandwidth Spectrogram Analysis for Speaker Verification
+  -  EyetrackingMOS: proposta de um método de avaliação online para modelos de sı́ntese de fala
+  -  A Large Dataset of Spontaneous Speech with the Accent Spoken in São Paulo for Automatic Speech Recognition Evaluation
+  -  Comparison of Relation Extraction Models for Generating Knowledge Graphs in the Oil Drilling Domain
+  -  Yin Yang Convolutional Nets: Image Manifold Extraction by the Analysis of Opposites
+  -  Acoustic Analysis of Prosodic Features in Natural versus Synthesized Speech Samples from YourTTS and SYNTACC Models
+
+Projects:
+  - Cortex: IA Generativa aplicada à base de operações diárias de Poços
+  - PROINDL: Tecnologias de Inteligência Artificial no Fortalecimento das Línguas Indígenas do Brasil
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços
+  - AgroFábrica Vertical Urbana 5.0 de Alimentos e Bioativos Seguros para o Cenário Covid-19
+  - SISNE19 - Sistema aeropônico, autônomo e inteligente da produção de novas olerícolas para o cenário pandemia covid-19
+  - AvIoT: Avicultura Conectada, Inteligente e Otimizada
+  - Melhoramento de plantas para nutracêuticos. bioativos e fragrâncias com tecnologias 4.0 para ambientes controlados e iluminados artificialmente
+  - Utfarm: Urban Tech Farm
+  - CORAA ASR: Corpus of Annotated Audios for Automatic Speech Recognition
+  - BrazSpeechData: plataforma de anotação de recursos de áudio
+  - TaRSila: Reconhecimento Automático de Fala e Síntese de Fala no Centro de Inteligência Artificial (C4AI)
+  - Projeto SPIRA: Sistema de Detecção Precoce de Insuficiência Respiratória por meio de Análise de Áudio
+  - Inteligência Artificial para Auxílio de Ações que Visam à Redução da Evasão no Ensino Superior - MEC
+  - Inteligência Computacional Aplicada à Agroindústria
+  - Speech-to-Text: Processamento da Voz no Contexto de Atas
+  - Portal Min@s: Corpora de Fala e Escrita
+  - ARTIZIMA: Evolução in silico de enzimas para biorefinarias: um incremento na produção de bioetanol
+  - AbEvo (Antibodies Evolution): fase I e II. Sistema inteligente para o desenho de anticorpos baseado na estrutura do antígeno
+  - PorSimples: Simplificação Textual do Português para Inclusão e Acessibilidade Digital
+  - Terminologia de Biocombustíveis: descrição semântica e morfológica com vistas à sistematização
+  - Terminologia em Língua Portuguesa da Nanociência e Nanotecnologia: Sistematização do Repertório Vocabular e Elaboração de Dicionário-Piloto
+  - Dicionário Histórico do Português do Brasil (séculos XVI, XVII e XVIII)
+
+
+
+
+--- Professor Information ---
+Name: Ivan Rizzo Guilherme
+Lattes ID: 0140365057016044
+
+Research Areas:
+  - Inteligência Artificial Aplicada a Medicina
+  - Sistemas de apoio a decisão médica
+  - Sistemas especialistas
+  - Web Semântica
+  - Ontologias
+  - Processamento da Linguagem Natural
+  - Inteligência Artificial
+  - Bioinformatica
+  - Inteligência Artificial Aplicada a Petróleo
+
+Periodic Papers:
+  -  A multi-agent approach to monitor and manage container-based distributed systems
+  -  RaDE+: A semantic rank-based graph embedding algorithm
+  -  Evolving Neural Conditional Random Fields for drilling report classification
+  -  Semantic Guided Interactive Image Retrieval for Plant Identification
+  -  Unsupervised Manifold Learning through Reciprocal kNN Graph and Connected Components for Image Retrieval Tasks
+  -  UMA ABORDAGEM PARA GESTÃO DE CONTEÚDOS EDUCACIONAIS
+  -  ARQUITETURA DE UM SISTEMA MULTIAGENTE AUTÔNOMO PARA SUPERVISÃO E CONTROLE
+  -  Improving operational safety on subsea wells with quantitative and dynamic risk assessment
+  -  Petroleum well drilling monitoring through cutting image analysis and artificial intelligence techniques
+  -  Expressed sequence tags from Atta laevigata and identification of candidate genes for the control of pest leaf-cutting ants
+
+Congress Papers:
+  -  PsyBERTpt: A Clinical Entity Recognition Model for Psychiatric Narratives
+  -  An Ontology-Based Approach For Risk Evaluation In Human-Machine Interaction
+  -  A Meta-Feature Model for Exploiting Different Regressors to Estimate Sugarcane Crop Yield
+  -  Estudo comparativo entre diferentes regressores para estimar produtividade de cana-de-açúcar
+  -  Development and implementation of an IA based system to automate textual classification on Daily Drilling Reports
+  -  PetroBERT: a domain adaptation language model for oil and gas applications in Portuguese
+  -  SMS Spam Detection Through Skip-gram Embeddingsand Shallow Networks
+  -  When External Knowledge Does Not Aggregate in Named Entity Recognition
+  -  Manifold Learning-based Clustering Approach applied to Anomaly Detection in Surveillance Videos
+  -  RaDE: A Rank-base Graph Embedding Approach
+
+Projects:
+  - Desenvolvimento de Software de Reconhecimento Automático de Microfósseis
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços.
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - RADIAR: Método para disseminação do conhecimento
+  - Exploração de Paralelismo em Hardware e Software (PROCAD 2966/2014)
+  - Concepção do Centro de Pesquisa Tecnológica em Petróleo e Gás da Baixada Santista
+  - Proposta de uma Arquitetura Web Semântica Multiagente para Análise de Dados
+  - Sistemas Multiagente Web Semântico aplicado ao suporte a  educação.
+  - Análise da Viabilidade Técnica de Implementação do SIACas - Sistema Inteligente para Análise do Cascalho Produzido na Perfuração
+  - Um Estudo de Ontologias aplicadas a Geociências e Meio Ambiente
+  - METODOLOGIA PARA A CLASSIFICAÇÃO DE ANORMALIDADES NA PERFURAÇÃO - Edital MCT/CNPq 02/2006 - Universal
+  - Concepção, desenvolvimento e implementação de um sistema de informação aplicado à elaboração de cartas de sensibilidade ambiental a derrames de petróleo: litoral paulista
+  - Proposta de um Sistema Multiagente para Automação e Controle
+  - Desenvolvimento de metodologias para avaliar a segurança de poços de petróleo em águas profundas (Edital CT-Petro/CNPq 17/2004)
+  - SISCPO  - SISTEMA INTELIGENTE SUPERVISÓRIO PARA CONTROLE DE PRODUÇÃO OFFSHORE
+  - Desenvolvimento de metodologia para análise de parâmetros de perfuração
+
+
+
+
+--- Professor Information ---
+Name: Leonardo Castro Botega
+Lattes ID: 6027755717265622
+
+Research Areas:
+  - Redes Veiculares
+  - Redes de Sensores Sem Fio
+  - Informação e Tecnologia
+
+Periodic Papers:
+  -  Modelo de mapeamento semântico entre as terminologias de saúde CID-10 e SNOMED-CT
+  -  Bug Localization Model in Source Code using Ontologies
+  -  CLASIFICACIÓN DE TEXTOS: UN ENFOQUE CON USO DE MACHINE LEARNINGTEXT CLASSIFICATION: AN APPROACH USING MACHINE LEARNINGCLASSIFICAÇÃO DE TEXTOS: UMA ABORDAGEM COM USO DE MACHINE LEARNING
+  -  Qualidade de dados em gestão de dados de pesquisa: um estudo bibliométrico
+  -  Critérios de qualidade de dados em saúde: uma análise quantitativa
+  -  A experiência do usuário em ambientes de gestão da aprendizagem: análise de casos de uso com as ferramentas Moodle e Google Classroom
+  -  Fusão de dados para análise de imagens registradas por satélites: proposta de modelo de metadados
+  -  A Filosofia da informação e a Sociedade da informação e do conhecimento: reflexões diante do progresso tecnológico
+  -  Enriquecimento semântico para a disponibilização de dados abertos: teoria e prática
+  -  A Qualidade na Recuperação de Dados Governamentais: Um Estudo Sobre Dados de Políticas Públicas na Internet
+
+Congress Papers:
+  -  Improving Medication Identification Accuracy and Regulatory Compliance through NLP and Ontologies: An Analysis of Otorhinolaryngology Prescriptions
+  -  OWL-Sharp: Source Code Semantic Generator
+  -  Servidor de terminologias para a identiﬁcação e padronização de conceitos médicos a partir de anotações clínicas
+  -  MODELO DE MAPEAMENTO SEMÂNTICO ENTRE TERMINOLOGIAS DE SAÚDE
+  -  Acesso e disponibilização de dados abertos em educação nas capitais das regiões sul e sudeste do Brasil: Um estudo exploratório
+  -  RELAÇÃO JURÍDICA CONTRATUAL CONTEMPORÂNEA A LUZ DE NOVAS TECNOLOGIAS
+  -  Development of a Semantic Representation Model of Criminal Information to Support the Assessment of Risk Situations
+  -  Assessing Situation Awareness on Fusion-Driven Emergency Management Systems
+  -  Development of Criminal Ontologies to Enhance Situation Assessment
+  -  Fusão de dados para compreensão de fenômenos ambientais por meio de fotografias
+
+Projects:
+  - Abordagem de análise criminal para a ampliação da consciência situacional utilizando fusão de dados e informações
+  - Avaliação da Qualidade de Dados e Informações para a Ampliação de Consciência Situacional em Processos Decisórios.
+  - Sistema de alerta DF100Fogo: a produção voluntária de informação geográfica, paisagens e incêndios florestais
+  - Desenvolvimento de soluções para a melhoria da consciência situacional em ambientes de gerenciamento de emergências
+  - Desenvolvimento de interface tangível para aplicações multidisciplinares
+  - Análise de Imagens Tomográficas da Ciência do Solo em Ambiente de Realidade Virtual
+  - Utilização de Realidade Virtual para construção de ferramentas de treinamento médico
+
+
+
+
+--- Professor Information ---
+Name: Carlos Roberto Valêncio
+Lattes ID: 4644812253875832
+
+Research Areas:
+  - Extração de conhecimento em base de dados
+  - Engenharia de Software
+  - Banco de Dados
+
+Periodic Papers:
+  -  Corpus-based Methodology for an Online Multilingual Collocations Dictionary: First Steps
+  -  Metaheuristics for multiple sequence alignment: A systematic review
+  -  Analysing research collaboration through co-authorship networks in a big data environment: an efficient parallel approach
+  -  A system proposal for automated data cleaning environment
+  -  Data Warehouse design to support social media analysis in a big data environment
+  -  Hierarchical assessment of host factors influencing the spontaneous resolution of hepatitis C infection
+  -  An approach for COFFEE objective function to global DNA multiple sequence alignment
+  -  Exploring Mesh Generation and Quality Enhancement with Open Source Codes
+  -  Performance Improvement of SNP Search Using Multithread Programming
+  -  A User-Driven Association Rule Mining Based on Templates for Multi-Relational Data
+
+Congress Papers:
+  -  Pattern recognition in biosequences using artificial immune system
+  -  Multiple sequence alignment using Ant Colony Optimization with chaotic jump
+  -  Generation of New Bilingual Dictionaries Through Inference Techniques Supported by a Graph Oriented Database Management System
+  -  Feature Selection with Hybrid Bio-inspired Approach for Classifying  Multi-idiom Social Media Sentiment Analysis
+  -  A Hybrid Approach using Progressive and Genetic Algorithms for Improvements in Multiple Sequence Alignments
+  -  Project Scope Management: A Strategy Oriented to the Requirements Engineering
+  -  An efficient parallel approach optimization for co-authorship network analysis
+  -  A Qualitative Approach to Develop Niche Social Networks - A Reading Social Networks Case Study
+  -  Improving risk identification process in project management
+  -  A Configurable Strategy for Extraction, Transformation and Load to Support Data Propagation on Active Data Warehouses
+
+Projects:
+  - Desenvolvimento de uma Plataforma On-Line de Dicionários Monolíngues de Colocações Acadêmicas em inglês e português do Brasil e Europeu
+  - Sistema de recomendação como um serviço para o setor imobiliário baseado em informações geográficas
+  - Framework híbrido de recomendação para o setor imobiliário baseado em informações geográficas e conjuntos Big Data
+  - Desenvolvimento de Pesquisa e Treinamentos em Tecnologias para Aplicações WEB, Banco de Dados e Análise de Dados
+  - Infraestrutura computacional para armazenamento, recuperação e disposição de dados em nuvem
+  - Análise em Big Data da área da Saúde (Triênio Unesp: 2025-2027)
+  - Construção de Sistema de Informação Georeferenciável para Banco de Tumores e Data Mining
+  - Big Data em Gestão Ambiental
+  - Sistema de Informação Georreferenciável de suporte à Gestão Ambiental
+  - Armazenamento e recuperação da informação: tecnologias, infraestrutura computacional e processo de descoberta de conhecimento em bases de dados
+  - Gestão e extração de conhecimento na saúde
+  - Armazenamento e recuperação de dados biológicos
+  - Base de dados multimídia e análise de dados
+  - Desenvolvimento de técnicas e ferramentas para análise de dados
+  - Projeto ProTeM e CC/NSF
+  - Tecnologias para o armazenamento e recuperação de dados em Sistemas Gerenciadores não convencionais
+  - Construção de ambiente de programação orientado a estruturas sintáticas
+
+
+
+
+--- Professor Information ---
+Name: Renata Spolon Lobato
+Lattes ID: 5568681374094860
+
+Research Areas:
+  - Avaliação de Desempenho do Protocolo Time Warp e Variantes
+  - projeto de extensão IX Semana de Computação
+  - Sistemas de computação
+
+Periodic Papers:
+  -  CAVENAGHI, MARCOS 
+  -  Parallel fuzzy minimals on GPU
+  -  Apriori-roaring: frequent pattern mining method based on compressed bitmaps
+  -  Viabilidade do Protocolo µTesla em Redes Veiculares
+  -  Simulação de Sistemas de Computação em Nuvem para o iSPD
+  -  Identificação de Usuário em Aplicativos Interativos para a TVDi
+  -  Biblioteca de Escalonamento de Tarefas em Grid Computacional - LIBTS
+
+Congress Papers:
+  -  A qualitative comparison of open access discrete event simulation libraries (a ser publicado)
+  -  ?From cold starts to pricing: A comparative analysis in executing Node
+  -  Serverless-simulator - Simulador de computação sem servidores
+  -  Modelo de adaptação de conteúdo individualizada com base em estilos de aprendizagem
+  -  Functional Extension in Python for Simulating Discrete Events in Queueing Networks
+  -  Comparison of Edge Computing Scheduling Algorithms
+  -  Training Transformers for Question Generation Task in Intelligent Tutoring Systems
+  -  Modeling and Simulation of Cloud Computing with iSPD
+  -  Simulation Platform On Distributed Shared Memory
+  -  Mineração de Regras Negativas: Uma Revisão da Literatura Com Foco Em Desempenho
+
+Projects:
+  - Computação em nuvem e computação sem servidor
+  - Computação em nuvem em gestores open source
+  - Explorac#807;a#771;o de Paralelismo em Hardware e Software
+  - Desenvolvimento de um Sistema de Arquivos Distribuído Adaptável
+  - Exploração de Paralelismo dem GPU para Acelerar Desempenho de Algoritmos
+  - iSPD - Simulador de Grades Computacionais com Interface Icônica
+  - Avaliação de desempenho de sistemas computacionais
+  - Compilação de bytecodes Java para um ambiente de arquitetura reconfigurável
+  - Interface gráfica, particionamento da aplicação e dispositivo gerador de arcabouços para a CMB-Simulation
+  - Especificação de um compilador para um ambiente de arquitetura reconfigurável segundo restrições de desempenho
+  - Proposta de um compilador para um ambiente de arquitetura reconfigurável
+  - Avaliação do Mecanismo Time Warp e Variantes
+  - Método de Avaliação de Desempenho de Protocolos Otimistas
+  - Desenvolvimento de Programas Paralelos
+
+

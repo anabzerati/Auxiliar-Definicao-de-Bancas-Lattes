@@ -34,14 +34,14 @@ def parse_args():
     parser.add_argument(
         "-s", "--summary",
         type=str,
-        default="./sum.txt",
+        default="./summary/sum.txt",
         help="Caminho do arquivo com o resumo"
     )
     parser.add_argument(
         "-o", "--output",
         type=str,
         default="ranking_output",
-        help="Caminho pro arquivo de saída"
+        help="Nome pro arquivo de saída"
     )
 
     return parser.parse_args()
@@ -52,7 +52,7 @@ warnings.filterwarnings("ignore")
 def main():
 
     args = parse_args()
-    output = args.output + '_' + args.model + '.txt'
+    output = 'output/' + args.output + '_' + args.model + '.txt'
 
     init_logger(output)   # txt com as saídas
     # theme: str = input("Enter the title of your theme: ")

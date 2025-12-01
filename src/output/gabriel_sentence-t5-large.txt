@@ -1,0 +1,310 @@
+Título do trabalho: Analise de Modelos de Lingua de Baixo Custo
+Resumo do trabalho: A tecnologia é historicamente uma área de estudos inacessível ao grande público, com essa inacessibilidade se estendendo até tecnologias de aprendizado de máquina e de processamento de linguagem natural modernas. Existe uma crescente necessidade de desenvolvimento de aplicações que sejam acessíveis e eficazes de tais tecnologias, capazes de obter resultados satisfatórios com custos acessíveis para o pesquisador comum. Este trabalho propõe o treinamento e avaliação de diferentes modelos de linguagem, sendo dentre as várias abordagens possíveis estudados principalmente dois tipos de modelos: Transformer e xLSTM. Os dados foram obtidos da Wikipedia e outras fontes na internet, pré-processados a fim de reduzir recursos computacionais exigidos e otimizar a tarefa. O objetivo deste trabalho é treinar e avaliar os modelos de linguagem de escolha, utilizando a métrica de perplexidade e testes auto-regressivos para o fim de medir a coerência e a capacidade preditiva. Os resultados obtidos explicitam as dificuldades acerca de estudos sobre a área, sendo o modelo de melhor performance o GPT-2 pré-treinado com a adição de ajustes finos.
+
+
+--- Ranking ---
+Leonardo Castro Botega                    ->  0.9395
+Ronaldo Celso Messias Correia             ->  0.9379
+Marilaine Colnago                         ->  0.9330
+Mauricio Araujo Dias                      ->  0.9306
+Ivan Rizzo Guilherme                      ->  0.9303
+Rogério Eduardo Garcia                    ->  0.9283
+Arnaldo Candido Junior                    ->  0.9266
+Rogéria Cristiane Gratão de Souza         ->  0.9245
+Carlos Roberto Valêncio                   ->  0.9230
+Alexandro José Baldassin                  ->  0.9216
+Renata Spolon Lobato                      ->  0.9212
+Wallace Correa de Oliveira Casaca         ->  0.9208
+Antonio Carlos Sementille                 ->  0.9206
+Diego Renan Bruno                         ->  0.9205
+Felipe Fernandes Fanchini                 ->  0.9185
+Danillo Roberto Pereira                   ->  0.9183
+Geraldo Francisco Donegá Zafalon          ->  0.9182
+João Paulo Papa                           ->  0.9181
+Danilo Medeiros Eler                      ->  0.9168
+Rodrigo Capobianco Guido                  ->  0.9167
+Leandro Alves Neves                       ->  0.9164
+Rodolfo Ipolito Meneguette                ->  0.9158
+Lucas Correia Ribas                       ->  0.9134
+Jose Remo Ferreira Brega                  ->  0.9132
+Clayton Reginaldo Pereira                 ->  0.9125
+Kelton Augusto Pontara da Costa           ->  0.9111
+Daniel Carlos Guimarães Pedronette        ->  0.9074
+Denis Henrique Pinheiro Salvadeo          ->  0.9061
+Aparecido Nilceu Marana                   ->  0.9055
+Caetano Mazzoni Ranieri                   ->  0.9016
+Veronica Oliveira de Carvalho             ->  0.9005
+Adriano Mauro Cansian                     ->  0.9000
+Frank José Affonso                        ->  0.8988
+Fabricio Aparecido Breve                  ->  0.8981
+Leonardo Tórtoro Pereira                  ->  0.8968
+Cassio Machiaveli Oishi                   ->  0.8949
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: Leonardo Castro Botega
+Lattes ID: 6027755717265622
+
+Research Areas:
+  - Redes Veiculares
+  - Redes de Sensores Sem Fio
+  - Informação e Tecnologia
+
+Periodic Papers:
+  -  Modelo de mapeamento semântico entre as terminologias de saúde CID-10 e SNOMED-CT
+  -  Bug Localization Model in Source Code using Ontologies
+  -  CLASIFICACIÓN DE TEXTOS: UN ENFOQUE CON USO DE MACHINE LEARNINGTEXT CLASSIFICATION: AN APPROACH USING MACHINE LEARNINGCLASSIFICAÇÃO DE TEXTOS: UMA ABORDAGEM COM USO DE MACHINE LEARNING
+  -  Qualidade de dados em gestão de dados de pesquisa: um estudo bibliométrico
+  -  Critérios de qualidade de dados em saúde: uma análise quantitativa
+  -  A experiência do usuário em ambientes de gestão da aprendizagem: análise de casos de uso com as ferramentas Moodle e Google Classroom
+  -  Fusão de dados para análise de imagens registradas por satélites: proposta de modelo de metadados
+  -  A Filosofia da informação e a Sociedade da informação e do conhecimento: reflexões diante do progresso tecnológico
+  -  Enriquecimento semântico para a disponibilização de dados abertos: teoria e prática
+  -  A Qualidade na Recuperação de Dados Governamentais: Um Estudo Sobre Dados de Políticas Públicas na Internet
+
+Congress Papers:
+  -  Improving Medication Identification Accuracy and Regulatory Compliance through NLP and Ontologies: An Analysis of Otorhinolaryngology Prescriptions
+  -  OWL-Sharp: Source Code Semantic Generator
+  -  Servidor de terminologias para a identiﬁcação e padronização de conceitos médicos a partir de anotações clínicas
+  -  MODELO DE MAPEAMENTO SEMÂNTICO ENTRE TERMINOLOGIAS DE SAÚDE
+  -  Acesso e disponibilização de dados abertos em educação nas capitais das regiões sul e sudeste do Brasil: Um estudo exploratório
+  -  RELAÇÃO JURÍDICA CONTRATUAL CONTEMPORÂNEA A LUZ DE NOVAS TECNOLOGIAS
+  -  Development of a Semantic Representation Model of Criminal Information to Support the Assessment of Risk Situations
+  -  Assessing Situation Awareness on Fusion-Driven Emergency Management Systems
+  -  Development of Criminal Ontologies to Enhance Situation Assessment
+  -  Fusão de dados para compreensão de fenômenos ambientais por meio de fotografias
+
+Projects:
+  - Abordagem de análise criminal para a ampliação da consciência situacional utilizando fusão de dados e informações
+  - Avaliação da Qualidade de Dados e Informações para a Ampliação de Consciência Situacional em Processos Decisórios.
+  - Sistema de alerta DF100Fogo: a produção voluntária de informação geográfica, paisagens e incêndios florestais
+  - Desenvolvimento de soluções para a melhoria da consciência situacional em ambientes de gerenciamento de emergências
+  - Desenvolvimento de interface tangível para aplicações multidisciplinares
+  - Análise de Imagens Tomográficas da Ciência do Solo em Ambiente de Realidade Virtual
+  - Utilização de Realidade Virtual para construção de ferramentas de treinamento médico
+
+
+
+
+--- Professor Information ---
+Name: Ronaldo Celso Messias Correia
+Lattes ID: 2420360066008780
+
+Research Areas:
+  - Ambientes Virtuais Distribuídos
+  - Desenvolvimento de Aplicações Distribuídas
+  - Realidade Virtual
+  - Banco de Dados
+  - Armazenamento e Recuperação de Grande Volume de Dados
+  - Ciência de Dados
+  - Mineração de Dados
+  - Banco de Dados
+  - Ensino de Computação na Educação Básica
+  - Ensino de Computação
+
+Periodic Papers:
+  -  Potential Factors for Retention and Intent to Drop-out in Brazilian Computing Programs
+  -  Visual analytics of COVID-19 dissemination in São Paulo state, Brazil
+  -  Análise de Escalabilidade Horizontal em um cluster HBase
+  -  Framework para Armazenamento e Recuperação de Dados baseado em Serviços para Cidades Inteligentes
+  -  Simuladores de processos geológicos e geomorfológicos: contribuições para o ensino e formação em geociências e ciências da terra
+  -  PROTÓTIPO DE REALIDADE AUMENTA EM DISPOSITIVOS MÓVEIS NA ABORDAGEM DE SÓLIDOS GEOMÉTRICOS
+  -  Analysis of Document Pre-Processing Effects in Text and Opinion Mining
+  -  Hadoop Cluster Deployment: A Methodological Approach
+  -  Integração e Virtualização de Banco de Dados Relacionais e Não Relacionais
+  -  PGCP ? Plataforma para Gerenciamento Colaborativo de Projetos
+
+Congress Papers:
+  -  Análise dos principais fatores que influenciam a evasão no ensino superior utilizando técnicas de mineração de dados educacionais
+  -  O Bacharelado Interdisciplinar em Tecnologia da Informação EaD da Univesp
+  -  A Computational Thinking Course for Pre-Service Teachers
+  -  Fireasy: a tool to aid security policy modeling, translation and understanding firewall configuration
+  -  Evaluating a Computational Thinking and Computing Attitudes Instrument for Educational Purposes
+  -  Software Quality as a Subsidy for Teaching Programming
+  -  A Strategy to Enhance Computer Science Teaching Material Using Topic Modelling
+  -  A Hybrid Visualization Approach to Perform Analysis of Feature Spaces
+  -  URecommender: An API for Recommendation Systems
+  -  A visual approach to support Change Impact Analysis in object-oriented source code
+
+Projects:
+  - Mineração de Dados Educacionais aplicada na gestão do desempenho acadêmico no ensino Superior
+  - Ensino de Computação e Pensamento Computacional
+  - Pontal Transparente
+  - Representação visual multinível para auxiliar a exploração de conjuntos de dados
+  - Cadastro dos Cursos do PRONERA realizados no período de 2011-2017
+  - Sistema Evidência
+  - DATAPRONERA - Banco de dados sobre a Educação na Reforma Agrária (PRONERA)
+  - Sistema de Gestão Administrativa dos Cursos do PRONERA - Residência Agrária
+  - Atlas Ambiental Escolar de Presidente Prudente
+  - Análise de Escalabilidade e Desempenho em Armazenamento, Recuperação e Mineração de Grande Volume de Dados
+  - Impactos da Tecnologia da Informação e Comunicação na Agricultura Camponesa
+  - MAPEAMENTO E ANÁLISE DO TERRITÓRIO DO AGROHIDRONEGÓCIO CANAVIEIRO NO PONTAL DO PARANAPANEMA-SÃO PAULO-BRASIL: Relações de trabalho, conflitos e formas de uso da terra e da água, e a saúde ambiental
+  - Desenvolvimento do atlas da questão agrária brasileira e análise da agricultura camponesa
+  - Especificação e implementação do banco de dados  sobre Educação na  Reforma Agrária - DATAPRONERA
+  - WebDataluta ? Sistema de Informação Web do Banco de Dados da Luta pela Terra (DATALUTA)
+  - Escalabilidade em Ambientes Virtuais Distribuídos e MMOGs
+  - AVDNet ? Uma Arquitetura para Ambientes Virtuais Distribuídos baseada na Infra-Estrutura Atual da Internet
+
+
+
+
+--- Professor Information ---
+Name: Marilaine Colnago
+Lattes ID: 8764225815253091
+
+Research Areas:
+  - Análise Numérica
+  - Modelagem de Dados Energéticos
+  - Ciência de Dados
+  - Processamento Digital de Imagens
+  - Matemática Aplicada
+  - Mecânica dos Fluidos Computacional
+  - Matemática Computacional
+  - Análise de Dados
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  Precision Meets Speed: An Attention Encoder-Decoder Network for Deforestation Segmentation
+  -  ABD: A machine intelligent-based algal bloom detector for remote sensing images
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  Leak Detection in Hermetic Compressors using Computer Vision and Artificial Intelligence
+  -  ASSESSING THE EFFECTIVENESS OF INPAINTING TECHNIQUES FOR ENHANCING FEATURE EXTRACTION QUALITY IN REMOTE SENSING IMAGERY
+  -  Predicting Energy Generation in Large Wind Farms: A Data-Driven Study with Open Data and Machine Learning
+  -  Data-driven analysis and machine learning for energy prediction in distributed photovoltaic generation plants: A case study in Queensland, Australia
+  -  Mapping Fire Susceptibility in the Brazilian Amazon Forests Using Multitemporal Remote Sensing and Time-Varying Unsupervised Anomaly Detection
+  -  A Fully Unsupervised Deep Learning Framework for Non-Rigid Fundus Image Registration
+
+Congress Papers:
+  -  Efeitos da vacinação tardia na evolução da pandemia de COVID-19 na região de Presidente Prudente, SP
+  -  Aplicação de Redes de Deep Learning Recurrent Neural Network, Long Short-Term Memory e Gated Recurrent Unit na Predição da COVID-19 no Cenário Pós-Vacinação
+  -  GECET: Garotas nas Engenharias, Ciências Exatas e Tecnologias: Projeto de Extensão voltado para a participação feminina nas áreas STEM
+  -  Consumo de Energia do Bitcoin na Era das Criptomoedas: um Estudo Exploratório e de Previsão Baseado em Dados
+  -  Inclusão Feminina em STEM: Experiência do Projeto GECET Através de Atividades de Programação
+  -  Unsupervised Deep Learning Network for Deformable Fundus Image Registration
+  -  Um Estudo de Gênero a partir da Distribuição de Bolsas do Programa Universidade para Todos
+  -  Automatically Detecting Textual Content in High-Resolution Images
+  -  Inpainting Digital Via Replicação por Blocos e o Método SPH
+  -  Lockdown contra a Covid-19 funciona ou não? Um estudo de caso com o município de Araraquara
+
+Projects:
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo - TRIENAL
+  - Aprimorando a Eficiência na Previsão Sucroalcooleira via Técnicas de Inteligência Artificial e Análise de Dados Integrada
+  - Inteligência Artificial e suas Aplicações no setor de Biocombustíveis
+  - Modelagem e Predição da Produção de Cana-de-Açúcar no Estado de São Paulo
+  - Análise Exploratória de Dados da Covid-19 no Estado de São Paulo: Avaliação de Indicadores e das Ações de Enfrentamento da Pandemia por Parte dos Governos Municipais e Estadual
+  - Auxílio à Pesquisa FAPESP: Rumo à Avaliação de Demanda de Eletricidade no Brasil: Análise Guiada a Dados e Modelos de Aprendizado por Agrupamento
+  - Cooperação Brasil-Angola de Pesquisa e Criação de Redes Internacionais
+  - Desenvolvimentos Computacionais Aplicados a Processos de Refino - Escoamentos Multifásicos
+
+
+
+
+--- Professor Information ---
+Name: Mauricio Araujo Dias
+Lattes ID: 2740441033907310
+
+Research Areas:
+  - Análise de Imagens
+  - Projeto e Desenvolvimento de Processadores e Coprocessadores
+  - Projeto e Desenvolvimento de Circuitos Criptográficos Baseados em Curvas Elípticas
+  - Processamento Morfológico de Imagens
+  - Tecnologia Educacional
+
+Periodic Papers:
+  -  Epidemic Modeling in Satellite Towns and Interconnected Cities: Data-Driven Simulation and Real-World Lockdown Validation
+  -  A Study of COVID-19 Diagnosis Applying Artificial Intelligence to X-Rays Images
+  -  Recognition of Brazilian Banknotes Using Artificial Intelligence to Assist Visually Impaired Individuals
+  -  Threshold-Based Approach for Disaster Mapping Using Long-Term Multispectral Image Series
+  -  Artificial Intelligence for Forensic Image Analysis in Bullet Hole Comparison: A Preliminary Study
+  -  A Robust Dual-Mode Machine Learning Framework for Classifying Deforestation Patterns in Amazon Native Lands
+  -  Assessing the impacts of catastrophic 2020 wildfires in the Brazilian Pantanal using MODIS data and Google Earth Engine: A case study in the world?s largest sanctuary for Jaguars
+  -  ABF: A data-driven approach for algal bloom forecasting using machine intelligence and remotely sensed data series
+  -  Dimensionality Reduction and Anomaly Detection Based on Kittler?s Taxonomy: Analyzing Water Bodies in Two Dimensional Spaces
+  -  Associating Anomaly Detection Strategy Based on Kittler?s Taxonomy with Image Editing to Extend the Mapping of Polluted Water Bodies
+
+Congress Papers:
+  -  Diferente Abordagem do Algoritmo de Crescimento por Região Aplicado em Extração de Feições Cartográficas
+  -  Avaliação e Comparação de Metodologias de Extração de Malhas Viárias em Imagens de Sensoriamento Remoto
+  -  Combining Feature Extraction Techniques for Fruit Classification
+  -  Comparison of feature spaces in fruit recognition
+  -  Eklof And Ringertz Bone Age Estimation Using Adaptive Neuro Fuzzy Inference System
+  -  Appling a semiautomatic methodology for cartographic features extraction using high-resolution remote sensing images
+  -  An Inverter Architecture for ECC-GF(2m) Based on the Stein's Algorithm
+  -  Curvas Elípticas aplicadas à criptografia: uma proposta alternativa para implementação de um circito digital
+  -  Aplicação de curvas elípticas para a criptografia
+
+Projects:
+  - Detecção de anomalias em dados para monitoramento de eventos extremos.
+  - Jogos educativos: pesquisa baseada no modelo da teoria unificada de aceitação e uso da tecnologia
+  - Jogo educativo para sistemas operacionais: aceitação e uso pelos estudantes
+  - Avaliação da aceitação e uso de um jogo educacional na ciência da computação com base na teoria unificada da aceitação e uso de tecnologia
+  - Estudo de uma estratégia de aprendizado de máquina baseada na Taxonomia de Kittler para detectar anomalias e reconhecer desmatamento no meio ambiente
+  - Sistema criptográfico baseado em curvas elípticas implementado em FPGA
+  - Análise de séries temporais de imagens de sensoriamento remoto para a detecção de anomalias
+  - Anomaly Detection, Analysis and Localization: a Case Study on Digital Static Images from Remote Sensing Applied to Cartography
+  - Arquiteturas de Computadores Reconfiguráveis
+
+
+
+
+--- Professor Information ---
+Name: Ivan Rizzo Guilherme
+Lattes ID: 0140365057016044
+
+Research Areas:
+  - Inteligência Artificial Aplicada a Medicina
+  - Sistemas de apoio a decisão médica
+  - Sistemas especialistas
+  - Web Semântica
+  - Ontologias
+  - Processamento da Linguagem Natural
+  - Inteligência Artificial
+  - Bioinformatica
+  - Inteligência Artificial Aplicada a Petróleo
+
+Periodic Papers:
+  -  A multi-agent approach to monitor and manage container-based distributed systems
+  -  RaDE+: A semantic rank-based graph embedding algorithm
+  -  Evolving Neural Conditional Random Fields for drilling report classification
+  -  Semantic Guided Interactive Image Retrieval for Plant Identification
+  -  Unsupervised Manifold Learning through Reciprocal kNN Graph and Connected Components for Image Retrieval Tasks
+  -  UMA ABORDAGEM PARA GESTÃO DE CONTEÚDOS EDUCACIONAIS
+  -  ARQUITETURA DE UM SISTEMA MULTIAGENTE AUTÔNOMO PARA SUPERVISÃO E CONTROLE
+  -  Improving operational safety on subsea wells with quantitative and dynamic risk assessment
+  -  Petroleum well drilling monitoring through cutting image analysis and artificial intelligence techniques
+  -  Expressed sequence tags from Atta laevigata and identification of candidate genes for the control of pest leaf-cutting ants
+
+Congress Papers:
+  -  PsyBERTpt: A Clinical Entity Recognition Model for Psychiatric Narratives
+  -  An Ontology-Based Approach For Risk Evaluation In Human-Machine Interaction
+  -  A Meta-Feature Model for Exploiting Different Regressors to Estimate Sugarcane Crop Yield
+  -  Estudo comparativo entre diferentes regressores para estimar produtividade de cana-de-açúcar
+  -  Development and implementation of an IA based system to automate textual classification on Daily Drilling Reports
+  -  PetroBERT: a domain adaptation language model for oil and gas applications in Portuguese
+  -  SMS Spam Detection Through Skip-gram Embeddingsand Shallow Networks
+  -  When External Knowledge Does Not Aggregate in Named Entity Recognition
+  -  Manifold Learning-based Clustering Approach applied to Anomaly Detection in Surveillance Videos
+  -  RaDE: A Rank-base Graph Embedding Approach
+
+Projects:
+  - Desenvolvimento de Software de Reconhecimento Automático de Microfósseis
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços.
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - RADIAR: Método para disseminação do conhecimento
+  - Exploração de Paralelismo em Hardware e Software (PROCAD 2966/2014)
+  - Concepção do Centro de Pesquisa Tecnológica em Petróleo e Gás da Baixada Santista
+  - Proposta de uma Arquitetura Web Semântica Multiagente para Análise de Dados
+  - Sistemas Multiagente Web Semântico aplicado ao suporte a  educação.
+  - Análise da Viabilidade Técnica de Implementação do SIACas - Sistema Inteligente para Análise do Cascalho Produzido na Perfuração
+  - Um Estudo de Ontologias aplicadas a Geociências e Meio Ambiente
+  - METODOLOGIA PARA A CLASSIFICAÇÃO DE ANORMALIDADES NA PERFURAÇÃO - Edital MCT/CNPq 02/2006 - Universal
+  - Concepção, desenvolvimento e implementação de um sistema de informação aplicado à elaboração de cartas de sensibilidade ambiental a derrames de petróleo: litoral paulista
+  - Proposta de um Sistema Multiagente para Automação e Controle
+  - Desenvolvimento de metodologias para avaliar a segurança de poços de petróleo em águas profundas (Edital CT-Petro/CNPq 17/2004)
+  - SISCPO  - SISTEMA INTELIGENTE SUPERVISÓRIO PARA CONTROLE DE PRODUÇÃO OFFSHORE
+  - Desenvolvimento de metodologia para análise de parâmetros de perfuração
+
+

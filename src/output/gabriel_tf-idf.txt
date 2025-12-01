@@ -1,0 +1,373 @@
+Título do trabalho: Analise de Modelos de Lingua de Baixo Custo
+Resumo do trabalho: A tecnologia é historicamente uma área de estudos inacessível ao grande público, com essa inacessibilidade se estendendo até tecnologias de aprendizado de máquina e de processamento de linguagem natural modernas. Existe uma crescente necessidade de desenvolvimento de aplicações que sejam acessíveis e eficazes de tais tecnologias, capazes de obter resultados satisfatórios com custos acessíveis para o pesquisador comum. Este trabalho propõe o treinamento e avaliação de diferentes modelos de linguagem, sendo dentre as várias abordagens possíveis estudados principalmente dois tipos de modelos: Transformer e xLSTM. Os dados foram obtidos da Wikipedia e outras fontes na internet, pré-processados a fim de reduzir recursos computacionais exigidos e otimizar a tarefa. O objetivo deste trabalho é treinar e avaliar os modelos de linguagem de escolha, utilizando a métrica de perplexidade e testes auto-regressivos para o fim de medir a coerência e a capacidade preditiva. Os resultados obtidos explicitam as dificuldades acerca de estudos sobre a área, sendo o modelo de melhor performance o GPT-2 pré-treinado com a adição de ajustes finos.
+
+
+--- Ranking ---
+João Paulo Papa                           ->  0.1596
+Cassio Machiaveli Oishi                   ->  0.1491
+Kelton Augusto Pontara da Costa           ->  0.0922
+Aparecido Nilceu Marana                   ->  0.0897
+Antonio Carlos Sementille                 ->  0.0810
+Denis Henrique Pinheiro Salvadeo          ->  0.0796
+Alexandro José Baldassin                  ->  0.0762
+Daniel Carlos Guimarães Pedronette        ->  0.0741
+Rodolfo Ipolito Meneguette                ->  0.0724
+Leonardo Castro Botega                    ->  0.0719
+Wallace Correa de Oliveira Casaca         ->  0.0626
+Ivan Rizzo Guilherme                      ->  0.0625
+Ronaldo Celso Messias Correia             ->  0.0624
+Geraldo Francisco Donegá Zafalon          ->  0.0609
+Fabricio Aparecido Breve                  ->  0.0607
+Arnaldo Candido Junior                    ->  0.0564
+Marilaine Colnago                         ->  0.0561
+Rogéria Cristiane Gratão de Souza         ->  0.0545
+Veronica Oliveira de Carvalho             ->  0.0531
+Clayton Reginaldo Pereira                 ->  0.0515
+Carlos Roberto Valêncio                   ->  0.0485
+Danillo Roberto Pereira                   ->  0.0484
+Diego Renan Bruno                         ->  0.0482
+Danilo Medeiros Eler                      ->  0.0479
+Lucas Correia Ribas                       ->  0.0468
+Felipe Fernandes Fanchini                 ->  0.0392
+Renata Spolon Lobato                      ->  0.0328
+Mauricio Araujo Dias                      ->  0.0306
+Frank José Affonso                        ->  0.0299
+Caetano Mazzoni Ranieri                   ->  0.0281
+Rogério Eduardo Garcia                    ->  0.0277
+Jose Remo Ferreira Brega                  ->  0.0222
+Leandro Alves Neves                       ->  0.0219
+Adriano Mauro Cansian                     ->  0.0212
+Rodrigo Capobianco Guido                  ->  0.0088
+Leonardo Tórtoro Pereira                  ->  0.0025
+
+
+ --- Lattes profile information for the top 5 recommendations ---
+
+
+--- Professor Information ---
+Name: João Paulo Papa
+Lattes ID: 9039182932747194
+
+Research Areas:
+  - Reconhecimento de Padrões
+
+Periodic Papers:
+  -  Brain Age Prediction Using a Lightweight Convolutional Neural Network
+  -  A pilot study for speech assessment to detect the severity of Parkinson?s disease: An ensemble approach
+  -  Facial Expression Analysis in Parkinson's Disease Using Machine Learning: A Review
+  -  TransConv: a lightweight architecture based on transformers and convolutional neural networks for adenocarcinoma and Barrett?s esophagus identification
+  -  Enhancing Explainability in Pacu Fish Image Segmentation using Saliency Maps and Combined Explainable AI Methods
+  -  Robust Opposition-Based Jellyfish Search Algorithms for Large-Scale and Bound-Constrained Optimization
+  -  Evaluating Large Language Models for Brazilian Portuguese Sentiment Analysis: A Comparative Study of Multilingual State-of-the-Art vs
+  -  The Bode Family of Large Language Models: Investigating the Frontiers of LLMs in Brazilian Portuguese
+  -  Quantum Neural Networks Successfully Calibrate Language Models
+  -  Urban tree failure probability prediction based on dendrometric aspects and machine learning models
+
+Congress Papers:
+  -  A Convolutional Recurrent Mixer Network For Radar Meteorological Image Super-Resolution
+  -  Customized Atrous Spatial Pyramid Pooling with Joint Convolutions for Urban Tree Segmentation
+  -  Optimum-Path Forest Ensembles to Estimate the Internal Decay in Urban Trees
+  -  A Step Forward for Medical LLMs in Brazilian Portuguese: Establishing a Benchmark and a Strong Baseline
+  -  A Hybrid Quantum-Classical Model for Breast Cancer Diagnosis with Quanvolutions
+  -  Learning a Kernel-Based Beran Estimator Using Nearest-Neighbours and Its Application to Reliability Analysis
+  -  Influence of Pixel Perturbation on eXplainable Artificial Intelligence Methods
+  -  Facial Point Graphs for Amyotrophic Lateral Sclerosis Identification
+  -  Strategies for Classifier Selection Based on Genetic Programming for Multimedia Data Recognition
+  -  Convolutional Neural Networks and Image Patches for Lithological Classification of Brazilian Pre-Salt Rocks
+
+Projects:
+  - Aplicações de Modelos de Linguagem em Português - TRIENAL
+  - PD-00063-3101/2025   Plataforma computacional para gestão de relacionamento com cliente baseada em economia comportamental e inteligência analítica
+  - CePEX - Centro Paulista de integração de dados para monitoramento de Eventos eXtremos
+  - HIDE - Detecção de Hipomímia Utilizando Arquiteturas Leves
+  - EXTRACT - Extraindo Aplicações e Recomendações de Pesquisas em Saúde Usando Inteligência Artificial
+  - WISDOM - Sistema Integrado de Suporte a Tomada de Decisão em Tempo Real para Gestão de Risco em Poços - Desenvolvimento de novos modelos de confiabilidade de conjunto solidário de barreiras de poços
+  - QOPF - A Quantum Optimum-Path Forest Framework for Optimization and Machine Learning Problems
+  - LAGRANGE - Análise Tribólogica Utilizando Inteligência Artificial
+  - Centro Multidisciplinar para o Desenvolvimento de Tecnologia Assistiva (CMDTA)
+  - Entendendo o Comportamento Tribológico de Medidas XRD de Cobre Utilizando Aprendizado de Máquina
+  - Aprendizado de Modelos Profundos Utilizando Metaheurísticas
+  - ProtoRADIAR: Métodos de Captura e Disseminação do Conhecimento, através de Processamento de Linguagem Natural na Área de Poços
+  - Aprendizado Fracamente Supervisionado para Análise de Vídeos no Domínio Comprimido em Tarefas de Recuperação e Classificação para Alertas Visuais
+  - PD-00063-3067/2019? Plataforma para Detecção de Falhas Incipientes em Transformadores de Óleo Isolante a partir do Uso e Desenvolvimento de Nanosensores
+  - Adaptação de Domínio e suas Aplicações para o Diagnóstico de Câncer
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - AnImaLS: Anotação de Imagem em Larga Escala: O que máquinas e especialistas podem aprender interagindo?
+  - RADIAR: Método para a disseminação do conhecimento
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+  - Modelos Probabilísticos para Detecção de Perdas Comerciais
+  - Sistema de Monitoramento  e Diagnóstico por Meio de Processamento de Imagens na Identificação Ocorrências e Falhas na Segurança em Áreas de Preservação Permanente (APPs) e Reservatórios de UHEs
+  - Development of Cardiovascular Disease and Diabetes Risk Assessment model for Ethnically diverse Populations
+  - Meta-Heuristic-based Optimization of Probabilistic Neural Networks
+  - Sobre a Aplicação de Floresta de Caminhos Ótimos em Ambientes de Aprendizado em Profundidade
+  - Sobre a Detecção de Anomalias em Redes de Computadores Utilizando Floresta de Caminhos Ótimos: Avanços e Aplicações em Redes de Computadores
+  - Sobre a Otimização de Parâmetros em Técnicas de Aprendizado de Máquina: Avanços e Paradigmas
+  - ARPaVid: Aprendizado e Reconhecimento de Padrões em Vídeos
+  - Além das Técnicas Tradicionais de Reconhecimento Supervisionado de Padrões: Explorando Aprendizado Sequencial e Suporte a Múltiplos Rótulos por Floresta de Caminhos Ótimos
+  - Reconhecimento Automático Robusto de Impressões Digitais Baseado em Características Biométricas de Terceiro Nível
+  - Novas Tendências em Reconhecimento de Padrões baseado em Floresta de Caminhos Ótimos (FAPESP - Jovem Pesquisador)
+  - Desenvolvimento e Avaliação de Técnicas de Localização de Faltas em Sistemas de Distribuição Subterrâneos
+  - Inteligência Artificial Aplicada na Identificação e Classificação de Harmônicos em Redes de Distribuição de Energia Elétrica
+  - Reconhecimento Facial Humano Utilizando Transformada Census Modificada e Floresta de Caminhos Ótimos
+  - Classificação de padrões por Floresta de Caminhos Ótimos: Avanços e Aplicações
+  - Projeto ARPIs: Aprendizado e Reconhecimento de Padrões em Imagens por Floresta de Caminhos Ótimos
+  - DAPI -- Automatização do Diagnóstico de Parasitos Intestinais do Homem por Análise de Imagens
+  - Métodos de Aproximação para Computação Visual
+  - Detecção Precoce de Problemas de Perfuração de Poços de Petróleo por Meio da Análise de Cascalhos
+  - Análise de Imagens de Parasitos Intestinais do Homem
+  - Algoritmos Para Reconstrução Tomográfica: Otimização, Reconstrução, Quantificação e Aplicação Clínica
+  - Carcinoma escamoso basalóide na mucosa bucal: Análise dos índices proliferativo e apoptótico
+  - Análise morfométrica comparativa do bulbo cardíaco de (Corydoras aeneus e Moenkhausia intermedia)
+  - Estilo reprodutivo em fêmeas de Corydoras aeneus (GILL, 1858) (SILURIFORMES, CALLICHTHYDAE). Características estruturais da ovogênse
+  - Expressão da eotaxina em carcinomas espinocelulares de boca
+  - Análise estrutural e comparativa do ventrículo cardíaco de peixes teleósteos (Corydoras aeneus e Moenkhausia intermedia)
+  - Biologia da reprodução e cinética da espermatogênese de peixes teleósteos de água doce
+  - Características ultraestruturais e cinética da espermatogênese em Liposarcus anisitsi
+
+
+
+
+--- Professor Information ---
+Name: Cassio Machiaveli Oishi
+Lattes ID: 8671745801940831
+
+Research Areas:
+
+Periodic Papers:
+  -  Predicting Energy Budgets in Droplet Dynamics: A Recurrent Neural Network Approach
+  -  Analysis of Newtonian fluid flows around sharp corners with slip boundary conditions
+  -  Elasto-viscoplastic spreading: From plastocapillarity to elastocapillarity
+  -  On more insightful dimensionless numbers for computational viscoelastic rheology
+  -  Nonlinear parametric models of viscoelastic fluid flows
+  -  Machine learning in viscoelastic fluids via energy-based kernel embedding
+  -  Mathematical modeling for drug delivery and inflammation process: An application in macular edema
+  -  A machine learning strategy for computing interface curvature in Front-Tracking methods
+  -  Numerical investigation of shear-thinning and viscoelastic binary droplet collision
+  - 2022Oishi, Cassio M
+
+Congress Papers:
+  -  A novel algebraic extra stress model and its analytic solution for fully developed laminar flow
+  -  Numerical simulation of the Weissenberg effect
+  -  Numerical investigation of three dimensional viscoelastic free surface flows: impacting drop problem
+  -  Performance of projection methods for low-Reynolds-number flows
+  -  A numerical study of the FENE-CR model applied to a jet flow problem
+  -  Numerical predictions of steady and unsteady flows of the fene-p fluid with a Newtonian solvent
+  -  Numerical assessment of mass conservation on a MAC-type method for viscoelastic free surface flows
+  -  Numerical simulation of 3D viscoelastic free surface flows
+  -  Uma abordagem implícita para simular escoamentos viscoelástico com superfícies livres usando modelos do tipo Pom-Pom
+  -  Sobre a Escolha de Métodos para Escoamentos Incompressíveis em Microescala
+
+Projects:
+  - Revelando modelos parcimoniosos de equações diferenciais a partir de dados corrompidos e incompletos (FAPESP SPRINT 2024/02658-8))
+  - Modelagem orientada a dados e predições em dinâmica de fluidos (307228/2023-1)
+  - Ciência de Dados para a Indústria Inteligente (CDII)
+  - Métodos orientados por dados e aprendizado de máquina em mecânica dos fluidos não-Newtonianos
+  - Métodos numéricos e técnicas de aprendizagem de máquina: aplicações em escoamentos de materiais não-Newtonianos (Produtividade 305383/2019-1)
+  - Free surface  flows of Complex Fluids (Fapesp 2018/22242-0)
+  - Análise numérica e modelagem computacional de escoamentos não-newtonianos complexos (Produtividade em pesquisa, 307459/2016-0)
+  - Asymptotics and simulation of complex fluids
+  - Asymptotics and simulation of complex fluids (Newton Fund)
+  - Solução numérica de escoamentos de fluidos complexos (Produtividade em pesquisa, 309514/2013-4)
+  - Seminários de matemática aplicada e computacional (45680020131)
+  - Desenvolvimentos de métodos numéricos em escoamentos de fluidos viscoelásticos
+  - Desenvolvimentos de métodos numéricos em escoamentos de fluidos viscoelásticos (Universal  47358920133)
+  - CeMEAI - Centro de Ciências Matemática Aplicadas à Indústria (CEPID)
+  - Computação de alto desempenho: simulações numéricas e estatísticas
+  - Análise aplicada a escoamentos transientes:aperfeiçoamentos, aplicaçőes com superfícies livres e modelos viscoelásticos (CNPq, Produtividade, 305447/2010-6))
+  - Métodos numéricos em escoamentos transientes: desenvolvimentos, aplicações com superfícies livres e modelos viscoelásticos
+  - Estudo de métodos numéricos estáveis e acurados em escoamentos transientes: aperfeiçoamentos, implementações, aplicações com superfícies livres e modelos viscoelásticos - Projeto Jovem Pesquisador 2009/15892-9
+  - Pro-sul -Computação cientifica
+  - Análise na precisão e estabilidade de técnicas numéricas em escoamentos transientes: problemas com superfície livre e modelos viscoelásticos - Edital Universal CNPq, 477858/2009-0
+  - Mecânica dos Fluidos Não Estacionária: Aplicações em Aeronáutica e em Reologia
+
+
+
+
+--- Professor Information ---
+Name: Kelton Augusto Pontara da Costa
+Lattes ID: 3369681396058151
+
+Research Areas:
+
+Periodic Papers:
+  -  Evaluation of Transformer-Based Large Language Models for Email Spam Detection Using BERT, Phi, and Gemma
+  -  Quantum AI-Enhanced IoT-Fog Communication: A Survey from Cybersecurity and Data Privacy Perspective
+  -  A review of deep learning-based approaches for deepfake content detection
+  -  MODELO DE AUTOENCODER COM ENSEMBLE LEARNING E CLUSTERIZAÇÃO PARA DETECÇÃO DE INTRUSÃO EM REDES
+  -  A Comprehensive Survey on Ensemble Learning-Based Intrusion Detection Approaches in Computer Networks
+  -  An Intrusion Detection System for Web-Based Attacks Using IBM Watson
+  -  Study on Machine Learning Techniques for Botnet Detection
+  -  Non-Fragmented Network Flow Design Analysis: Comparison IPv4 with IPv6 Using Path MTU Discovery
+  -  A critical literature survey and prospects on tampering and anomaly detection in image data
+  -  Enhancing anomaly detection through restricted Boltzmann machine features projection
+
+Congress Papers:
+  -  Optimum-Path Forest Ensembles to Estimate the Internal Decay in Urban Trees
+  -  Enhancing Network Intrusion Detection Systems: A Multi-Layer Ensemble Approach to Mitigate Adversarial Attacks
+  -  Aplicação de Redes Generativas em Detecção em Spam em Cibersegurança
+  -  Quantum Approaches for Degree-Constrained Minimum Spanning Tree Computation (aceito para publicação)
+  -  Optimizing Cardiovascular Disease Risk Prediction  Using Ensemble Learning Techniques (aceito para publicação)
+  -  Machine Learning-based Spyware Detection Systems: An Undersampling Performance Analysis (aceito para publicação)
+  -  Large Language Models for Intrusion Detection:  Tokenization Impacts on DDoS Flows (aceito para publicação)
+  -  Evaluation of Machine Learning Algorithms for Intrusion Detection in SCADA Systems (aceito para publicação)
+  -  Comparative Evaluation of Supervised Machine Learning Algorithms for Intrusion Detection in  Electric Vehicle Systems (aceito para publicação)
+  -  Ensemble Diversity Pruning on Cybersecurity: Optimizing Intrusion Detection Systems
+
+Projects:
+  - TRIENAL - Detecção de Anomalias com Aprendizado de Máquina Quântico Federado em Espaços Latentes
+  - Impacts of Code Optimization in Noise Reduction and Performance Improvement of Quantum Machine Learning Models for Anomaly Detection in Computer Networks
+  - Sistemas Inteligentes Quânticos para Segurança Cibernética
+  - WISDOM - Sistema Integrado de Suporte a Tomada de Decisão em Tempo Real para Gestão de Risco em Poços - Desenvolvimento de novos modelos de confiabilidade de conjunto solidário de barreiras de poços
+  - Sobre a aplicação das técnicas da Explainable Artificial Intelligence (XAI) para geração de imagens a partir de pacotes de dados para detecção de anomalias em redes de computadores
+  - Sobre a Segurança de Imagens Utilizando Técnicas Inteligentes
+  - Utilização de Técnicas Ensemble em Machine Learning para Detecção de Exploits em Redes de Computadores
+  - Sobre a Segurança de Imagens Utilizando Aprendizado de Máquina.
+  - Detecção de Redimensionamento de Imagens via Seam Carving utilizando Redes Neurais Convolucionais no contexto da Forense Computacional
+  - Seleção de Características Utilizando uma Abordagem Meta-heurística para Detecção de Anomalias em Redes de Computadores
+  - Sobre a Detecção de Anomalias em Redes de Computadores Utilizando Floresta de Caminhos Ótimos: Avanços e Aplicações em Redes de Computadores
+  - Laboratório de Sistemas Computacionais - LSC
+  - Laboratório de Pesquisas em Sistemas Distribuídos - LAPESID
+  - Vento Iônico: Proposta de Resfriamento de Baixo Custo para Processadores e Chipsets através de uma Arquitetura para Substituição de Coolers baseada em Efeito Biefeld-Brown.
+  - Laboratório de Instrumentação Virtual e Microprocessada - LIVmP
+
+
+
+
+--- Professor Information ---
+Name: Aparecido Nilceu Marana
+Lattes ID: 6027713750942689
+
+Research Areas:
+  - Visão Computacional
+  - Aprendizagem de Máquina
+  - Biometria
+  - Visão Computacional
+  - Biometria
+
+Periodic Papers:
+  -  Combining ArcFace and Visual Transformer Mechanisms for Biometric Periocular Recognition
+  -  Learning Streamed Attention Network from Descriptor Images for Cross-Resolution 3D Face Recognition
+  -  DUA: A Domain-Unified Approach for Cross-Dataset 3D Human Pose Estimation
+  -  Human action recognition in videos based on spatiotemporal features and bag-of-poses
+  -  Deep Features Extraction for Robust Fingerprint Spoofing Attack Detection
+  -  Semi-Supervised Learning with Connectivity-driven Convolutional Neural Networks
+  -  Automatic Frontal Sinus Recognition in Computed Tomography Images for Person Identification
+  -  Deep Discriminative Restricted Boltzmann Machine (DDRBM) for Robust Face Spoofing Detection
+  -  Deep Texture Features for Robust Face Spoofing Detection
+  -  Detecção de spoofing facial: uma abordagem baseada nas máquinas de Boltzmann restritas
+
+Congress Papers:
+  -  3D Human Pose Estimation Based on Monocular RGB Images and Domain Adaptation
+  -  Hate Speech Detection in Portuguese Using BERTimbau
+  -  Dog Face Recognition Using Vision Transformer
+  -  Human Identification Based on Gait and Soft Biometrics
+  -  Human Action Recognition Based in 2D Poses and Skeleton Joints
+  -  A Survey of Recent Advances on Two-Step 3D Human Pose Estimation
+  -  Gait Recognition Using 2D Poses
+  -  Cross-Domain Deep Face Matching for Real Banking Security Systems
+  -  People Identification Based on Soft Biometrics Features Obtained from 2D Poses
+  -  Ocular Recognition Using Deep Features for Identity Authentication
+
+Projects:
+  - Detection of Hate Speech Using Natural Language Processing Techniques and Attention Mechanisms
+  - Estimação de Poses Humanas Tridimensionais Baseada em Imagens Monoculares Auxiliada por Adaptação de Domínio
+  - Identificação Biométrica de Animais Baseada em Aprendizado de Máquina
+  - Domain Adaptation and its Applications to Cancer Diagnosis
+  - Human Action Recognition in Videos
+  - SiSuSMS - Sistema Supervisório de SMS para Sondas
+  - Unconstrained 3D Facial Recognition
+  - Modelos de Aprendizado Baseados em Energia e suas Aplicações
+  - Sistema de Monitoramento e Diagnóstico por meio de Processamento de Imagens na Identificação de Ocorrências  e Falhas na Segurança em Áreas de  Preservação Permanente (APPs) e Reservatórios de UHEs
+  - Detecção de Ataques a Sistemas Biométricos Utilizando Técnicas de Aprendizado de Máquina
+  - Identificação Biométrica Forense Via Características dos Seios Paranasais
+  - Liveness Detection for Biometric Systems
+  - Avaliação do Potencial Biométrico do Eletroencefalograma (EEG)
+  - Análise de Formas Planas em Imagens Digitais
+  - Reconhecimento de Impressões Digitais Baseado em Características Biométricas de Nível 3
+  - Novas Tendências em Reconhecimento de Padrões baseado em Floresta de Caminhos Ótimos
+  - Autenticação Biométrica Usando o Reconhecimento Facial em Dispositivos Móveis
+  - Autenticação Biométrica de Usuários em Sistemas WEB
+  - Reconhecimento de Faces Baseado na Fusão dos Espectros Visível e Infravermelho
+  - Detecção Precoce de Problemas de Perfuração de Poços de Petróleo por Meio da Análise de Cascalhos
+  - Identificação Humana Automática Baseada em Registros Dentários
+  - Identificação e Reconhecimento Automático de Pessoas Utilizando Técnicas Biométricas
+  - Sistema WEB de Acesso a Banco de Dados de DNA para Identificação Humana
+  - Mecanismo de Busca de Imagens por Análise de Conteúdo
+  - Comparação de Seqüências Genéticas em Ambientes de Processamento Paralelo
+  - Utilização de algoritmos genéticos em ambientes paralelos para determinação de parâmetros ótimos de técnica de autenticação e identificação de impressões digitais baseada na transformada de Hough
+  - OMR para execução automática de partituras musicais
+  - Desenvolvimento de aplicações de visão computacional em ambientes paralelos
+  - Autenticação de Pessoas Utilizando a Transformada de Hough no Reconhecimento de Impressões Digitais
+  - Desenvolvimento de algoritmos paralelos para análise e classificação de textura
+  - Sistema Para Acesso a Bancos de Dados de Imagens Via Internet
+  - Reconhecimento de Dígitos Manuscritos Usando Transformada de Hough, Redes Neurais e Algoritmos Genéticos
+  - Estimação de Densidades de Multidões Utilizando Wavelets
+  - Estimação de Densidades de Multidões Utilizando Campos Aleatórios de Markov
+  - Monitoração de Multidões Utilizando Técnicas de Visão Computacional
+
+
+
+
+--- Professor Information ---
+Name: Antonio Carlos Sementille
+Lattes ID: 1882712230914196
+
+Research Areas:
+  - Sistemas de Computação
+  - Realidade Virtual
+  - Sistemas Distribuídos
+  - Realidade Aumentada
+
+Periodic Papers:
+  -  Non-deterministic method for semi-automatic calibration of smartphone-based OST HMDs
+  -  Pinch gesture interaction in the peripersonal space using VST smartphone-based HMDs
+  -  A Realidade Aumentada e Realidade Virtual para a Conservação do Patrimônio Cultural do Artesanato de Tradição
+  -  Optimizing a medical image registration algorithm based on profiling data for real-time performance
+  -  Detection of computationally intensive functions in a medical image segmentation algorithm based on an active contour model
+  -  Geração de efeitos especiais em tempo real para programas jornalísticos em TV com utilização de sistema de partículas do motor de jogos
+  -  Recommendations for evaluating the performance of background subtraction algorithms for surveillance systems
+  -  Challenging situations for background subtraction algorithms
+  -  PAD: a perceptual application-dependent metric for quality assessment of segmentation algorithms
+  -  ARStudio
+
+Congress Papers:
+  -  A Mapping of Visual SLAM Algorithms and Their Applications in Augmented Reality
+  -  Uma análise do uso de mídias sociais por comunidades  acadêmicas: Utilizando a linguagem R
+  -  Handling Occlusions in Augmented Reality for Mobile Devices
+  -  Os Processos de Dinamismo e Desafios nos Setores da Educação: a Inserção do Ambiente de Tecnologias de Aprendizagem e Conhecimento (TAC?s)
+  -  The Development of a Facial Animation System Based on Performance and the Use of an RGB-D Camera
+  -  Development of a Method for Capturing Human Motion Using a RGB-D Camera
+  -  Aspects of User Profiles That Can Improve Mobile Augmented Reality Usage
+  -  O Uso de Representações Tridimensionais no Entendimento de Projetos Arquitetônicos
+  -  Segmentation Quality for Augmented Reality: An Objective Metric
+  -  Qualidade de segmentação em realidade aumentada: definição e identificação de erros mais perceptíveis
+
+Projects:
+  - Estudo e implementação de um sistema de tradução automática de sinais de LIBRAS para a língua portuguesa
+  - HMDs optical see-through baseados em smartphone: um método de calibração automática e a percepção e interação no espaço peripessoal de realidade aumentada
+  - Estudo e implementação de um sistema de estúdio virtual interativo com realidade aumentada e holografia
+  - Um sistema de baixo custo para a geração de conteúdos com realidade aumentada voltado a educação a distância e baseado no uso de display semi-holográfico
+  - Um suporte à captura de movimentos e conteúdo interativo 3D para o sistema ARSTUDIO
+  - Aspectos Teóricos e Práticos da Ciência Cognitiva para o auxilio no Projeto de Produto
+  - ARSTUDIO - Inovação na Geração de Conteúdo digital para Televisão, Cinema e Educação à Distância utilizando Técnicas de Realidade Aumentada
+  - Um Suporte para a Reconstrução Tridimensional de Cenas direcionado à Estúdios Virtuais
+  - O Desenvolvimento de um Sistema de Estúdio Virtual Aumentado para a TV Digital
+  - Programação Visual de Robôs Móveis utilizando Técnicas de Realidade Aumentada
+  - Sistema de realidade virtual (RV) para estruturas dentárias
+  - A Utilização de Marcadores Passivos no Rastreamento de Movimentos Corporais
+  - PUMA- Ferramenta para Simulação de Exame de Punção Mamária
+  - Estudo, Projeto e Implementação de Ambientes de Realidade Combinada
+  - Ambientes Virtuais Distribuídos: Projeto e Implementação
+  - Um Ambiente Virtual Integrado com Interfaces Multiformes Orientado a LIBRAS
+  - Utilização de Realidade Virtual para Construção de Ferramentas de Treinamento em Medicina
+  - Um Sistema de Informação Policial
+  - A Utilização da Técnica de Dead-reckoning no desenvolvimento de uma aplicação virtual distribuída baseada na arquitetura CORBA
+  - Sistema de Informação Gráfico-Espacial Virtual Distribuído
+  - O Desenvolvimento de uma Aplicação Virtual Distribuída utilizando-se a Arquitetura Corba e Técnicas para a Minimização da Latência de Comunicação
+  - AVVIC - Ambiente Virtual para Visualização Interativa Compartilhada
+  - A Utilização de uma Arquitetura baseada em Objetos Interoperáveis para o Suporte de Aplicações Distribuídas de Tempo-Real
+  - VESIV - Virtual Environment for Shared Interactive Visualization
+  - Um Suporte de Comunicação Tolerante a Falhas para Aplicações Distribuídas de Tempo-Real no C.P.E.R
+  - Um Módulo de Comunicação Remota Tolerante a Falhas para Sistema Operacional sobre a Arquitetura CPER
+
+
